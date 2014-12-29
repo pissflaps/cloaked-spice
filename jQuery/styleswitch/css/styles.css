@@ -1,0 +1,48 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+
+body {
+	padding-left:10px;
+	padding-top:10px;
+}
+
+#sheetswitch {
+	position:absolute;
+	top:0px;
+	right:20px;
+	background:url('../images/bg_grad.jpg');
+	border-left:1px solid #23B2D2;
+	border-right:1px solid #23B2D2;
+	border-bottom:1px solid #23B2D2;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#sheetswitch img {
+	border:none;
+}
+
+#sheetswitch .swatch {
+	margin-right:15px;
+	display:block;
+	width:16px;
+	height:16px;
+	float:left;
+	border:1px solid white;
+}
+
+#sheetswitch .swatch_hi {
+	border:1px solid #777;
+}
+
+.sheetswitch_prev {
+	margin-right:15px;
+}
+
+.sheetswitch_next, .sheetswitch_prev {
+	float:left;
+}

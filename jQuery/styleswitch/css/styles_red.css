@@ -1,0 +1,37 @@
+* {
+	font-family:georgia;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:24px;
+	color:#F24633;
+	font-weight:bold;
+}
+
+h3 {
+	font-size:18px;
+	color:#FF6E5E;
+}
+
+p {
+	font-family:arial;
+	font-size:12px;
+}
+
+h4 {
+	text-indent:-1000px;
+	width:400px;
+	height:120px;
+	background:url('../images/red.jpg') no-repeat;
+	display:block;
+	margin-top:20px;
+	margin-bottom:20px;	
+}
+
+#text_body {
+	width:380px;
+	line-height:24px;
+	border:1px solid #FF6E5E;
+	padding:10px;
+}
