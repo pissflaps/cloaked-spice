@@ -1,0 +1,987 @@
+/*================    FLOATING BUBBLE =====================================
+================THAT EXPLODES WHILE FLYING UP ==============================*/
+
+div#bubble_background
+{
+  /*border: 2px solid pink;*/
+  position: absolute;
+  bottom: 0px;
+  float: right;
+  margin: 150px 0 0 230px;
+}
+
+
+
+@keyframes bubbleFloat 
+{
+from 
+  { bottom: 110px;
+    transform: scale(.3);
+    opacity: 0;
+    animation-timing-function: ease-in-out; 
+  }
+1% 
+  { bottom: 110px;
+    transform: scale(.3);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+30% 
+  { bottom: 110px;
+    transform: scale(.8);
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+95% 
+  { bottom: 545px;
+    transform: scale(.3);
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+99% 
+  { bottom: 550px;
+    transform: scale(3); 
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+to 
+  { bottom: 110px;
+    transform: scale(.9);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+
+/*--------------------------------------*/
+@-webkit-keyframes bubbleFloat 
+{
+from 
+  { bottom: 110px;
+    -webkit-transform: scale(.3);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out; 
+  }
+1% 
+  { bottom: 110px;
+    -webkit-transform: scale(.3);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+30% 
+  { bottom: 110px;
+    -webkit-transform: scale(.8);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+95% 
+  { bottom: 545px;
+    -webkit-transform: scale(.3);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+99% 
+  { bottom: 550px;
+    -webkit-transform: scale(3); 
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+to 
+  { bottom: 110px;
+    -webkit-transform: scale(.9);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
+
+
+/*--------------------------------------*/
+@-moz-keyframes bubbleFloat 
+{
+from 
+  { bottom: 110px;
+    -moz-transform: scale(.3);
+    opacity: 0;
+    -moz-animation-timing-function: ease-in-out; 
+  }
+1% 
+  { bottom: 110px;
+    -moz-transform: scale(.3);
+    opacity: 0;
+    -moz-animation-timing-function: ease-in-out;
+  }
+30% 
+  { bottom: 110px;
+    -moz-transform: scale(.8);
+    opacity: 1;
+    -moz-animation-timing-function: ease-in-out;
+  }
+95% 
+  { bottom: 545px;
+    -moz-transform: scale(.3);
+    opacity: 1;
+    -moz-animation-timing-function: ease-in-out;
+  }
+99% 
+  { bottom: 550px;
+    -moz-transform: scale(3); 
+    opacity: 0;
+    -moz-animation-timing-function: ease-in-out;
+  }
+to 
+  { bottom: 110px;
+    -moz-transform: scale(.9);
+    opacity: 0;
+    -moz-animation-timing-function: ease-in-out;
+  }
+}
+
+
+/*--------------------------------------*/
+@-o-keyframes bubbleFloat 
+{
+from 
+  { bottom: 110px;
+    -o-transform: scale(.3);
+    opacity: 0;
+    -o-animation-timing-function: ease-in-out; 
+  }
+1% 
+  { bottom: 110px;
+    -o-transform: scale(.3);
+    opacity: 0;
+    -o-animation-timing-function: ease-in-out;
+  }
+30% 
+  { bottom: 110px;
+    -o-transform: scale(.8);
+    opacity: 1;
+    -o-animation-timing-function: ease-in-out;
+  }
+95% 
+  { bottom: 545px;
+    -o-transform: scale(.3);
+    opacity: 1;
+    -o-animation-timing-function: ease-in-out;
+  }
+99% 
+  { bottom: 550px;
+    -o-transform: scale(3); 
+    opacity: 0;
+    -o-animation-timing-function: ease-in-out;
+  }
+to 
+  { bottom: 110px;
+    -o-transform: scale(.9);
+    opacity: 0;
+    -o-animation-timing-function: ease-in-out;
+  }
+}
+
+
+
+
+
+/*---------------------------------*/ 
+
+@keyframes redPulse 
+{
+from  { box-shadow: 0 0 30px #eb1c2a;}
+50%   { box-shadow: 0 0 80px #c91a26; }
+to    { box-shadow: 0 0 30px #eb1c2a;}
+}
+
+@-webkit-keyframes redPulse 
+{
+from  { box-shadow: 0 0 30px #eb1c2a;}
+50%   { box-shadow: 0 0 80px #c91a26; }
+to    { box-shadow: 0 0 30px #eb1c2a;}
+}
+
+@-moz-keyframes redPulse 
+{
+from  { box-shadow: 0 0 30px #eb1c2a;}
+50%   { box-shadow: 0 0 80px #c91a26; }
+to    { box-shadow: 0 0 30px #eb1c2a;}
+}
+
+@-o-keyframes redPulse 
+{
+from  { box-shadow: 0 0 30px #eb1c2a;}
+50%   { box-shadow: 0 0 80px #c91a26; }
+to    { box-shadow: 0 0 30px #eb1c2a;}
+}
+
+
+/*===================   BLUE BUBBLES  bigger  ===================================*/
+div#beaker3 
+{
+    height: 50px;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker3 span.bubble3 
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: block;
+    left: 100px;
+    bottom: 70px;  
+    background: gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -moz-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -o-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+   
+    border-radius: 160px;
+    animation-name: bubbleFloat;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; 
+    
+    
+    -webkit-border-radius: 160px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;  
+    
+    -moz-border-radius: 160px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 8s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 160px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 8s;
+    -o-animation-iteration-count: infinite; 
+    
+    -ms-border-radius: 160px;
+    -ms-animation-name: bubbleFloat;
+    -ms-animation-duration: 8s;
+    -ms-animation-iteration-count: infinite;      
+}
+
+div#beaker3 span.glow3
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border-radius: 160px;
+    animation-name: redPulse3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 160px;
+    -webkit-animation-name: redPulse3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite; 
+    
+    -moz-border-radius: 160px;
+    -moz-animation-name: redPulse3;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 160px;
+    -o-animation-name: redPulse3;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;    
+}
+
+@keyframes redPulse3 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse3 
+{
+from { -webkit-box-shadow: 0 0 5px #BED7E8;}
+50%  { -webkit-box-shadow: 0 0 30px #89C0E8; }
+to   { -webkit-box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse3 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse3 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+
+
+div#beaker4 
+{
+    height: 10px;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker4 span.bubble4 
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    left: 100px;
+    bottom: 40px;
+    background: gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -moz-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -o-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+   
+    border-radius: 80px;  
+    animation-name: bubbleFloat;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+   
+    -webkit-border-radius: 80px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 80px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 6s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 80px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 6s;
+    -o-animation-iteration-count: infinite;    
+}
+
+div#beaker4 span.glow4
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    
+    border-radius: 140px;
+    animation-name: redPulse4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 140px;
+    -webkit-animation-name: redPulse4;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 140px;
+    -moz-animation-name: redPulse4;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 140px;
+    -o-animation-name: redPulse4;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;
+}
+
+
+@keyframes redPulse4 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse4 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse4 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse4 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+
+/* =======================    blue bubble  smaller    ========================= */
+div#beaker5 
+{
+    height: 0;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker5 span.bubble5 
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    left: 180px;
+    bottom: 40px;
+    background: gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -moz-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -o-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+   
+    border-radius: 80px;
+    animation-name: bubbleFloat;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 80px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 80px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 9s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 80px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 9s;
+    -o-animation-iteration-count: infinite;
+}
+div#beaker5 span.glow5
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border-radius: 140px;
+    animation-name: redPulse5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 140px;
+    -webkit-animation-name: redPulse5;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 140px;
+    -moz-animation-name: redPulse5;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 140px;
+    -o-animation-name: redPulse5;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;   
+}
+
+@keyframes redPulse5 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 30px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse5 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 30px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse5 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 30px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse5 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 30px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+
+div#beaker6 
+{
+    height: 0;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker6 span.bubble6 
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    left: 250px;
+    bottom: 40px;
+    background: gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -moz-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -o-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+   
+    
+    
+    border-radius: 80px;
+    animation-name: bubbleFloat;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 80px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 13s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 80px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 13s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 80px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 13s;
+    -o-animation-iteration-count: infinite;      
+}
+div#beaker6 span.glow6
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border-radius: 140px;
+    animation-name: redPulse6;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 140px;
+    -webkit-animation-name: redPulse6;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 140px;
+    -moz-animation-name: redPulse6;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 140px;
+    -o-animation-name: redPulse6;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;      
+}
+
+@keyframes redPulse6 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse6 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse6 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse6 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 30px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+
+div#beaker7 
+{
+    height: 0;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker7 span.bubble7 
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    left: 110px;
+    bottom: 30px;
+    background: gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -moz-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    background: -o-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    
+    border-radius: 70px;
+    animation-name: bubbleFloat;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 70px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 16s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 70px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 16s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 70px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 16s;
+    -o-animation-iteration-count: infinite;   
+}
+div#beaker7 span.glow7
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border-radius: 140px;
+    animation-name: redPulse7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 140px;
+    -webkit-animation-name: redPulse7;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 140px;
+    -moz-animation-name: redPulse7;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 140px;
+    -o-animation-name: redPulse7;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;    
+}
+
+@keyframes redPulse7 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse7 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse7 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse7 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+
+
+div#beaker8 
+{
+    height: 0;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker8 span.bubble8 
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    left: 70px;
+    bottom: 30px;
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    border-radius: 70px;
+    animation-name: bubbleFloat;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 70px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 70px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 70px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 10s;
+    -o-animation-iteration-count: infinite;    
+}
+div#beaker8 span.glow8
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border-radius: 140px;
+    animation-name: redPulse8;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 140px;
+    -webkit-animation-name: redPulse8;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 140px;
+    -moz-animation-name: redPulse8;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 140px;
+    -o-animation-name: redPulse8;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;    
+}
+
+@keyframes redPulse8 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse8 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse8 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse8 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+
+
+div#beaker9 
+{
+    height: 0;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker9 span.bubble9
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    left: 130px;
+    bottom: 30px;
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    border-radius: 70px;
+    animation-name: bubbleFloat;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+   
+    -webkit-border-radius: 70px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 70px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 7s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 70px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 7s;
+    -o-animation-iteration-count: infinite;
+}
+div#beaker9 span.glow9
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border-radius: 140px;
+    animation-name: redPulse9;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 140px;
+    -webkit-animation-name: redPulse9;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 140px;
+    -moz-animation-name: redPulse9;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 140px;
+    -o-animation-name: redPulse9;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;    
+}
+
+@keyframes redPulse9 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse9 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse9 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse9 
+{
+from { box-shadow: 0 0 5px #BED7E8;}
+50%  { box-shadow: 0 0 25px #89C0E8; }
+to   { box-shadow: 0 0 5px #BED7E8;}
+}
+
+
+
+div#beaker10 
+{
+    height: 0;
+    position: relative;
+   /* border: 2px solid blue;*/
+}
+div#beaker10 span.bubble10
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    left: 135px;
+    bottom: 30px;
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,.2)), to(rgba(53,162,240,.2)));
+    border-radius: 70px;
+    animation-name: bubbleFloat;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+   
+    -webkit-border-radius: 70px;
+    -webkit-animation-name: bubbleFloat;
+    -webkit-animation-duration: 13s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 70px;
+    -moz-animation-name: bubbleFloat;
+    -moz-animation-duration: 13s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 70px;
+    -o-animation-name: bubbleFloat;
+    -o-animation-duration: 13s;
+    -o-animation-iteration-count: infinite;    
+}
+div#beaker10 span.glow10
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border-radius: 140px;
+    animation-name: redPulse10;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -webkit-border-radius: 140px;
+    -webkit-animation-name: redPulse10;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-border-radius: 140px;
+    -moz-animation-name: redPulse10;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-border-radius: 140px;
+    -o-animation-name: redPulse10;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;
+}
+
+@keyframes redPulse10 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-webkit-keyframes redPulse10 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-moz-keyframes redPulse10 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+@-o-keyframes redPulse10 
+{
+from  { box-shadow: 0 0 5px #BED7E8;}
+50%   { box-shadow: 0 0 25px #89C0E8; }
+to    { box-shadow: 0 0 5px #BED7E8;}
+}
+
+/*====================================================================*/

@@ -1,0 +1,364 @@
+@import url('fontFace.css');
+@import url('../Foundation/css/foundation.min.css');
+@import url('../Foundation/icons/foundation-icons.css');
+@import url('jqui.css');
+
+/* RESPONSIVE TABLES FROM FOUNDATION */
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+table th { font-weight: bold; }
+table td, table th { padding: 9px 10px; text-align: center; }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	
+	table.responsive { margin-bottom: 0; }
+	
+	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border: 0px; }
+	.pinned table { border-right: none; border: 0px; width: 100%; }
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0; }
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border: 0px; }
+	div.table-wrapper div.scrollable { margin-left: 35%; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
+	
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+	
+	
+}
+
+table, table tr, table td{
+border-collapse: collapse;
+border: none;
+}
+/******************************		
+*   TAC's New Alert System               		
+*	Developed 9/28/2012 - 03/29/2013  by jim mulhern           		
+* 	CERTIFIED FOR: IE 9+ | Opera 12+ | Google Chrome 20+ | Mozilla Firefox 16+
+*	Published 2/12/2014
+* 		ISI Telemanagement               	
+*****************************/	
+/*		***	General Styling Classes for re-use throughout the Alert System		***	*/
+
+body,html,*,*:after, *:before {	
+    -webkit-font-smoothing:subpixel-antialiased;
+    -moz-font-smoothing:subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing:antialiased;
+    font-smoothing:subpixel-antialiased;
+}
+	.shadowZ{
+	color: #962D3E  !important;
+			text-shadow: #212121  0.15em 0.15em 0.25em;
+		}
+		
+	.shadow {
+		-moz-box-shadow:    6px 5px 4px 3px #ccc;
+		-webkit-box-shadow: 6px 5px 4px 3px #ccc;
+		box-shadow:         6px 5px 4px 3px #ccc;
+	 }
+	 .Tshadow{
+		color: #cccccc;
+		font-weight: bold;
+		text-shadow: #212121 0.1em 0.1em 0.25em;
+	}
+	.corners {
+		-moz-border-radius: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.round {
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+	
+	  #Hamburger{
+	    font-size: 12pt;
+		padding-right: 4px;
+	  }
+	  
+/* //////////  TAC ALERT PANEL EDITION //////////// */
+
+    html, body{
+      font-family: Arial,verdana, sans-serif;	
+	  font-size: 12pt;
+      height: 100%;
+    }
+    #BodyWrapper{
+      background: #3C555C;
+      background-attachment: fixed;
+	  color: #F2E5BD;
+	 }
+
+	  #BodyWrapper, .inner-wrap{
+	    min-height: 100%;
+	    margin-bottom: -50px; 
+	  }
+	  #BodyWrapper:after {
+        content: "";
+        display: block;
+		height: 50px;
+      }
+	  #Database{
+	    margin: 10px auto;
+        margin-bottom: -50px; 
+	  }
+	  #Footer{
+	  display: inline;
+	  width: 100%;
+	  position: fixed;
+	  bottom: 0px;
+	    height: 50px;
+	background-color:#352C2B;  /* #3498db   2980b9 */
+color:  #FFEBCD;
+	  }
+	  #Whois, #Alerts{
+	    padding: none;
+	    height: 50px;
+		color: #FFEBCD;
+	  }	
+	  #Alerts{
+	border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding: 0.5rem 0.25rem 0.775rem 0.775rem;
+  font-size: 0.995rem;
+  background-color:#352C2B;
+  border-color: #352C2B;
+  color: #FFEBCD ;
+}
+    #Whois{
+	border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  font-size: 0.8125rem;
+  	z-index:999999;
+	background-color:#352C2B;
+	border-color: #352C2B;
+	color:#FFEBCD;
+	}
+	  #delTable tr>td{
+	    text-align: center;
+		border: 0px;
+		font-size:  .9em;
+	  }
+
+    .trr td{
+	  font-size: 1.1em;
+	  background-color: #CD5510;
+	  color: #FFEBCD;
+	  text-align: center;
+	  border: 0px;
+	  padding: none;
+	  margin: none;
+    }
+
+#tacWeather{
+overflow: hidden;
+}
+	#Weather{
+	    vertical-align: top;
+		background: transparent;
+		background-color: transparent;
+		color: #212121;
+		border: none;
+	}
+	#wIcon{
+		float: left;
+		vertical-align: top;
+		padding-right: 2px;
+	}
+	#temp{
+	margin-top: 2px;
+	vertical-align: top;
+	}
+#temp, #humid, #realfeel{
+                color: #352C2B ;
+                font-weight: bold;
+            }
+#time{
+margin-top: -2px;
+vertical-align: top;
+color: #3C555C;     /*    #F1F7F9    */
+}
+	#RegUser {
+		position: absolute;
+		bottom:1px;
+		right:2px;
+		padding:6px;
+		line-height:0.9em;
+	}			
+	
+img#delCross{
+	height: 16px;
+	width: 16px;
+	border: none;
+}	
+#DelCel {
+	display:table-cell;
+	vertical-align: middle;
+}
+img#del{
+	min-height: 20px;
+		max-height: 30px;
+	min-width: 20px;
+		max-width: 30px;
+	cursor: pointer;		
+}
+
+.ui-autocomplete {
+	background: rgba(255,255,255, 1);
+	background-color: #ffffff;
+	color: #000000;
+	z-index: 9999999 !important;
+}
+
+
+
+#DateTimeString{
+	font-family: Arial Black, sans-serif;
+	color: #00008B;
+}	
+  #UserLink{
+   text-decoration: none;
+   box-shadow: none;
+   border: none;
+  }
+#DBContainer{
+margin-left: 10%;
+margin-right: 10%;
+}  
+		#allgone{
+			position: relative;
+			clear: both;
+			display: inline-block;
+			margin-left: 10%;
+			margin-right: 10%;
+			z-index: 1;
+			text-align: center;
+			font-family: Oswald, Impact, sans-serif;
+			font-size: 21pt;
+			text-align: center;
+			color: #778899;
+		}
+		
+#save, #cancel{
+position: relative;
+top: 1em;
+clear: both;
+}
+
+#foo {
+border: none;
+}	
+
+#output{
+clear: both;
+margin: 1em;
+padding: 1em;
+}
+
+#TicketForm{
+float: left;
+clear: both;
+}
+
+.ajaxloader {
+position: absolute;
+width: 30px;
+height: 30px;
+left: 50%;
+top: 15%;
+margin: 0 0 0 -15px;
+border: 8px solid #fff;
+border-right-color: transparent;
+border-radius: 50%;
+box-shadow: 0 0 25px 2px #eee;
+-webkit-animation: spin 1s linear infinite;
+-moz-animation: spin 1s linear infinite;
+-ms-animation: spin 1s linear infinite;
+-o-animation: spin 1s linear infinite;
+animation: spin 1s linear infinite;
+}
+
+#chartdiv {
+background-color: transparent;
+background: transparent;
+overflow: hidden;
+}
+
+
+h7.subheader{
+  color: #CD5510;
+}
+
+#ISI{
+background:transparent;
+visibility: hidden;
+display: none;
+}
+
+.alert{
+background-color: #CD5510 !important;
+color: #f1f7f9 !important;
+}
+    .alert:hover{
+      background-color:rgb(225, 105, 36) !important;
+      color: #f1f7f9;
+    }
+.success{
+background-color: #9E9657 !important;
+color: #f1f7f9 !important;
+}
+    .success:hover{
+	  background-color: rgb(185, 175, 105) !important;
+	  color: #f1f7f9;
+	}
+.primary{
+  background-color:#3C555C !important;
+  color: #f1f7f9 !important;
+}
+    .primary:hover{
+  	  background-color:rgb(80, 115, 112) !important; 
+    }  
+	
+nav.top-bar, section.top-bar-section, .top-bar ul>li, ul.right,ul.left, .top-bar-section li.has-dropdown a, #UserLink, .off-canvas-list, aside, .side-nav{
+background-color:#FFEBCD !important;
+color: #3C555C  !important;
+}
+    li.themes a:hover{
+      background-color: #CD5510 !important;
+	  color: #FFEBCD !important;
+    }
+.off-canvas-list a:active,.off-canvas-list a:link,.off-canvas-list a:visited {
+color:#3C555C  !important;
+}  .off-canvas-list a:hover{
+      color:  #CD5510 !important;
+    }
+	
+.title-area h1 a{
+color: #CD5510 !important;
+}	
+	
+  #YOSPOS{
+    background: #000000 !important;
+    border: 1px solid #32CD32 !important;
+    color: #00FF00 !important;
+  }
+    #YOSPOS:hover{ 
+	  background: #006400 !important;
+	  border: 1px solid #00FF00 !important;
+	  color: #000000 !important;
+	  }

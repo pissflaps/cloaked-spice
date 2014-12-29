@@ -1,0 +1,686 @@
+/******************************		
+*   TAC's New Alert System               		
+*	Developed 9/28/2012 - 10/19/2012  by jim mulhern           		
+* 	CERTIFIED FOR: IE 9+ | Opera 12+ | Google Chrome 20+ | Mozilla Firefox 16+
+*	Published 10/19/2012
+* 		ISI Telemanagement               	
+*****************************/	
+
+
+/*	***	
+*HARD STYLES * * *  
+*EDIT THIS AFTER ALL OTHER STYLESHEETS 
+*HAVE BEEN MODIFIED PROPERLY		***	*/
+
+
+body {
+		font-family: Droid Sans, Lato, Istok Web, Cantora One, Arial, Tahoma, Verdana, sans-serif;
+		background: rgba(25,0,0,0.6);	/*	rgba(90,180,225,0.3);	*/
+		color: #ff0000;
+	}
+	#color{
+		color: #ff0000;
+	}
+	
+/*		***	General Styling Classes for re-use throughout the Alert System		***	*/
+		
+	.shadow {
+		-moz-box-shadow:    6px 5px 4px 3px #ccc;
+		-webkit-box-shadow: 6px 5px 4px 3px #ccc;
+		box-shadow:         6px 5px 4px 3px #ccc;
+	 }
+	 .Tshadow{
+		color: #ff0000;
+		font-weight: bold;
+		text-shadow: #555555 0.1em 0.1em 0.2em;
+	}
+	.corners {
+		-moz-border-radius: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.round {
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+		#talkbubble {
+			   width: 150px;
+			   height: 60px; 
+			   background: #ffffcc;
+			   color: #000000;
+			   position: relative;
+			   -moz-border-radius:    8px; 
+			   -webkit-border-radius: 8px; 
+			   border-radius:         8px;
+			   border: 1px solid #ffffcc;
+			   padding: 0.25em;
+		}
+			#talkbubble:before {
+			   content:"";
+			   position: absolute;
+			   right: 100%;
+			   top: 25px;
+			   width: 0;
+			   height: 0;
+			   border-top: 13px solid transparent;
+			   border-right: 26px solid #ffffcc;
+			   border-bottom: 13px solid transparent;
+			}
+
+/*		***	Input bar highlight / Click event / onChange style and animation	***	*/
+
+	input, textarea {
+	  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+	  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	  transition: border linear 0.2s, box-shadow linear 0.2s;
+	  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+		input:focus, textarea:focus {
+		  outline: 0;
+		  border-color: rgba(255, 0, 0, 0.8);
+		  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 0, 0, 0.6);
+		  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 0, 0, 0.6);
+		  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 0, 0, 0.6);
+		}
+	input[type=file]:focus, input[type=checkbox]:focus, select:focus {
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  outline: 1px dotted #ff0000;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	.ui-autocomplete-input,
+	textarea,
+	.uneditable-input {
+	  display: inline-block;
+	  padding: 4px;
+	  font-size: 1em;
+	  font-family: Cantora One, Istok Web, Arial;
+	  line-height: 18px;
+	  color: #808080;
+	  border: 1px solid #BD0000;
+	  -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	  border-radius: 3px;
+	}
+					
+/*		***		Login Bar Style and Layout Design 		***	*/
+
+		#RegUser {
+		position: absolute;
+		top:1px;
+		right:2px;
+		padding:6px;
+		background: rgba(255, 52, 180, 0.8); 
+		color:#f5fffa;
+		border-radius:4px;
+		line-height:0.9em;
+		}
+
+#RegUser:hover { background: rgba(15, 150, 225, 0.6);  }		
+	#RegUser a{ color:#eeeeee; } #RegUser a:hover{ color: #F5FFFA; }
+
+#firstlinks{
+display: inline-block;
+position: fixed;
+top: 0px;
+left: 0px;
+	font-family: Lato, Istok Web, Verdana;
+	z-index: 99;
+}
+		#loginout{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			font-family: Source Sans Pro, Cabin Condensed, Arial, Tahoma, sans-serif;
+			padding: 0px;
+			display: inline;
+			background: rgba(50,0,00,0.25);
+			color: #fff;
+			width: 100%;
+			height: 50px;
+			text-align:center;
+			margin: none;
+			z-index: 90;
+			}
+			
+					#loginout a{
+						color: #f5fffa;
+						text-decoration: none;
+						font-weight: bold;
+					}
+						#loginout a:hover{
+							color: #ffffff;
+							text-decoration: none;
+						}
+							#outlog{
+										float: right;
+										clear: left;
+										font-size: 12px;
+										padding: 0.25em;
+										line-height: 1.5;
+										background: rgba(210,20,20,0.5);
+										border-radius: 4px;
+										border: 1px solid transparent;
+										font-family: Electrolize, Share, Ubuntu, Arial;
+									}
+									#outlog:hover{
+											background: rgba(210,20,20,0.8);
+											border: 1px solid #ffffff;
+										}
+								#in{
+									display: inline-block;
+									font-family: Lato, Droid Sans, Arial;
+									position: relative;
+									background: rgba(0,180,30,0.5);
+									padding: 0.5em;
+									vertical-align: bottom;
+									text-align: center;
+									border-radius: 4px;
+									line-height: 1.5;
+								}
+								#out{
+									display:block;
+									position: relative;
+									left: 25px;
+									padding: 0.25em;
+									vertical-align: top;
+									font-size: 12px;
+									line-height: 0.9;
+								}
+									#RegUser{
+										display: block;
+										float: right;
+										clear:none;
+										padding: 0.5em;
+										font-size: 12px;
+									}
+/*	***	LOGINOUT UL > LI STYLE  & DESIGN LAYOUT	***	*/
+
+			#firstlinks ul{
+				list-style: none;
+				font-family: Droid Sans, Share, verdana, sans-serif;
+				display: inline;
+				z-index: 99;
+
+			}
+				#firstlinks ul li{
+					list-style:none;
+					cursor: pointer;
+					display: inline-block;
+					padding: 0.75em;
+					font-size: 0.9em;
+					float: left;
+					line-height: 0.8;
+					clear: none;
+					vertical-align: top;
+					border-radius: 4px;
+					text-align: center;
+				}				
+						#open{
+							background: rgba(150,200,25,0.5);
+							color: #f5fffa;
+						}
+							#open:hover{
+								background: rgba(150,200,25,0.8);
+								color: #ffffff;
+								}
+					
+						#links{
+							background: rgba(0,100,180,0.5);
+							color: #f5fffa;
+						}
+							#links:hover{
+								background: rgba(0, 100, 180, 0.8);
+								color: #ffffff;
+							}
+							#tEdit {
+							background: rgba(250,220,0,0.3);
+							color: #f5fffa;
+							}
+								#tEdit:hover{
+									background: rgba(250,220,0,0.8);
+									color: #ffffff;
+								}
+									#Stats{
+										background: rgba(255,140,0,0.3);
+										color: #f5fffa;
+									}
+										#Stats:hover{
+											background:rgba(255,140,0,0.8);
+											color: #ffffff;
+										}
+									#Themes{	
+									clear:none;
+										float: right;
+										background: rgba(200,10,18,0.3);
+										color: #f5fffa;
+
+									}
+										#Themes:hover{
+											background: rgba(220, 10, 18, 0.8);
+											color: #ffffff;
+										}
+/*		***		GROWL SECTION		***	*/
+
+#growl {
+position: absolute;
+top:50px;
+left:0;
+width:350px;
+z-index: 99;
+color: #ffffff;
+padding: 1em;
+display:inline-block;
+border-radius: 4px;
+}
+	.notice {
+		position: relative;
+	}
+	
+	.skin {
+		position: absolute;
+		background: rgba(0, 0, 0, 0.5); 
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		border-radius: 4px;
+	}
+	.content{
+		display:block;
+		padding: 15px;
+		margin-left: 5px;
+		font-weight: bold;
+	}
+	
+	.Gclose {
+		vertical-align: top;
+		float:right;
+	}	
+		
+/*		***	Database Div and Below Layout	& Design stylings		***	*/
+						#Database {
+							margin-top: 3.5em;
+							margin-left: 2em;
+							z-index: 1;
+							position: relative;
+							clear: both;
+							padding: 1em;
+						}
+								#allgone{
+									position: relative;
+									clear: both;
+									display: inline-block;
+									margin-left: 35%;
+									margin-top: 2em;
+									z-index: 1;
+									text-align: center;
+									font-family: Istok Web, Lato;
+								}
+									#all_clear {
+										padding: 1em;
+										border:1px solid #212121;
+										font-family: Source Sans Pro, Courier, Times New Roman, sans-serif;
+										background: rgba(250, 250, 210, 0.8);
+										color:#212121;
+										clear:both;
+										float:left;
+										border-radius: 4px;
+									}
+									#table, #delTable {
+										text-align: center;
+									}
+									#foot{
+										position: fixed;
+										bottom: 0px;
+										vertical-align: bottom;
+										height: 40px;
+										width: 100%;
+										background: rgba(10,150,250,0.3);
+										color: #ffffff;
+										display: none;
+									}		
+		
+/*	***	NewTicket drop-down structure and styling 	***	*/
+
+#panel{
+	background: transparent;
+}
+#panel a{
+	color: #0000ff;
+	}
+		#panel a:hover{
+			color: #000000;
+			text-decoration: underline;
+		}
+		#NewTicket{
+				position: fixed;
+				top: 50px;
+				left: 0px;
+				display: block;
+				text-align: left;
+				background: rgba(0,0,10, 0.3);
+				padding: 1.5em;
+				border: none;
+				border-radius: 2px;
+			}
+				#linx{
+					position: fixed;
+					top: 50px;
+					right: 0px;
+				}
+				#hotlinks{
+					background: rgba(0,0,10,0.3);
+					color: #ffffff;
+					padding: 0.5em;
+					vertical-align: top;
+					float: right;
+					clear: both;
+					display: inline-block;
+					border-radius: 4px;
+					z-index: 99;
+					}		
+							#links1 a, #links1 a:active, #links1 a:visited, #hotlinks a { color: #FFA500; }									
+								#links1 a:hover, #hotlinks a:hover { color: #000000; }									
+							#links2 a, #links2 a:active, #links2 a:visited { color: #000000; }
+								#links2 a:hover { color: #FFA500; }
+							
+							#rotor{
+								clear: both;
+								padding:2px;
+								vertical-align: top;
+								text-align: center;
+							}	
+					#eTicket{
+						position: fixed;
+						top: 50px;
+						left: 0px;
+						display: inline-block;
+						width: 100%;
+						text-align: left;
+						background: rgba(100,180,50, 0.3);
+						padding: 0.5em;
+						border: none;
+					}
+					#tStat{
+						position: fixed;
+						top: 50px;
+						left: 0px;
+						width: 100%;
+						display: inline-block;
+						background: rgba(100,200,150,0.3);
+						padding: 0.5em;
+						border: none;
+					}
+					#Style{
+						position: fixed;
+						top: 50px;
+						left: 0px;
+						width: 100%;
+						display: inline-block;
+						background: rgba(200,10,18, 0.3);
+						padding: 0.5em;
+						border: none;
+						}
+					#email{
+						float: right;
+						clear: none;
+						background: transparent;
+						cursor: pointer;
+						padding: 0px;
+						margin: 0px;
+						border-radius: 15px;
+					}
+					#forma {
+						padding:5px;
+						text-align: left;
+						background:transparent;		/* #add8e6; */
+						border: none;
+						overflow: hidden;
+					}
+			#aTechs{
+					vertical-align: bottom;
+					padding: 1em;
+					display: block;
+				}
+			.emails { 
+				word-spacing:2px;
+				letter-spacing:1px;
+				background: transparent;
+				border: none;
+				font: 14px "Segoe UI";
+				color: #000000;
+				overflow:hidden;
+			} 
+
+/*		***	Ticket Editing Styling and Design Layout		***	*/
+		
+#eTicket input {
+padding:5px;
+border-radius: 4px;
+}
+	#TicketTable {
+		background: transparent;
+		color: #ffffff;
+	}
+		#content{
+		background: transparent;
+		}
+	#table {
+		text-align: center;
+		vertical-align: top;
+		color: #000000;
+	}
+
+	#table td{
+		padding: 5px;
+	}
+	#divtop {
+	display: inline;
+	text-align: center;
+	vertical-align: top;
+	}
+	#divbottom {
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	padding: 5px;
+	background: transparent;
+	}
+	
+	.outline {
+	border: 1px solid #444444;
+	}
+	
+	#status {
+		display: none;
+	 padding:10px;
+	 margin: 5px auto;
+	 border-radius: 4px;
+	 clear:both;
+	 }
+		.success{
+		background: #32cd32;
+		color: #EEFFCC;
+		border:1px solid #006400;
+		}
+		.error{
+		background: #FFCCCC;
+		color: #BD0000;
+		border: 1px solid #FF0000;
+		}
+		
+	 #noticket {
+	 background: transparent;
+	 color: #eeeeee;
+	 text-shadow: #444444 0.15em 0.15em 0.25em;
+	 font-size: 1.25em;
+	 line-height: 1.5;
+	 }
+	 
+	 #save {
+	 margin: 5px auto;
+	 }
+	 
+	 #pgTitle{
+	 display:block;
+	 font-family: Arial Black, Arial, Sans-serif;
+	 font-size: 14px;
+	 background: #599fcf;
+	 color: #f5fffa;
+	 text-align: center;
+	 padding: 5px;
+	 }
+		#pgTitle sub{
+		font-family: Courier New, Arial, sans-serif;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 0.75;
+		}
+			#PutInQ{
+			display:none;
+			padding:10px;
+			margin: 5px auto;
+			border-radius: 4px;
+			float:right;
+			}
+				#Putback{
+					background: #0073ea;
+					text-shadow: #000000 0.1em 0.1em 0.25em;
+					color: #ffffff;
+					border-radius: 4px;
+					border: 1px solid #0000FF;
+					}
+					#Putback:hover{
+						background: #006400;
+						color: #EEFFCC;
+						border: 1px solid #32cd32;
+						}
+						
+/*	***	Ticket Search Display and Styling	***	*/
+
+.removed {
+background:#EFC2C2;
+padding:5px;
+display:block;
+cursor:pointer;
+}
+
+.added{
+background:#D8E6AD;
+padding:5px;
+display:block;
+cursor:pointer;
+} 						
+
+/*		***	Database Ticket Listing Display Classes and Stylings		***	*/
+	
+	.tblOclr {
+	background:  rgba(16,78,139,0.6);
+	color: #ffffff; /* #0064CD */
+	padding: 3px;
+	}
+	.tblEclr {
+	background:  rgba(164, 211, 240, 0.5);
+	color: #555555;
+	padding:3px;
+	}
+	.tblFclr {
+	background:  rgba(250,250,250,0.3);
+	color: #0073EA;	/*	#0073EA	*/
+	font-size: 18px;
+	text-shadow: #888888 0.1em 0.1em 0.15em;
+	padding:3px;
+	}
+	.tblbrdr{
+	border-right: 1px solid rgba(250,250,250,0.25);
+	border-bottom: 1px solid rgba(250,250,250,0.25);
+	padding: 5px;
+	}
+
+.database{
+display: none;
+}
+
+#tacWeather{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 420px;
+	height: 120px;
+	z-index: 98;
+	cursor: pointer;
+	display: none;
+}	
+
+#Container{
+	display: inline-block;
+	background: rgba(200,200,200,0.15);
+	color: #f5fffa;
+	border: none;
+	vertical-align: top;
+	border-radius: 15px;
+	padding: 0.05em;
+	}
+	
+	#Weather{
+		display: block;
+		font-family: arial,verdana, sans-serif;
+		font-size: 11px;
+		background: rgba(135,206,255, 0.3);
+		color: #ffffff;
+		border-radius: 4px;
+		padding: 0.25em;
+		text-shadow: #212121 0.1em 0.1em 0.15em;
+		text-align: left;
+		vertical-align: bottom;
+		}
+			#wIcon{
+			float: left;
+			padding: 0.5em;
+			border-radius: 8px;
+			}
+				#time{
+					font-family: arial, sans-serif;
+					font-size: 10px;
+					line-height: 1.8;
+					text-align: right;
+					float: right;
+					clear: both;
+					padding: 0.25em;
+					color: #ffffff;
+					}
+	#temp, #humid, #realfeel{
+		color: #eeff00;
+		font-weight: bold;
+		}
+
+		
+a:link {color:#555555;
+	text-decoration:underline; }
+
+a:visited {color:#aaaaaa;
+	text-decoration:none; }
+
+a:hover, :not #deletelink a:hover {color:#ffffff; 
+	background: #212121;
+	text-decoration:none;}
+
+a:active {color:#212121; 
+	text-decoration:underline; } 
+	
+	#tad a:hover {
+	color: #ffffff;
+	background: #212121;
+	text-decoration: none;
+	text-shadow: #555555 0.1em 0.1em 0.2em;
+	}

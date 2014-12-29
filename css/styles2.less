@@ -1,0 +1,288 @@
+@import url('http://fonts.googleapis.com/css?family=Istok+Web|Droid+Sans|Lato');
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:400,500|Share:400,700');
+
+/**********************
+       CONSTANTS
+***********************/
+ 
+@lightRed:   #fdd;
+@lightGreen: #dfd;
+@lightBlue:  #ddf;
+
+/* Sunny Theme */
+
+@Sunny_body: #feeebd;
+@Sunny_bodyClr: #EE7600;
+@Sunny_tblE: #fece2f url('http://tac-alert01/css/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png') 50% 50% repeat-x;
+@Sunny_tblEclr: #000000;
+@Sunny_tblF: #FFA007;
+@Sunny_tblFclr: #fef8e4;
+@Sunny_tblO: #feeebd url('http://tac-alert01/css/sunny/images/ui-bg_highlight-soft_100_feeebd_1x100.png') 50% top repeat-x;
+@Sunny_tblOclr: #FF6C00;
+@Sunny_border:  2px solid #fed449;
+
+
+/* Rainy Day */
+
+@Rainy_body: #DADADA;
+@Rainy_bodyClr: #70b2e1;
+@Rainy_tblE: #599fcf;
+@Rainy_tblEclr: #eeeeee;
+@Rainy_tblF: #444444 url('http://tac-alert01/css/RainyDay/images/ui-bg_glass_25_444444_1x400.png') 50% 50% repeat-x;
+@Rainy_tblFclr: #F5FFFA;
+@Rainy_tblO: #eeeeee url('http://tac-alert01/css/RainyDay/images/ui-bg_glass_55_eeeeee_1x400.png') 50% 50% repeat-x;
+@Rainy_tblOclr: #70b2e1;
+@Rainy_border: 1px solid #bbbbbb;
+
+
+/* Mixin */
+@Default_Body: @Sunny_body;
+@Default_BodyClr: @Sunny_bodyClr;
+@Default_tblO: @Sunny_tblO;
+@Default_tblOclr: @Sunny_tblOclr;
+@Default_tblF: @Sunny_tblF;
+@Default_tblFclr: @Sunny_tblFclr;
+@Default_tblE: @Sunny_tblE;
+@Default_tblEclr: @Sunny_tblEclr;
+@Default_tblBorder: @Sunny_border;
+ 
+/**********************
+         STYLES
+***********************/
+ 
+/* Mixin */
+.border-radius (@radius: 8px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+/* Mixin */
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.inner-shadow{
+-moz-box-shadow: inset 0 0 5px 5px #888;
+-webkit-box-shadow: inset 0 0 5px 5px#888;
+box-shadow: inset 0 0 5px 5px #888;
+}
+
+.Bshadow{
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+.Tshadow{
+text-shadow: 0.1em 0.1em 0.25em #444;
+}
+
+
+.FBfont{ font-family: verdana, georgia, arial, sans-serif; font-size: 1.15em; }
+.FBfont2{ font-family: Lato, Droid Sans, tahoma, sans-serif; font-size: 1.2em; color: #FF0084;}
+.Sunnyfont{ font-family: Istok Web, Droid Sans, Lato, sans-serif; font-size: 1.1em; color: @Sunny_bodyClr;}
+.Rainyfont { font-family: Ubuntu, Share, sans-serif; font-size: 1.25em; color: @Rainy_bodyClr; }
+
+.bord {
+border-right: 1px solid #444;
+border-bottom:1px solid #444;
+padding: 3px;
+}
+ 
+body{
+background: @Default_Body;
+color: @Default_BodyClr;
+.Sunnyfont;
+}
+
+	.tblOclr {
+	background: @Default_tblO;
+	color: @Default_tblOclr;
+	}
+	.tblEclr {
+	background: @Default_tblE;
+	color: @Default_tblEclr;
+	}
+	.tblFclr {
+	background: @Default_tblF;
+	color: @Default_tblFclr;
+	}
+	.tblbrdr{
+		border: @Default_tblBorder;
+	}
+			#delTable tr:odd {
+				.tblOclr;
+				}
+			#delTable tr:even {
+				.tblEclr;
+				}
+			#delTable tr:first {
+				.tblFclr;
+				}
+			#delTable td {
+				.tblbrdr;
+				}
+
+				table td{
+				.border-radius(4px);
+				}
+				
+			#somediv{
+			display: inline-block;
+			clear:both;
+			float:right;
+
+			margin: 10px auto;
+			padding: 50px;
+			.border-radius(15px);
+			.box-shadow;
+			}
+			#sometbl{
+			float:left;
+			padding: 50px;
+			.border-radius;
+			background: transparent;
+			.box-shadow;
+			}
+				#sometbl td {
+					background: @Rainy_body;
+					color: @Rainy_bodyClr;
+					padding: 10px;
+					border:2px solid transparent;
+					.border-radius(0px);
+						&:hover{
+						background: @Rainy_tblO;
+						color: @Rainy_tblOclr;
+						border: @Default_tblBorder;
+						}
+				}
+			#sometbl2{
+			float:right;
+			.border-radius(2px);
+			.box-shadow(15px, 8px, 6px, 0.75);
+			padding: 25px;
+			background: @Sunny_body;
+			border: 1px solid #000;
+			}
+				#sometbl2 td {
+					background: transparent;
+					padding: 5px;
+					color: @Sunny_tblO;
+					&:hover{
+						background: @Sunny_tblE;
+						color: @Sunny_tblEclr;
+						border: 2px dashed #fff;
+						}
+				}
+		#Quotes {
+		.FBfont2;
+		clear:both;
+		display:inline-block;
+		text-align:justify;
+		.Bshadow;
+		.bord;
+		padding: 25px;
+		margin: 10px auto;
+		background: transparent;
+		}
+		#box1{
+		position: relative;
+		display:inline-block;
+		height: 300px;
+		width: 90%;
+		.Bshadow;
+		padding: 5px;
+		margin: 10px auto;
+		background: transparent;
+		}
+			#title1{
+			.Rainyfont;
+				display:block;
+				height: 45px;
+				vertical-align:top;
+				.Tshadow;
+				.Bshadow;
+				padding:5px;
+				color: #fff;
+				&:hover{
+					color: @Rainy_bodyClr;
+					font-weight: bold;
+				}
+			}
+		#box2{
+			height: 150px;
+			width: 50%;
+			.Bshadow;
+			padding: 5px;
+			margin: 10px auto;
+			background: transparent;
+			.bord;
+				&:hover{
+					background: @Sunny_tblF;
+				}
+		}
+		#box3{
+			height: 100px;
+			width: 50%;
+			.Bshadow;
+			padding: 5px;
+			margin: 10px auto;
+			background: transparent;
+			.bord;
+				&:hover{
+					background: @Sunny_tblEclr;
+				}
+		}
+#Atheme{
+	background: @Default_BodyClr;
+	color: #eee;
+	padding: 5px;
+			&:hover{
+				background: @Default_Body;
+				color: #fff;
+			}
+}			
+	#Btheme{
+		background: @Default_tblOclr;
+		color: #eee;
+		padding: 5px;
+			&:hover{
+				background: @Default_tblEclr;
+				color: #fff;
+			}
+	}
+#growl {
+position: absolute;
+bottom:0;
+right:0;
+width:350px;
+z-index:999;
+color: #fff;
+padding: 2px;
+}
+	.notice {
+		position: relative;
+	}
+	
+	.skin {
+		position: absolute;
+		background: #000;
+		bottom: 0;
+		left: 0;
+		opacity: 0.5;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		.border-radius(4px);
+	}
+	.content{
+		padding: 2px;
+		margin-left: 10px;
+	}
+	
+	.Gclose {
+		float:right;
+	}
+		

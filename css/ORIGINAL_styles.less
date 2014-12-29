@@ -1,0 +1,327 @@
+@import url('http://fonts.googleapis.com/css?family=Istok+Web|Droid+Sans|Lato');
+/**********************
+       CONSTANTS
+***********************/
+ 
+@lightRed:   #fdd;
+@lightGreen: #dfd;
+@lightBlue:  #ddf;
+@defaultShapesWidth:75px;
+@defaultRadius:30px;
+ 
+/*********************************
+   OPERATIONS & COLOR FUNCTIONS
+**********************************/
+ 
+@darkBlue: @lightBlue - #555;
+ 
+@defaultThemeColor:@lightGreen;
+//@defaultThemeColor:spin(@lightBlue, 100);
+ 
+@borderSize:@defaultShapesWidth * 0.1;
+@borderColor:@defaultThemeColor - #222; 
+//@borderColor:darken(desaturate(@defaultThemeColor, 100%), 20%); 
+ 
+ 
+/**********************
+        MIXINS
+***********************/
+ 
+.RoundedShape(@radius:@defaultRadius){
+    -webkit-border-radius:@radius;
+       -moz-border-radius:@radius;
+            border-radius:@radius;  
+}
+ 
+.Round{
+    .RoundedShape(9999px);
+}
+ 
+.RoundedSquare(@radius:@defaultRadius){
+    .RoundedShape(@radius);
+}
+ 
+/**********************
+         STYLES
+***********************/
+ 
+.shape{
+    display:inline-block;
+    width:@defaultShapesWidth;
+    height:75px;
+    background:@defaultThemeColor;
+    margin:20px;
+    border:@borderSize solid @borderColor;
+}
+ 
+.shape{
+    &:hover{ background:@Googl; border:@borderSize solid @lightBlue;   }
+}
+ 
+#shape1{ .Round }
+#shape2{ .RoundedSquare }
+#shape3{ .RoundedSquare(60px) }
+
+/* Mixin */
+.border-radius (@radius: 8px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+/* Mixin */
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.inner-shadow{
+-moz-box-shadow: inset 0 0 5px 5px #888;
+-webkit-box-shadow: inset 0 0 5px 5px#888;
+box-shadow: inset 0 0 5px 5px #888;
+}
+
+.Bshadow{
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+.Tshadow{
+text-shadow: 0.1em 0.1em 0.25em #444;
+}
+
+/* Mixin */
+@base: #663333;
+@complement1: spin(@base, 180);
+@complement2: darken(spin(@base, 180), 5%);
+@lighten1: lighten(@base, 15%);
+@lighten2: lighten(@base, 30%);
+@lighten3: lighten(@base, 60%);
+@haha: #000;
+@hoho: #FFFFCC;
+@borderer: 10px solid transparent;
+@FBbod: #f1f2f7;
+@FBback: #3b5998;
+@FBcolr: #0e385f;
+@Flickr: #ff0084;
+@Googl: #0073EA;
+@Gdark: lighten(@FBback, 20%);
+@FBlite1: lighten(@FBcolr, 30%);
+@FBlite2: lighten(@FBback, 50%);
+@FBlite3: lighten(@FBcolr, 75%);
+@FBdark1: darken(@FBbod, 60%);
+
+.FBfont{ font-family: verdana, georgia, arial, sans-serif; font-size: 1.15em; }
+.FBfont2{ font-family: Lato, Droid Sans, tahoma, sans-serif; font-size: 1.2em; color: #FF0084;}
+
+
+.bord {
+border-right: 1px solid #444;
+border-bottom:1px solid #444;
+padding: 3px;
+}
+ 
+body{
+background: @FBbod;
+color: @FBcolr;
+border: @borderer;
+.FBfont;
+}
+
+	.tblOclr {
+	background: @FBback;
+	color: @FBcolr;
+	}
+	.tblEclr {
+	background: @FBlite1;
+	color: @FBlite2;
+	}
+	.tblFclr {
+	background: @FBbod;
+	color: @FBlite2;
+	}
+	.tblbrdr{
+		.bord;
+	}
+			#delTable tr:odd {
+				.tblOclr;
+				}
+			#delTable tr:even {
+				.tblEclr;
+				}
+			#delTable tr:first {
+				.tblFclr;
+				}
+			#delTable td {
+				.tblbrdr;
+				}
+				.trr{
+				background: @FBback;
+				color: @FBlite3;
+				.Tshadow;
+				}
+				table td{
+				.border-radius(4px);
+				}
+			#somediv{
+			display: inline-block;
+			clear:both;
+			float:right;
+			background: @FBdark1;
+			color: @FBlite3;
+			margin: 10px auto;
+			padding: 50px;
+			.border-radius(15px);
+			.box-shadow;
+			}
+			#sometbl{
+			float:left;
+			padding: 50px;
+			.border-radius;
+			background: transparent;
+			.box-shadow;
+			}
+				#sometbl td {
+					background: @FBlite1;
+					color: @FBdark1;
+					padding: 10px;
+					border:2px solid transparent;
+					.border-radius(0px);
+						&:hover{
+						background: @FBlite3;
+						color: @Flickr;
+						border:2px solid @Googl;
+						}
+				}
+			#sometbl2{
+			float:right;
+			.border-radius(2px);
+			.box-shadow(15px, 8px, 6px, 0.75);
+			padding: 25px;
+			background: @FBlite2;
+			border: 1px solid #000;
+			}
+				#sometbl2 td {
+					background: transparent;
+					padding: 5px;
+					color: @Googl;
+					border:2px dashed @Gdark;
+						&:hover{
+						background: @Flickr;
+						color: #fff;
+						border: 2px dashed #fff;
+						}
+				}
+		#Quotes {
+		.FBfont2;
+		clear:both;
+		display:inline-block;
+		text-align:justify;
+		.Bshadow;
+		.bord;
+		padding: 25px;
+		margin: 10px auto;
+		background: transparent;
+		}
+		#box1{
+		position: relative;
+		display:inline-block;
+		height: 300px;
+		width: 90%;
+		.Bshadow;
+		padding: 5px;
+		margin: 10px auto;
+		background: transparent;
+		}
+			#title1{
+			.FBfont;
+				display:block;
+				height: 45px;
+				vertical-align:top;
+				.Tshadow;
+				.Bshadow;
+				padding:5px;
+				background: @Googl;
+				color: #fff;
+				&:hover{
+					background: @FBlite2;
+					color: @Flickr;
+					font-weight: bold;
+				}
+			}
+		#box2{
+			height: 150px;
+			width: 50%;
+			.Bshadow;
+			padding: 5px;
+			margin: 10px auto;
+			background: transparent;
+			.bord;
+				&:hover{
+					background: @FBlite2;
+				}
+		}
+		#box3{
+			height: 100px;
+			width: 50%;
+			.Bshadow;
+			padding: 5px;
+			margin: 10px auto;
+			background: transparent;
+			.bord;
+				&:hover{
+					background: @Flickr;
+				}
+		}
+#Atheme{
+	background: @Flickr;
+	color: #eee;
+	padding: 5px;
+			&:hover{
+				background: @Googl;
+				color: #fff;
+			}
+}			
+	#Btheme{
+		background: @Googl;
+		color: #eee;
+		padding: 5px;
+			&:hover{
+				background: @Flickr;
+				color: #fff;
+			}
+	}
+#growl {
+position: absolute;
+bottom:0;
+right:0;
+width:350px;
+z-index:999;
+color: #fff;
+padding: 2px;
+}
+	.notice {
+		position: relative;
+	}
+	
+	.skin {
+		position: absolute;
+		background: #000;
+		bottom: 0;
+		left: 0;
+		opacity: 0.5;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		.border-radius(4px);
+	}
+	.content{
+		padding: 2px;
+		margin-left: 10px;
+	}
+	
+	.Gclose {
+		float:right;
+	}
+		

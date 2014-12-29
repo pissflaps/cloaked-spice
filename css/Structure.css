@@ -1,0 +1,1443 @@
+@import url('structure_jqui.css');
+@import url('gumby.css');
+/******************************		
+*   TAC's New Alert System               		
+*	Developed 9/28/2012 - 03/29/2013  by jim mulhern           		
+* 	CERTIFIED FOR: IE 9+ | Opera 12+ | Google Chrome 20+ | Mozilla Firefox 16+
+*	Published 10/19/2012
+* 		ISI Telemanagement               	
+*****************************/	
+/*	***	@import(normalize.css);			***
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* * * HARD STYLES * * *  
+
+
+*EDIT THIS AFTER ALL OTHER STYLESHEETS 
+
+
+*HAVE BEEN MODIFIED PROPERLY		***	
+
+
+
+*/
+
+body {
+		background:#212121;
+		background-attachment: fixed;
+		font-size: 14pt/18pt;
+	}
+	
+	#color{
+	color: #FFFFFF;
+	}
+	
+	
+/*		***	General Styling Classes for re-use throughout the Alert System		***	*/
+	.shadowZ{
+			text-shadow: #212121 0.15em 0.15em 0.2em;
+		}
+		
+	.shadow {
+		-moz-box-shadow:    6px 5px 4px 3px #ccc;
+		-webkit-box-shadow: 6px 5px 4px 3px #ccc;
+		box-shadow:         6px 5px 4px 3px #ccc;
+	 }
+	 .Tshadow{
+		color: #FFFFFF;
+		font-weight: bold;
+		text-shadow: #212121 0.1em 0.1em 0.25em;
+	}
+	.corners {
+		-moz-border-radius: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.round {
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+		#talkbubble {
+			   width: 150px;
+			   height: 60px; 
+			   background: #ffffcc;
+			   color: #000000;
+			   position: relative;
+			   -moz-border-radius:    8px; 
+			   -webkit-border-radius: 8px; 
+			   border-radius:         8px;
+			   border: 1px solid #ffffcc;
+			   padding: 0.25em;
+		}
+			#talkbubble:before {
+			   content:"";
+			   position: absolute;
+			   right: 100%;
+			   top: 25px;
+			   width: 0;
+			   height: 0;
+			   border-top: 13px solid transparent;
+			   border-right: 26px solid #ffffcc;
+			   border-bottom: 13px solid transparent;
+			}
+					
+/*		***		Login Bar Style and Layout Design 		***	*/
+	#RegUser {
+		position: absolute;
+		top:1px;
+		right:2px;
+		padding:6px;
+		background: rgba(255, 52, 180, 0.8); 
+		color:#f5fffa;
+		border-radius:4px;
+		line-height:0.9em;
+	}
+		#RegUser:hover { background: rgba(15, 150, 225, 0.6);  }		
+		#RegUser a{ color:#eeeeee; } #RegUser a:hover{ color: #F5FFFA; }
+		
+#firstlinks{
+	display: inline;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	font-family: Oxygen, Dosis, Arial, sans-serif;
+	z-index: 99999 !important; 
+}
+	#loginout{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		font-family: Source Sans Pro, Cabin Condensed, Arial, Tahoma, sans-serif;
+		padding: 0px;
+		display: inline;
+		background: rgba(100,100,100,0.3);
+		color: #ffffff;
+		width: 100%;
+		height: 50px;
+		text-align:center;
+		margin: none;
+		z-index: 99;
+		clear: none;
+	}
+			
+		#loginout a{
+			color: #FFA007;
+			text-decoration: none;
+			font-weight: bold;
+		}
+			#loginout a:hover{
+				color: #F5FFFA;
+				text-decoration: none;
+			}
+#outlog{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	clear: none;
+	font-size: 12px;
+	padding: 0.25em;
+	line-height: 1.5;
+	background: rgba(210,20,20,0.5);
+	border-radius: 4px;
+	border: 1px solid transparent;
+	font-family: Electrolize, Share, Ubuntu, Arial;
+}
+	#outlog:hover{
+		background: rgba(20,20,20,0.8);
+		border: 1px solid #ffffff;
+		}
+#in{
+	display: inline-block;
+	font-family: Lato, Droid Sans, Arial;
+	background: rgba(0,180,30,0.3);
+	padding: 0.5em;
+	position: relative;
+	vertical-align: bottom;
+	line-height:1.75;
+	text-align: center;
+	border-radius: 4px;
+	margin-left: 75px;
+}
+	#out{
+		display:inline-block;
+		position: relative;
+		margin-left: 30%;
+		padding: 0.2em;
+		vertical-align: bottom;
+		font-size: 10pt;
+		line-height: 0.75;
+	}
+#NotLogged{
+	background: #FF0000;
+	color: #ffffff;
+	border-radius: 2px;
+	padding:0.5em;
+}
+	#RegUser{
+		display: block;
+		float: right;
+		clear:none;
+		padding: 0.5em;
+		font-size: 12px;
+	}
+								
+								
+#LoggedIn	{
+background: transparent url(../icons/user.png) no-repeat;
+background-position: left;
+padding-left:1.1em;
+}
+			#LoggedIn:hover{
+				background: transparent url(../icons/tux.png) no-repeat;
+				background-position: left;
+				padding-left:1.1em;
+			}
+									
+/*	***	LOGINOUT UL > LI STYLE  & DESIGN LAYOUT	***	*/
+#firstlinks ul{
+	list-style: none;
+	font-family: Cabin Condensed, Share, verdana, sans-serif;
+	display: inline;
+	table-layout:fixed;
+	z-index: 98;
+	white-space: nowrap;
+	clear: none;
+	padding: 0px;
+}
+	#firstlinks ul li{
+		list-style:none;
+		list-style-type:none;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0px;
+		margin: 0px;
+		font-size: 1em;
+		float: left;
+		line-height: 0.75;
+		clear: none;
+		height: 35px;
+		width: 75px;
+		border: 1px dotted rgba(0,0,0,0.25);
+		vertical-align: top;
+		border-radius: 4px;
+		text-align: center;
+		
+			transition: background .25s ease-in;
+			-moz-transition: background .25s ease-in;
+			-o-transition: background .25s ease-in;
+			-webkit-transition: background .25s ease-in;	
+	}
+	
+#globalnav ul li:nth-child(-n+6):hover {
+	text-shadow: 0.15em 0.15em 0.2em rgba(0,0,0,0.8);
+	box-shadow: 2px 5px rgba(0,0,0,0.5);
+}				
+		#open{
+			background: rgba(150,200,25,0.75) url(../icons/glyph/glyphicons_046_router.png) no-repeat;
+			background-position: center;
+			color: #f5fffa;
+		}
+			#open:hover{
+				background-color: rgba(150,200,25,1);
+				color: #ffffff;
+			}
+					
+		#links{
+			background: rgba(0,100,180,0.75) url(../icons/glyph/glyphicons_258_qrcode.png) no-repeat;
+			background-position: center;
+			color: #f5fffa;
+		}
+				#links:hover{
+					background-color: rgba(0, 100, 180, 1);
+					color: #ffffff;
+				}
+		#tEdit {
+			background: rgba(250,220,0,0.75) url(../icons/glyph/glyphicons_365_restart.png) no-repeat;
+			background-position: center;
+			color: #f5fffa;
+		}
+				#tEdit:hover{
+					background-color: rgba(250,220,0,1);
+					color: #ffffff;
+				}
+		#Stats{
+			background: rgba(255,140,0,0.75) url(../icons/glyph/glyphicons_236_zoom_in.png) no-repeat;
+			background-position: center;
+			color: #f5fffa;
+		}
+				#Stats:hover{
+					background-color:rgba(255,140,0,1);
+					color: #ffffff;
+				}
+		#Themes{	
+			clear:none;
+			float: right;
+			background: rgba(200,10,18,0.75)  url(../icons/glyph/glyphicons_327_sampler.png) no-repeat;
+			background-position: center;
+			color: #f5fffa;
+		}
+				#Themes:hover{
+					background-color: rgba(220, 10, 18, 1);
+					color: #ffffff;
+				}
+		#Tweather{
+		clear: none;
+		float: right;
+		background: rgba(95, 175, 250, 0.75) url(../icons/glyph/glyphicons_231_sun.png) no-repeat;
+		background-position: center;
+		color: #f5fffa;
+		}
+				#Tweather:hover{
+					background-color: rgba(95, 175, 250, 1);
+					color: #ffffff;
+				}
+
+
+/*		***		GROWL SECTION		***	*/
+
+#growl {position: absolute;bottom:50px;left:0;
+width:350px;
+z-index: 99;
+color: #ffffff;
+padding: 1em;
+display:inline-block;
+border-radius: 4px;
+}
+	.notice {
+		position: relative;
+	}
+	
+	.skin {
+		position: absolute;
+		background: rgba(0, 0, 0, 0.5); 
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		border-radius: 4px;
+	}
+	.content{
+		display:block;
+		padding: 25px;
+		margin-left: 5px;
+		font-weight: bold;
+		background: rgba(0,0,0,0.5);
+		background-position: bottom right;
+	}
+	
+	.Gclose {
+		vertical-align: top;
+		float:right;
+		font-family: Arial Black, Impact, Arial sans-serif;
+		font-size: 11pt;
+		color: #FF0000;
+		padding: 2px;
+	}	
+/*		***	Database Div and Below Layout	& Design stylings		***	*/
+	#Database {
+							margin-top: 2%;
+							margin-left: 5%;
+							z-index: 1;
+							clear: both;
+							padding: 2em;
+							width: 85%;
+
+	}
+		#allgone{
+			position: relative;
+			clear: both;
+			display: inline-block;
+			margin-left: 30%;
+			z-index: 1;
+			text-align: center;
+			font-family: Oswald, Impact, sans-serif;
+			font-size: 21pt;
+			text-align: center;
+		}
+			#all_clear {
+				padding: 1em;
+				border:1px solid #212121;
+				font-family: Source Sans Pro, Courier, Times New Roman, sans-serif;
+				background: rgba(250, 250, 210, 0.8);
+				color:#212121;
+				clear:both;
+				float:left;
+				border-radius: 4px;
+				font-size: 12pt;
+				text-align: center;
+				margin: 1em auto;
+			}
+
+#DateTimeString{
+	font-family: Arial Black, sans-serif;
+	color: #00008B;
+}			
+			
+			#table, #delTable {
+				text-align: center;
+				background: transparent;
+				table-layout: fixed;
+			}
+#foo{
+margin-left: 25%;
+clear: both;
+padding: 2em;
+}		
+		
+/*	***	NewTicket drop-down structure and styling 	***	*/
+
+#panel{
+	background: transparent;
+	clear:both;
+	list-style: none;
+}
+#panel a{
+	color: #FFA007;
+	padding:0.2em;
+		transition: color .5s ease-in;
+		-moz-transition: color .5s ease-in;
+		-o-transition: color .5s ease-in;
+		-webkit-transition: color .5s ease-in;	
+	}
+		#panel a:hover{
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
+#NewTicket{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		display: block;
+		text-align: left;
+		background: rgba(0,0,10, 0.3);
+		padding: 1.5em;
+		border: none;
+		border-radius: 2px;
+}
+	#linx{
+		position: fixed;
+		top: 50px;
+		right: 0px;
+	}
+		#hotlinks{
+			background: rgba(0,0,10,0.5);
+			color: #FAFAFA;
+			padding: 0.25em;
+			vertical-align: top;
+			float: right;
+			clear: both;
+			display: block;
+			border-radius: 4px;
+			z-index: 99;
+		}		
+			#linkBlock{
+				width: 85%;
+				display: block;
+			}
+#hotlinks a { color: #FFA007; }									
+#hotlinks a:hover { color: #FFFFFF; text-shadow: #444444 0.1em 0.1em 0.2em; }									
+#rotor a:hover{background:transparent;color:transparent;border:none;}
+							
+#rotor{
+	clear: both;
+	padding:2px;
+	vertical-align: top;
+	text-align: center;
+}	
+	#eTicket{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+		background: rgba(100,180,50, 0.3);
+		padding: 0.25em;
+		border: none;
+	}
+	#tStat{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		width: 100%;
+		display: inline-block;
+		background: rgba(255,140,0,0.25);
+		padding: 0.25em;
+		border: none;
+	}
+	#Style{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		width: 100%;
+		display: table-cell;
+		background: rgba(200,10,18, 0.3);
+		padding: .25em;
+		border: none;
+		vertical-align:middle;
+		clear:both;
+		text-align: center;
+		}
+#email{
+	float: right;
+	clear: none;
+	background: transparent;
+	cursor: pointer;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 15px;
+}
+	#forma {
+		padding:5px;
+		text-align: left;
+		background:transparent;		/* #add8e6; */
+		border: none;
+		overflow: hidden;
+	}
+	#aTechs{
+			vertical-align: bottom;
+			padding: 0.05em;
+			display: block;
+		}
+.emails { 
+	word-spacing:2px;
+	letter-spacing:1px;
+	background: transparent;
+	border: none;
+	font: 14px "Segoe UI";
+	color: #000000;
+	overflow:hidden;
+} 
+
+/*		***	Ticket Editing Styling and Design Layout		***	*/
+		
+	#eTicket input {
+	padding:5px;
+	border-radius: 4px;
+	}
+#TicketTable {
+	background: transparent;
+	color: #ffffff;
+}
+	#content{
+	background: transparent;
+	}
+#table {
+	text-align: center;
+	vertical-align: top;
+	color: #000000;
+}
+
+		#table td{
+			padding: 0.5em;
+		}
+#divtop {
+display: inline;
+text-align: center;
+vertical-align: top;
+}
+#divbottom {
+text-align: left;
+vertical-align: top;
+display: block;
+padding: 5px;
+background: transparent;
+}
+.outline {
+	border: 1px solid #444444;
+}
+	
+#status {
+	display: none;
+	 padding:10px;
+	 margin: 5px auto;
+	 border-radius: 4px;
+	 clear:both;
+}
+			.success{
+				background: #32cd32;
+				color: #EEFFCC;
+				border:1px solid #006400;
+			}
+			.error{
+				background: #FFF007;
+				color: #FF0000;
+				border: 1px solid #FF0000;
+			}
+		
+ #noticket {
+	 background: transparent;
+	 color: #eeeeee;
+	 text-shadow: #444444 0.15em 0.15em 0.25em;
+	 font-size: 1.25em;
+	 line-height: 1.5;
+ }
+	 
+ #save {
+	 margin: 5px auto;
+ }
+	 
+ #pgTitle{
+	 display:block;
+	 font-family: Arial Black, Arial, Sans-serif;
+	 font-size: 16px;
+	 background: rgba(0,0,0,0.3);
+	 color: #f5fffa;
+	 text-align: center;
+	 padding: 2px;
+ }
+	#pgTitle sub{
+		font-family: Courier New, Arial, sans-serif;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 0.5;
+	}
+		#PutInQ{
+			display:none;
+			padding:10px;
+			margin: 5px auto;
+			border-radius: 4px;
+			float:right;
+		}
+		
+#Putback{
+	background: #0073ea;
+	text-shadow: #000000 0.1em 0.1em 0.25em;
+	color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #0000FF;
+}
+	#Putback:hover{
+		background: #006400;
+		color: #EEFFCC;
+		border: 1px solid #32cd32;
+	}
+		
+/*	***	Ticket Search Display and Styling	***	*/
+
+.removed {
+background:#EFC2C2;
+padding:5px;
+display:block;
+cursor:pointer;
+}
+
+.added{
+background:#D8E6AD;
+padding:5px;
+display:block;
+cursor:pointer;
+} 						
+
+/*		***	Database Ticket Listing Display Classes and Stylings		***	*/
+	
+	.tblOclr {
+	background:  rgba(0, 0, 0, 0.6);
+	color: #FFFFFF; /* #0064CD */
+	padding: 3px;
+	}
+	
+	.tblEclr {
+	background: rgba(200,200,200, 0.8);
+	color: #000000;
+	padding:3px;
+	}
+	
+	.tblFclr {	
+	background:  rgba(50,50,50,0.3);
+	color: #0073EA;		/*  #C76114  */
+	font-size: 16pt;
+	text-shadow: #212121 0.1em 0.1em 0.25em;
+	padding:3px;
+	}
+	
+	.tblbrdr{
+	border-right: 1px solid rgba(20,20,20,0.2);
+	border-bottom: 1px solid rgba(20,20,20,0.2);
+	padding: 5px;
+	}
+
+	#delTable td{
+		padding: 1em;
+	}	
+	
+.database{
+visibility: hidden;
+}
+
+#tacWeather{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 400px;
+	height: 120px;
+	cursor: pointer;
+	z-index: 9999999;
+	visibility: invisible;
+}	
+
+#Container{
+	display: inline-block;
+	background: rgba(200,200,200,0.15);
+	color: #f5fffa;
+	border: none;
+	vertical-align: top;
+	border-radius: 15px;
+	padding: 0.05em;
+}
+	
+	#Weather{
+		display: block;
+		font-family: arial,verdana, sans-serif;
+		font-size: 11pt;
+		background: rgba(250, 150, 10, 0.6);
+		color: #000000;
+		border-radius: 4px;
+		padding: 0.25em;
+		text-shadow: #444444 0.1em 0.1em 0.25em;
+		text-align: left;
+		vertical-align: bottom;
+		line-height: 1.1;
+	}
+	#wIcon{
+		float: left;
+		padding: 0.5em;
+		border-radius: 8px;
+	}
+			#time{
+				font-family: arial, sans-serif;
+				font-size: 10px;
+				line-height: 1.5;
+				text-align: right;
+				float: right;
+				clear: both;
+				padding: 0.05em;
+				color: #ffffff;
+				vertical-align: top;
+			}
+			#temp, #humid, #realfeel{
+				color: #eeff00;
+				font-weight: bold;
+			}
+
+a:link, a:active {color:#FFFF00;
+	transition: color .5s ease-in;
+		-moz-transition: color .5s ease-in;
+		-o-transition: color .5s ease-in;
+		-webkit-transition: color .5s ease-in;	
+	text-decoration:underline; 
+}
+
+a:visited {color:#FFFFFF;
+	text-decoration:none; 
+}
+
+a:hover, a:not #deletelink:hover {color:#FFFFFF; 
+	text-decoration:none;
+}
+
+	
+#tad a:hover {
+	color: #ffffff;
+	background: #212121;
+	text-decoration: none;
+	text-shadow: #555555 0.1em 0.1em 0.2em;
+}
+
+#chkbx{
+	background: rgba(200,200,200,0.25);
+	padding:0.2em;
+	clear:none;
+	border-radius: 4px;
+}
+	
+.delete{
+	cursor: pointer;
+	}
+	
+img#delCross{
+	height: 16px;
+	width: 16px;
+	border: none;
+}	
+#DelCel {
+	display:table-cell;
+	vertical-align: middle;
+}
+img#del{
+	min-height: 20px;
+		max-height: 30px;
+	min-width: 20px;
+		max-width: 30px;
+}
+	
+#slide, .cb-slideshow{
+list-style: none;
+list-style-type: none;
+}
+
+.ui-dialog-titlebar{
+font-face: Oswald, Impact, sans-serif;
+}
+
+#form1{
+background: rgba(200,200,200,0.6);
+color: #444444;
+padding: 0.75em;
+margin: 0px;
+border: 0px;
+line-height: 1.5;
+border-radius: 4px;
+}
+	#form1 label{
+	color: #212121;
+	font-weight: bold;
+	}
+	
+	#register {
+		line-height: 1.1;
+		position: relative;
+		top: -22px;
+		color: #888888;
+		float: right;
+		text-align: right;
+	}
+	
+#help1, #help2{
+	display: inline-block;
+	height: 25px;
+	width: 100px;
+	background: #000000;
+	color: #FFFFFF;
+	z-index: 99999;
+}
+	
+#epple,
+#help1, #help2, #username, #bubble_background, #beaker, .bubble, .glow,
+#beaker2, .bubble2, .glow2,
+#beaker3, .bubble3, .glow3,
+#beaker4, .bubble4, .glow4,
+#beaker5, .bubble5, .glow5,
+#beaker6, .bubble6, .glow6,
+#beaker7, .bubble7, .glow7,
+#beaker8, .bubble8, .glow8,
+#beaker9, .bubble9, .glow9,
+#beaker10, .bubble10, .glow10, #slide, 
+.cb-slideshow{
+visibility: hidden;
+}
+
+.themes{
+	position: relative;
+	top: 0.5em;
+}	
+
+#dialog-form{
+font-size: 0.95em;
+line-height: 1.2;
+padding: 5px;
+}
+
+#ISI *{
+height:0px;
+width: 0px;
+}
+
+#Whois{
+display: inline-block;
+position: fixed;
+bottom: 0px;
+right: 0px;
+font-family: Source Sans Pro, Arial, sans-serif;
+font-size: 0.75em;
+background-color: rgba(10,25,13,0.5);
+color: #f1f1f1;
+padding: 0.75em;
+vertical-align: bottom;
+text-shadow:#212121 0.15em 0.15em 0.25em;
+border-top-left-radius: 15px;
+						transition: background-color .5s ease-in;
+						-moz-transition: background-color .5s ease-in;
+						-o-transition: background-color .5s ease-in;
+						-webkit-transition: background-color .5s ease-in;	
+}
+	#Whois:hover{
+		background-color: rgba(33,33,33, 0.3);
+		color: #444444;
+		}
+		
+#spaceme{
+	position: fixed;
+	top: 0px;
+	left: 40%;
+	clear: none;
+	margin: 0px;
+	padding: 0px;
+	height: 35px;
+	vertical-align: top;
+}
+
+
+#search {
+    width: 325px;
+    margin: 0px;
+	vertical-align: top;
+	
+}
+#search_text{
+    width: 150px;
+    padding: 0px 0 0px 20px;
+    font-size: 12pt;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    height: 35px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: #1f7f5c;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.15s;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+#search_text:focus {
+    background: rgb(65, 150, 120);
+
+}
+#search_button {
+    border: 0 none;
+    background: #1f7f5c url(../search.png) center no-repeat;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+	border-radius: 0px;
+}
+	#search_button:hover{
+		-moz-box-shadow: inset 3px 1px 8px 2px #444;
+		-webkit-box-shadow: inset 3px 1px 8px 2px #444;
+		box-shadow: inset 3px 1px 8px 2px #444;
+	}
+
+
+
+.ui-autocomplete {
+	background: rgba(255,255,255, 1);
+	background-color: #ffffff;
+	color: #000000;
+	z-index: 9999999 !important;
+}
+
+#success, #resuccess {
+background: transparent;
+color: #ffffff;
+padding: 5px;
+vertical-align: top;
+text-align: center;
+}
+
+.themes{
+display: inline;
+list-style: none;
+vertical-align: top;
+text-align: center;
+clear: none;
+padding: 0px;
+margin: 0px;
+}
+
+
+.menu ul{
+    margin: 0;
+	padding: 0;
+    float: left;	
+	list-style: none;
+}
+ 
+.menu ul li{
+    display: block;
+}
+ 
+.menu ul li a{
+    float: left; text-decoration: none;
+    color: white; 
+    padding: 10.5px 11px;
+    background-color: #333; 
+}
+ 
+.menu ul li a:visited{
+    color: white;
+}
+ 
+.menu ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#0b75b2;
+}
+
+.BlueBG {
+
+background-image: linear-gradient(right bottom, rgb(62,167,224) 77%, rgb(51,123,204) 39%);
+background-image: -o-linear-gradient(right bottom, rgb(62,167,224) 77%, rgb(51,123,204) 39%);
+background-image: -moz-linear-gradient(right bottom, rgb(62,167,224) 77%, rgb(51,123,204) 39%);
+background-image: -webkit-linear-gradient(right bottom, rgb(62,167,224) 77%, rgb(51,123,204) 39%);
+background-image: -ms-linear-gradient(right bottom, rgb(62,167,224) 77%, rgb(51,123,204) 39%);
+
+background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left top,
+	color-stop(0.77, rgb(62,167,224)),
+	color-stop(0.39, rgb(51,123,204))
+);
+}
+
+.PinkBG {
+
+background-image: linear-gradient(right bottom, rgb(214,62,222) 77%, rgb(161,51,204) 39%);
+background-image: -o-linear-gradient(right bottom, rgb(214,62,222) 77%, rgb(161,51,204) 39%);
+background-image: -moz-linear-gradient(right bottom, rgb(214,62,222) 77%, rgb(161,51,204) 39%);
+background-image: -webkit-linear-gradient(right bottom, rgb(214,62,222) 77%, rgb(161,51,204) 39%);
+background-image: -ms-linear-gradient(right bottom, rgb(214,62,222) 77%, rgb(161,51,204) 39%);
+
+background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left top,
+	color-stop(0.77, rgb(214,62,222)),
+	color-stop(0.39, rgb(161,51,204))
+);
+}
+
+.GreenBG {
+
+background-image: linear-gradient(right bottom, rgb(190,222,62) 77%, rgb(102,204,51) 39%);
+background-image: -o-linear-gradient(right bottom, rgb(190,222,62) 77%, rgb(102,204,51) 39%);
+background-image: -moz-linear-gradient(right bottom, rgb(190,222,62) 77%, rgb(102,204,51) 39%);
+background-image: -webkit-linear-gradient(right bottom, rgb(190,222,62) 77%, rgb(102,204,51) 39%);
+background-image: -ms-linear-gradient(right bottom, rgb(190,222,62) 77%, rgb(102,204,51) 39%);
+
+background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left top,
+	color-stop(0.77, rgb(190,222,62)),
+	color-stop(0.39, rgb(102,204,51))
+);
+}
+
+#delTable td, #globalnav li, th{
+text-align:center;
+}
+
+
+#SubButton, #reset, #WikiSearch, #Lookup, #Ssubmit{
+padding: 5px !important;
+}
+
+#Alerts{
+background: none;
+border: none;
+padding: none;
+margin: none;
+position: fixed;
+bottom: 5px;
+left: 5px;
+}
+
+#Ccontact{
+display: table-cell;
+clear: none; 
+float: left;
+vertical-align: middle;
+color: #212121;
+}

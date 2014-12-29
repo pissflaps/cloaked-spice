@@ -1,0 +1,1776 @@
+
+}
+.metrouicss .icon-checkbox:before {
+  content: "\e0a6";
+}
+.metrouicss .icon-checkbox-unchecked:before {
+  content: "\e0a7";
+}
+.metrouicss .icon-checkbox-partial:before {
+  content: "\e0a8";
+}
+.metrouicss .icon-radio-checked:before {
+  content: "\e0a9";
+}
+.metrouicss .icon-radio-unchecked:before {
+  content: "\e0aa";
+}
+.metrouicss .icon-font:before {
+  content: "\e0ab";
+}
+.metrouicss .icon-paragraph-left:before {
+  content: "\e0ac";
+}
+.metrouicss .icon-paragraph-center:before {
+  content: "\e0ad";
+}
+.metrouicss .icon-paragraph-right:before {
+  content: "\e0ae";
+}
+.metrouicss .icon-paragraph-justify:before {
+  content: "\e0af";
+}
+.metrouicss .icon-left-to-right:before {
+  content: "\e0b0";
+}
+.metrouicss .icon-right-to-left:before {
+  content: "\e0b1";
+}
+.metrouicss .icon-share:before {
+  content: "\e0b2";
+}
+.metrouicss .icon-new-tab:before {
+  content: "\e0b3";
+}
+.metrouicss .icon-new-tab-2:before {
+  content: "\e0b4";
+}
+.metrouicss .icon-embed:before {
+  content: "\e0b5";
+}
+.metrouicss .icon-code:before {
+  content: "\e0b6";
+}
+.metrouicss .icon-bluetooth:before {
+  content: "\e0b7";
+}
+.metrouicss .icon-share-2:before {
+  content: "\e0b8";
+}
+.metrouicss .icon-share-3:before {
+  content: "\e0b9";
+}
+.metrouicss .icon-mail-2:before {
+  content: "\e0ba";
+}
+.metrouicss .icon-google:before {
+  content: "\e0bb";
+}
+.metrouicss .icon-google-plus:before {
+  content: "\e0bc";
+}
+.metrouicss .icon-google-drive:before {
+  content: "\e0bd";
+}
+.metrouicss .icon-facebook:before {
+  content: "\e0be";
+}
+.metrouicss .icon-instagram:before {
+  content: "\e0bf";
+}
+.metrouicss .icon-twitter:before {
+  content: "\e0c0";
+}
+.metrouicss .icon-feed:before {
+  content: "\e0c1";
+}
+.metrouicss .icon-youtube:before {
+  content: "\e0c2";
+}
+.metrouicss .icon-vimeo:before {
+  content: "\e0c3";
+}
+.metrouicss .icon-flickr:before {
+  content: "\e0c4";
+}
+.metrouicss .icon-picassa:before {
+  content: "\e0c5";
+}
+.metrouicss .icon-dribbble:before {
+  content: "\e0c6";
+}
+.metrouicss .icon-deviantart:before {
+  content: "\e0c7";
+}
+.metrouicss .icon-github:before {
+  content: "\e0c8";
+}
+.metrouicss .icon-github-2:before {
+  content: "\e0c9";
+}
+.metrouicss .icon-github-3:before {
+  content: "\e0ca";
+}
+.metrouicss .icon-github-4:before {
+  content: "\e0cb";
+}
+.metrouicss .icon-github-5:before {
+  content: "\e0cc";
+}
+.metrouicss .icon-git:before {
+  content: "\e0cd";
+}
+.metrouicss .icon-github-6:before {
+  content: "\e0ce";
+}
+.metrouicss .icon-wordpress:before {
+  content: "\e0cf";
+}
+.metrouicss .icon-joomla:before {
+  content: "\e0d0";
+}
+.metrouicss .icon-blogger:before {
+  content: "\e0d1";
+}
+.metrouicss .icon-tumblr:before {
+  content: "\e0d2";
+}
+.metrouicss .icon-yahoo:before {
+  content: "\e0d3";
+}
+.metrouicss .icon-amazon:before {
+  content: "\e0d4";
+}
+.metrouicss .icon-tux:before {
+  content: "\e0d5";
+}
+.metrouicss .icon-apple:before {
+  content: "\e0d6";
+}
+.metrouicss .icon-finder:before {
+  content: "\e0d7";
+}
+.metrouicss .icon-android:before {
+  content: "\e0d8";
+}
+.metrouicss .icon-windows:before {
+  content: "\e0d9";
+}
+.metrouicss .icon-soundcloud:before {
+  content: "\e0da";
+}
+.metrouicss .icon-skype:before {
+  content: "\e0db";
+}
+.metrouicss .icon-reddit:before {
+  content: "\e0dc";
+}
+.metrouicss .icon-linkedin:before {
+  content: "\e0dd";
+}
+.metrouicss .icon-lastfm:before {
+  content: "\e0de";
+}
+.metrouicss .icon-delicious:before {
+  content: "\e0df";
+}
+.metrouicss .icon-stumbleupon:before {
+  content: "\e0e0";
+}
+.metrouicss .icon-pinterest:before {
+  content: "\e0e1";
+}
+.metrouicss .icon-xing:before {
+  content: "\e0e2";
+}
+.metrouicss .icon-flattr:before {
+  content: "\e0e3";
+}
+.metrouicss .icon-foursquare:before {
+  content: "\e0e4";
+}
+.metrouicss .icon-paypal:before {
+  content: "\e0e5";
+}
+.metrouicss .icon-yelp:before {
+  content: "\e0e6";
+}
+.metrouicss .icon-libreoffice:before {
+  content: "\e0e7";
+}
+.metrouicss .icon-file-pdf:before {
+  content: "\e0e8";
+}
+.metrouicss .icon-file-openoffice:before {
+  content: "\e0e9";
+}
+.metrouicss .icon-file-word:before {
+  content: "\e0ea";
+}
+.metrouicss .icon-file-excel:before {
+  content: "\e0eb";
+}
+.metrouicss .icon-file-powerpoint:before {
+  content: "\e0ec";
+}
+.metrouicss .icon-file-zip:before {
+  content: "\e0ed";
+}
+.metrouicss .icon-file-xml:before {
+  content: "\e0ee";
+}
+.metrouicss .icon-file-css:before {
+  content: "\e0ef";
+}
+.metrouicss .icon-html5:before {
+  content: "\e0f0";
+}
+.metrouicss .icon-html5-2:before {
+  content: "\e0f1";
+}
+.metrouicss .icon-css3:before {
+  content: "\e0f2";
+}
+.metrouicss .icon-chrome:before {
+  content: "\e0f3";
+}
+.metrouicss .icon-firefox:before {
+  content: "\e0f4";
+}
+.metrouicss .icon-IE:before {
+  content: "\e0f5";
+}
+.metrouicss .icon-opera:before {
+  content: "\e0f6";
+}
+.metrouicss .icon-safari:before {
+  content: "\e0f7";
+}
+.metrouicss .icon-IcoMoon:before {
+  content: "\e0f8";
+}
+.metrouicss .icon-sunrise:before {
+  content: "\e0f9";
+}
+.metrouicss .icon-sun:before {
+  content: "\e0fa";
+}
+.metrouicss .icon-moon:before {
+  content: "\e0fb";
+}
+.metrouicss .icon-sun-2:before {
+  content: "\e0fc";
+}
+.metrouicss .icon-windy:before {
+  content: "\e0fd";
+}
+.metrouicss .icon-wind:before {
+  content: "\e0fe";
+}
+.metrouicss .icon-snowflake:before {
+  content: "\e0ff";
+}
+.metrouicss .icon-cloudy:before {
+  content: "\e100";
+}
+.metrouicss .icon-cloud-3:before {
+  content: "\e101";
+}
+.metrouicss .icon-weather:before {
+  content: "\e102";
+}
+.metrouicss .icon-weather-2:before {
+  content: "\e103";
+}
+.metrouicss .icon-weather-3:before {
+  content: "\e104";
+}
+.metrouicss .icon-lines:before {
+  content: "\e105";
+}
+.metrouicss .icon-cloud-4:before {
+  content: "\e106";
+}
+.metrouicss .icon-lightning-2:before {
+  content: "\e107";
+}
+.metrouicss .icon-lightning-3:before {
+  content: "\e108";
+}
+.metrouicss .icon-rainy:before {
+  content: "\e109";
+}
+.metrouicss .icon-rainy-2:before {
+  content: "\e10a";
+}
+.metrouicss .icon-windy-2:before {
+  content: "\e10b";
+}
+.metrouicss .icon-windy-3:before {
+  content: "\e10c";
+}
+.metrouicss .icon-snowy:before {
+  content: "\e10d";
+}
+.metrouicss .icon-snowy-2:before {
+  content: "\e10e";
+}
+.metrouicss .icon-snowy-3:before {
+  content: "\e10f";
+}
+.metrouicss .icon-weather-4:before {
+  content: "\e110";
+}
+.metrouicss .icon-cloudy-2:before {
+  content: "\e111";
+}
+.metrouicss .icon-cloud-5:before {
+  content: "\e112";
+}
+.metrouicss .icon-lightning-4:before {
+  content: "\e113";
+}
+.metrouicss .icon-sun-3:before {
+  content: "\e114";
+}
+.metrouicss .icon-moon-2:before {
+  content: "\e115";
+}
+.metrouicss .icon-cloudy-3:before {
+  content: "\e116";
+}
+.metrouicss .icon-cloud-6:before {
+  content: "\e117";
+}
+.metrouicss .icon-cloud-7:before {
+  content: "\e118";
+}
+.metrouicss .icon-lightning-5:before {
+  content: "\e119";
+}
+.metrouicss .icon-rainy-3:before {
+  content: "\e11a";
+}
+.metrouicss .icon-rainy-4:before {
+  content: "\e11b";
+}
+.metrouicss .icon-windy-4:before {
+  content: "\e11c";
+}
+.metrouicss .icon-windy-5:before {
+  content: "\e11d";
+}
+.metrouicss .icon-snowy-4:before {
+  content: "\e11e";
+}
+.metrouicss .icon-snowy-5:before {
+  content: "\e11f";
+}
+.metrouicss .icon-weather-5:before {
+  content: "\e120";
+}
+.metrouicss .icon-cloudy-4:before {
+  content: "\e121";
+}
+.metrouicss .icon-lightning-6:before {
+  content: "\e122";
+}
+.metrouicss .icon-thermometer:before {
+  content: "\e123";
+}
+.metrouicss .icon-compass-2:before {
+  content: "\e124";
+}
+.metrouicss .icon-none:before {
+  content: "\e125";
+}
+.metrouicss .icon-Celsius:before {
+  content: "\e126";
+}
+.metrouicss .icon-Fahrenheit:before {
+  content: "\e127";
+}
+.metrouicss .icon-forrst:before {
+  content: "\e128";
+}
+.metrouicss .icon-headphones:before {
+  content: "\e129";
+}
+.metrouicss .icon-bug:before {
+  content: "\e12a";
+}
+.metrouicss .icon-cart-2:before {
+  content: "\e12b";
+}
+.metrouicss .icon-earth:before {
+  content: "\e12c";
+}
+.metrouicss .icon-battery:before {
+  content: "\e12d";
+}
+.metrouicss .icon-list:before {
+  content: "\e12e";
+}
+.metrouicss .icon-grid:before {
+  content: "\e12f";
+}
+.metrouicss .icon-alarm:before {
+  content: "\e130";
+}
+.metrouicss .icon-location-2:before {
+  content: "\e131";
+}
+.metrouicss .icon-pointer:before {
+  content: "\e132";
+}
+.metrouicss .icon-diary:before {
+  content: "\e133";
+}
+.metrouicss .icon-eye-2:before {
+  content: "\e134";
+}
+.metrouicss .icon-console:before {
+  content: "\e135";
+}
+.metrouicss .icon-location-3:before {
+  content: "\e136";
+}
+.metrouicss .icon-move:before {
+  content: "\e137";
+}
+.metrouicss .icon-gift-2:before {
+  content: "\e138";
+}
+.metrouicss .icon-monitor:before {
+  content: "\e139";
+}
+.metrouicss .icon-mobile-2:before {
+  content: "\e13a";
+}
+.metrouicss .icon-switch:before {
+  content: "\e13b";
+}
+.metrouicss .icon-star-4:before {
+  content: "\e13c";
+}
+.metrouicss .icon-address-book:before {
+  content: "\e13d";
+}
+.metrouicss .icon-shit:before {
+  content: "\e13e";
+}
+.metrouicss .icon-cone:before {
+  content: "\e13f";
+}
+.metrouicss .icon-credit-card:before {
+  content: "\e140";
+}
+.metrouicss .icon-type:before {
+  content: "\e141";
+}
+.metrouicss .icon-volume:before {
+  content: "\e142";
+}
+.metrouicss .icon-volume-2:before {
+  content: "\e143";
+}
+.metrouicss .icon-locked-2:before {
+  content: "\e144";
+}
+.metrouicss .icon-warning:before {
+  content: "\e145";
+}
+.metrouicss .icon-info:before {
+  content: "\e146";
+}
+.metrouicss .icon-filter:before {
+  content: "\e147";
+}
+.metrouicss .icon-bookmark-3:before {
+  content: "\e148";
+}
+.metrouicss .icon-bookmark-4:before {
+  content: "\e149";
+}
+.metrouicss .icon-stats:before {
+  content: "\e14a";
+}
+.metrouicss .icon-compass-3:before {
+  content: "\e14b";
+}
+.metrouicss .icon-keyboard:before {
+  content: "\e14c";
+}
+.metrouicss .icon-award-fill:before {
+  content: "\e14d";
+}
+.metrouicss .icon-award-stroke:before {
+  content: "\e14e";
+}
+.metrouicss .icon-beaker-alt:before {
+  content: "\e14f";
+}
+.metrouicss .icon-beaker:before {
+  content: "\e150";
+}
+.metrouicss .icon-move-vertical:before {
+  content: "\e151";
+}
+.metrouicss .icon-move-horizontal:before {
+  content: "\e153";
+}
+.metrouicss .icon-steering-wheel:before {
+  content: "\e152";
+}
+.metrouicss .icon-volume-3:before {
+  content: "\e154";
+}
+.metrouicss .icon-volume-mute:before {
+  content: "\e155";
+}
+.metrouicss .icon-play:before {
+  content: "\e156";
+}
+.metrouicss .icon-pause:before {
+  content: "\e157";
+}
+.metrouicss .icon-stop:before {
+  content: "\e158";
+}
+.metrouicss .icon-eject:before {
+  content: "\e159";
+}
+.metrouicss .icon-first:before {
+  content: "\e15a";
+}
+.metrouicss .icon-last:before {
+  content: "\e15b";
+}
+.metrouicss .icon-play-alt:before {
+  content: "\e15c";
+}
+.metrouicss .icon-battery-empty:before {
+  content: "\e15d";
+}
+.metrouicss .icon-battery-half:before {
+  content: "\e15e";
+}
+.metrouicss .icon-battery-full:before {
+  content: "\e15f";
+}
+.metrouicss .icon-battery-charging:before {
+  content: "\e160";
+}
+.metrouicss .icon-left-quote:before {
+  content: "\e161";
+}
+.metrouicss .icon-right-quote:before {
+  content: "\e162";
+}
+.metrouicss .icon-left-quote-alt:before {
+  content: "\e163";
+}
+.metrouicss .icon-right-quote-alt:before {
+  content: "\e164";
+}
+.metrouicss .icon-smiley:before {
+  content: "\e165";
+}
+.metrouicss .icon-umbrella:before {
+  content: "\e166";
+}
+.metrouicss .icon-info-2:before {
+  content: "\e167";
+}
+.metrouicss .icon-chart-alt:before {
+  content: "\e168";
+}
+.metrouicss .icon-save:before {
+  content: "\e169";
+}
+
+.metrouicss button,
+.metrouicss .button {
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  font-size: 14px;
+  padding: 4px 12px;
+  line-height: 20px;
+  vertical-align: middle !important;
+  min-width: 90px;
+  min-height: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border: 1px transparent solid;
+  color: #353535;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 4px 10px;
+  position: relative;
+  outline: none;
+}
+.metrouicss button.standart,
+.metrouicss .button.standart {
+  min-width: 90px;
+  min-height: 32px;
+}
+.metrouicss button:active,
+.metrouicss .button:active,
+.metrouicss button.default:active,
+.metrouicss .button.default:active {
+  top: 1px;
+  left: 1px;
+}
+.metrouicss button:disabled,
+.metrouicss .button:disabled,
+.metrouicss button.disabled,
+.metrouicss .button.disabled {
+  background-color: #eaeaea;
+  color: #bebebe;
+  cursor: not-allowed;
+}
+.metrouicss button.default,
+.metrouicss .button.default {
+  background-color: #008287;
+  color: #fff;
+}
+.metrouicss button:hover,
+.metrouicss .button:hover,
+.metrouicss button.default:hover,
+.metrouicss .button.default:hover {
+  color: inherit;
+}
+.metrouicss button:focus,
+.metrouicss .button:focus {
+  outline: 0;
+  border: 1px #353535 dotted;
+}
+.metrouicss a.button:hover,
+.metrouicss a.button:active {
+  color: inherit;
+}
+.metrouicss a.button.big {
+  padding: 14px 10px;
+}
+.metrouicss a.button.disabled:hover {
+  color: #bebebe;
+}
+.metrouicss button.mini,
+.metrouicss .button.mini,
+.metrouicss .tool-button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss button.big,
+.metrouicss .button.big,
+.metrouicss .tool-button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .tool-button.mini {
+  min-width: 22px;
+  width: 22px;
+}
+.metrouicss .tool-button.big {
+  min-width: 48px;
+  width: 48px;
+}
+.metrouicss .command-button {
+  display: inline-block;
+  width: 330px;
+  text-align: left;
+  padding: 10px 20px;
+  height: auto;
+  color: #000;
+  background-color: #ccc;
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+}
+.metrouicss .command-button > small {
+  display: block;
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+  font-size: 10pt;
+  color: #505050;
+}
+.metrouicss .command-button.default > small {
+  color: #ccc;
+}
+.metrouicss .tool-button {
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  font-size: 14px;
+  padding: 4px 12px;
+  line-height: 20px;
+  vertical-align: middle !important;
+  min-width: 90px;
+  background-color: #ccc;
+  border: 1px transparent solid;
+  color: #353535;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 4px 10px;
+  outline: none;
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+.metrouicss .tool-button [class^="icon-"],
+.metrouicss .tool-button [class*=" icon-"] {
+  vertical-align: -10%;
+  font-size: 1.2em;
+  display: inline-block;
+}
+.metrouicss .tool-button [class^="icon-"].icon-large,
+.metrouicss .tool-button [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+.metrouicss .tool-button.big [class^="icon-"],
+.metrouicss .tool-button.big [class*=" icon-"] {
+  font-size: 1.3333333333333333em;
+}
+.metrouicss .tool-button [class^="icon-"],
+.metrouicss .tool-button [class*=" icon-"] {
+  margin-right: 5px;
+}
+.metrouicss .tool-button [class^="icon-"].right,
+.metrouicss .tool-button [class*=" icon-"].right {
+  margin-left: 5px;
+  margin-right: auto;
+}
+.metrouicss .tool-button.standart {
+  min-width: 90px;
+  min-height: 32px;
+}
+.metrouicss .tool-button:active,
+.metrouicss .tool-button.default:active {
+  top: 1px;
+  left: 1px;
+}
+.metrouicss .tool-button:disabled,
+.metrouicss .tool-button.disabled {
+  background-color: #eaeaea;
+  color: #bebebe;
+  cursor: not-allowed;
+}
+.metrouicss .tool-button.default {
+  background-color: #008287;
+  color: #fff;
+}
+.metrouicss .tool-button:hover,
+.metrouicss .tool-button.default:hover {
+  color: inherit;
+}
+.metrouicss .tool-button:focus {
+  outline: 0;
+  border: 1px #353535 dotted;
+}
+.metrouicss .tool-button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss .tool-button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .tool-button img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.metrouicss .toolbar {
+  *zoom: 1;
+}
+.metrouicss .toolbar a,
+.metrouicss .toolbar button {
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  font-size: 14px;
+  padding: 4px 12px;
+  line-height: 20px;
+  vertical-align: middle !important;
+  min-width: 90px;
+  background-color: #ccc;
+  border: 1px transparent solid;
+  color: #353535;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 4px 10px;
+  outline: none;
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  margin-right: 0px;
+}
+.metrouicss .toolbar a.mini,
+.metrouicss .toolbar button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss .toolbar a.big,
+.metrouicss .toolbar button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .toolbar a.mini,
+.metrouicss .toolbar button.mini {
+  min-width: 22px;
+  width: 22px;
+}
+.metrouicss .toolbar a.big,
+.metrouicss .toolbar button.big {
+  min-width: 48px;
+  width: 48px;
+}
+.metrouicss .toolbar a [class^="icon-"],
+.metrouicss .toolbar button [class^="icon-"],
+.metrouicss .toolbar a [class*=" icon-"],
+.metrouicss .toolbar button [class*=" icon-"] {
+  vertical-align: -10%;
+  font-size: 1.2em;
+  display: inline-block;
+}
+.metrouicss .toolbar a [class^="icon-"].icon-large,
+.metrouicss .toolbar button [class^="icon-"].icon-large,
+.metrouicss .toolbar a [class*=" icon-"].icon-large,
+.metrouicss .toolbar button [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+.metrouicss .toolbar a.big [class^="icon-"],
+.metrouicss .toolbar button.big [class^="icon-"],
+.metrouicss .toolbar a.big [class*=" icon-"],
+.metrouicss .toolbar button.big [class*=" icon-"] {
+  font-size: 1.3333333333333333em;
+}
+.metrouicss .toolbar a [class^="icon-"],
+.metrouicss .toolbar button [class^="icon-"],
+.metrouicss .toolbar a [class*=" icon-"],
+.metrouicss .toolbar button [class*=" icon-"] {
+  margin-right: 5px;
+}
+.metrouicss .toolbar a [class^="icon-"].right,
+.metrouicss .toolbar button [class^="icon-"].right,
+.metrouicss .toolbar a [class*=" icon-"].right,
+.metrouicss .toolbar button [class*=" icon-"].right {
+  margin-left: 5px;
+  margin-right: auto;
+}
+.metrouicss .toolbar a.standart,
+.metrouicss .toolbar button.standart {
+  min-width: 90px;
+  min-height: 32px;
+}
+.metrouicss .toolbar a:active,
+.metrouicss .toolbar button:active,
+.metrouicss .toolbar a.default:active,
+.metrouicss .toolbar button.default:active {
+  top: 1px;
+  left: 1px;
+}
+.metrouicss .toolbar a:disabled,
+.metrouicss .toolbar button:disabled,
+.metrouicss .toolbar a.disabled,
+.metrouicss .toolbar button.disabled {
+  background-color: #eaeaea;
+  color: #bebebe;
+  cursor: not-allowed;
+}
+.metrouicss .toolbar a.default,
+.metrouicss .toolbar button.default {
+  background-color: #008287;
+  color: #fff;
+}
+.metrouicss .toolbar a:hover,
+.metrouicss .toolbar button:hover,
+.metrouicss .toolbar a.default:hover,
+.metrouicss .toolbar button.default:hover {
+  color: inherit;
+}
+.metrouicss .toolbar a:focus,
+.metrouicss .toolbar button:focus {
+  outline: 0;
+  border: 1px #353535 dotted;
+}
+.metrouicss .toolbar a.mini,
+.metrouicss .toolbar button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss .toolbar a.big,
+.metrouicss .toolbar button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .toolbar a img,
+.metrouicss .toolbar button img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.metrouicss .toolbar a {
+  padding: 5px 0;
+}
+.metrouicss .toolbar:before,
+.metrouicss .toolbar:after {
+  display: table;
+  content: "";
+}
+.metrouicss .toolbar:after {
+  clear: both;
+}
+.metrouicss .toolbar .toolbar-group {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  float: left;
+}
+.metrouicss .toolbar-vertical {
+  width: 33px;
+  float: left;
+  margin-right: 10px;
+  *zoom: 1;
+}
+.metrouicss .toolbar-vertical a,
+.metrouicss .toolbar-vertical button {
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  font-size: 14px;
+  padding: 4px 12px;
+  line-height: 20px;
+  vertical-align: middle !important;
+  min-width: 90px;
+  background-color: #ccc;
+  border: 1px transparent solid;
+  color: #353535;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 4px 10px;
+  outline: none;
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.metrouicss .toolbar-vertical a.mini,
+.metrouicss .toolbar-vertical button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss .toolbar-vertical a.big,
+.metrouicss .toolbar-vertical button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .toolbar-vertical a.mini,
+.metrouicss .toolbar-vertical button.mini {
+  min-width: 22px;
+  width: 22px;
+}
+.metrouicss .toolbar-vertical a.big,
+.metrouicss .toolbar-vertical button.big {
+  min-width: 48px;
+  width: 48px;
+}
+.metrouicss .toolbar-vertical a [class^="icon-"],
+.metrouicss .toolbar-vertical button [class^="icon-"],
+.metrouicss .toolbar-vertical a [class*=" icon-"],
+.metrouicss .toolbar-vertical button [class*=" icon-"] {
+  vertical-align: -10%;
+  font-size: 1.2em;
+  display: inline-block;
+}
+.metrouicss .toolbar-vertical a [class^="icon-"].icon-large,
+.metrouicss .toolbar-vertical button [class^="icon-"].icon-large,
+.metrouicss .toolbar-vertical a [class*=" icon-"].icon-large,
+.metrouicss .toolbar-vertical button [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+.metrouicss .toolbar-vertical a.big [class^="icon-"],
+.metrouicss .toolbar-vertical button.big [class^="icon-"],
+.metrouicss .toolbar-vertical a.big [class*=" icon-"],
+.metrouicss .toolbar-vertical button.big [class*=" icon-"] {
+  font-size: 1.3333333333333333em;
+}
+.metrouicss .toolbar-vertical a [class^="icon-"],
+.metrouicss .toolbar-vertical button [class^="icon-"],
+.metrouicss .toolbar-vertical a [class*=" icon-"],
+.metrouicss .toolbar-vertical button [class*=" icon-"] {
+  margin-right: 5px;
+}
+.metrouicss .toolbar-vertical a [class^="icon-"].right,
+.metrouicss .toolbar-vertical button [class^="icon-"].right,
+.metrouicss .toolbar-vertical a [class*=" icon-"].right,
+.metrouicss .toolbar-vertical button [class*=" icon-"].right {
+  margin-left: 5px;
+  margin-right: auto;
+}
+.metrouicss .toolbar-vertical a.standart,
+.metrouicss .toolbar-vertical button.standart {
+  min-width: 90px;
+  min-height: 32px;
+}
+.metrouicss .toolbar-vertical a:active,
+.metrouicss .toolbar-vertical button:active,
+.metrouicss .toolbar-vertical a.default:active,
+.metrouicss .toolbar-vertical button.default:active {
+  top: 1px;
+  left: 1px;
+}
+.metrouicss .toolbar-vertical a:disabled,
+.metrouicss .toolbar-vertical button:disabled,
+.metrouicss .toolbar-vertical a.disabled,
+.metrouicss .toolbar-vertical button.disabled {
+  background-color: #eaeaea;
+  color: #bebebe;
+  cursor: not-allowed;
+}
+.metrouicss .toolbar-vertical a.default,
+.metrouicss .toolbar-vertical button.default {
+  background-color: #008287;
+  color: #fff;
+}
+.metrouicss .toolbar-vertical a:hover,
+.metrouicss .toolbar-vertical button:hover,
+.metrouicss .toolbar-vertical a.default:hover,
+.metrouicss .toolbar-vertical button.default:hover {
+  color: inherit;
+}
+.metrouicss .toolbar-vertical a:focus,
+.metrouicss .toolbar-vertical button:focus {
+  outline: 0;
+  border: 1px #353535 dotted;
+}
+.metrouicss .toolbar-vertical a.mini,
+.metrouicss .toolbar-vertical button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss .toolbar-vertical a.big,
+.metrouicss .toolbar-vertical button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .toolbar-vertical a img,
+.metrouicss .toolbar-vertical button img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.metrouicss .toolbar-vertical a {
+  padding: 5px 0;
+}
+.metrouicss .toolbar-vertical:before,
+.metrouicss .toolbar-vertical:after {
+  display: table;
+  content: "";
+}
+.metrouicss .toolbar-vertical:after {
+  clear: both;
+}
+.metrouicss .toolbar-vertical .toolbar-group {
+  margin-bottom: 20px;
+}
+.metrouicss .image-button {
+  position: relative;
+  border: 0;
+  padding-right: 45px;
+}
+.metrouicss .image-button img,
+.metrouicss .image-button:active img {
+  position: absolute;
+  right: 0;
+  margin-left: 32px;
+  padding: 5px;
+  height: 100%;
+  top: 0px;
+  margin-left: 0px;
+  box-sizing: border-box;
+  border: 1px transparent solid;
+  z-index: 2;
+}
+.metrouicss .button-set a,
+.metrouicss .button-set button {
+  margin-right: 0;
+  text-align: center;
+}
+.metrouicss .button-set a img,
+.metrouicss .button-set button img {
+  background-color: transparent;
+}
+.metrouicss .button-set a {
+  padding: 5px 0;
+}
+.metrouicss .button-set button.active {
+  background-color: #008287;
+  color: #fff;
+}
+
+.metrouicss table {
+  width: 100%;
+  border-collapse: separate;
+  margin: 0 0 20px;
+}
+.metrouicss table thead tr th,
+.metrouicss table thead tr td {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  border-bottom: 1px #ddd solid;
+  border-right: 1px #ddd solid;
+  border-left: 1px transparent solid;
+  border-top: 1px transparent solid;
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  letter-spacing: 0.01em;
+  line-height: 13pt;
+  font-smooth: always;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+.metrouicss table thead tr th.right,
+.metrouicss table thead tr td.right {
+  text-align: right;
+  padding-right: 10px;
+}
+.metrouicss table thead tr th.last,
+.metrouicss table thead tr td.last {
+  border-right: 1px transparent solid;
+}
+.metrouicss table thead tr th:last-child,
+.metrouicss table thead tr td:last-child {
+  border-right: 1px transparent solid;
+}
+.metrouicss table tbody tr {
+  border: 1px #fff solid;
+}
+.metrouicss table tbody tr td {
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+  padding: 3px 10px;
+  border-right: 1px #ddd solid;
+  border-bottom: 1px #ddd solid;
+  border-left: 1px transparent solid;
+  border-top: 1px transparent solid;
+  box-sizing: border-box;
+}
+.metrouicss table tbody tr td.right {
+  text-align: right;
+}
+.metrouicss table tbody tr td.center {
+  text-align: center;
+}
+.metrouicss table tbody tr td.last {
+  border-right: 1px transparent solid;
+}
+.metrouicss table tbody tr td:last-child {
+  border-right: 1px transparent solid;
+}
+.metrouicss table tbody tr.success {
+  background-color: #00a300 !important;
+}
+.metrouicss table tbody tr.error {
+  background-color: #b91d47 !important;
+}
+.metrouicss table tbody tr.warning {
+  background-color: #e3a21a !important;
+}
+.metrouicss table tbody tr.info {
+  background-color: #2d89ef !important;
+}
+.metrouicss table tbody tr.info td,
+.metrouicss table tbody tr.warning td,
+.metrouicss table tbody tr.error td,
+.metrouicss table tbody tr.success td {
+  color: #ffffff !important;
+}
+.metrouicss table tbody tr.selected-row {
+  background-color: rgba(28, 183, 236, 0.1) !important;
+}
+.metrouicss table tbody tr.selected-row td:first-child {
+  border-left: 1px #1c98cc solid;
+}
+.metrouicss table tbody tr.selected-row td:last-child {
+  border-right: 1px #1c98cc solid;
+}
+.metrouicss table tbody tr.selected-row td {
+  border-top: 1px #1c98cc solid;
+  border-bottom: 1px #1c98cc solid;
+}
+.metrouicss table.striped tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.metrouicss table.bordered {
+  border-collapse: separate !important;
+  border: 1px #ccc solid !important;
+}
+.metrouicss table.bordered tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.metrouicss label {
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.metrouicss fieldset {
+  position: relative;
+  margin-top: 30px;
+  border: 2px #eaeaea solid;
+  padding: 10px;
+}
+.metrouicss fieldset legend {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+  color: #cfcfcf;
+  position: absolute;
+  top: -25px;
+  left: -10px;
+}
+.metrouicss input[type=button],
+.metrouicss input[type=reset],
+.metrouicss input[type=submit] {
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  font-size: 14px;
+  padding: 4px 12px;
+  line-height: 20px;
+  vertical-align: middle !important;
+  min-width: 90px;
+  min-height: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border: 1px transparent solid;
+  color: #353535;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 4px 10px;
+  position: relative;
+  outline: none;
+  border-radius: 0;
+}
+.metrouicss input[type=button] [class^="icon-"],
+.metrouicss input[type=reset] [class^="icon-"],
+.metrouicss input[type=submit] [class^="icon-"],
+.metrouicss input[type=button] [class*=" icon-"],
+.metrouicss input[type=reset] [class*=" icon-"],
+.metrouicss input[type=submit] [class*=" icon-"] {
+  vertical-align: -10%;
+  font-size: 1.2em;
+  display: inline-block;
+}
+.metrouicss input[type=button] [class^="icon-"].icon-large,
+.metrouicss input[type=reset] [class^="icon-"].icon-large,
+.metrouicss input[type=submit] [class^="icon-"].icon-large,
+.metrouicss input[type=button] [class*=" icon-"].icon-large,
+.metrouicss input[type=reset] [class*=" icon-"].icon-large,
+.metrouicss input[type=submit] [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+.metrouicss input[type=button].big [class^="icon-"],
+.metrouicss input[type=reset].big [class^="icon-"],
+.metrouicss input[type=submit].big [class^="icon-"],
+.metrouicss input[type=button].big [class*=" icon-"],
+.metrouicss input[type=reset].big [class*=" icon-"],
+.metrouicss input[type=submit].big [class*=" icon-"] {
+  font-size: 1.3333333333333333em;
+}
+.metrouicss input[type=button] [class^="icon-"],
+.metrouicss input[type=reset] [class^="icon-"],
+.metrouicss input[type=submit] [class^="icon-"],
+.metrouicss input[type=button] [class*=" icon-"],
+.metrouicss input[type=reset] [class*=" icon-"],
+.metrouicss input[type=submit] [class*=" icon-"] {
+  margin-right: 5px;
+}
+.metrouicss input[type=button] [class^="icon-"].right,
+.metrouicss input[type=reset] [class^="icon-"].right,
+.metrouicss input[type=submit] [class^="icon-"].right,
+.metrouicss input[type=button] [class*=" icon-"].right,
+.metrouicss input[type=reset] [class*=" icon-"].right,
+.metrouicss input[type=submit] [class*=" icon-"].right {
+  margin-left: 5px;
+  margin-right: auto;
+}
+.metrouicss input[type=button].standart,
+.metrouicss input[type=reset].standart,
+.metrouicss input[type=submit].standart {
+  min-width: 90px;
+  min-height: 32px;
+}
+.metrouicss input[type=button]:active,
+.metrouicss input[type=reset]:active,
+.metrouicss input[type=submit]:active,
+.metrouicss input[type=button].default:active,
+.metrouicss input[type=reset].default:active,
+.metrouicss input[type=submit].default:active {
+  top: 1px;
+  left: 1px;
+}
+.metrouicss input[type=button]:disabled,
+.metrouicss input[type=reset]:disabled,
+.metrouicss input[type=submit]:disabled,
+.metrouicss input[type=button].disabled,
+.metrouicss input[type=reset].disabled,
+.metrouicss input[type=submit].disabled {
+  background-color: #eaeaea;
+  color: #bebebe;
+  cursor: not-allowed;
+}
+.metrouicss input[type=button].default,
+.metrouicss input[type=reset].default,
+.metrouicss input[type=submit].default {
+  background-color: #008287;
+  color: #fff;
+}
+.metrouicss input[type=button]:hover,
+.metrouicss input[type=reset]:hover,
+.metrouicss input[type=submit]:hover,
+.metrouicss input[type=button].default:hover,
+.metrouicss input[type=reset].default:hover,
+.metrouicss input[type=submit].default:hover {
+  color: inherit;
+}
+.metrouicss input[type=button]:focus,
+.metrouicss input[type=reset]:focus,
+.metrouicss input[type=submit]:focus {
+  outline: 0;
+  border: 1px #353535 dotted;
+}
+.metrouicss input[type=button].mini,
+.metrouicss input[type=reset].mini,
+.metrouicss input[type=submit].mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss input[type=button].big,
+.metrouicss input[type=reset].big,
+.metrouicss input[type=submit].big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss input[type=submit] {
+  background-color: #008287;
+  color: #fff;
+}
+
+.metrouicss code,
+.metrouicss pre {
+  padding: 0 3px 2px;
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+  font-size: 10pt;
+  color: #525252;
+}
+.metrouicss code {
+  padding: 2px 4px;
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px #e1e1e8 solid;
+}
+.metrouicss pre {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  line-height: 14pt;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.metrouicss pre.prettyprint {
+  margin-bottom: 10px;
+}
+.metrouicss pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+.metrouicss .dialog {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  min-width: 150px;
+  min-height: 155px;
+  z-index: 1002;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.metrouicss .dialog .header {
+  font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 20pt;
+  letter-spacing: 0.01em;
+  line-height: 22pt;
+  font-smooth: always;
+  width: auto;
+  height: 35px;
+  padding: 0px 35px 5px 5px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #2D89EF;
+  color: #fff;
+  border: 1px solid #2D89EF;
+  border-bottom: 0 none;
+}
+.metrouicss .dialog .header div {
+  position: absolute;
+  right: -5px;
+  top: 5px;
+}
+.metrouicss .dialog .header button {
+  font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  font-smooth: always;
+  line-height: 11pt;
+  font-size: 14px;
+  padding: 4px 12px;
+  line-height: 20px;
+  vertical-align: middle !important;
+  min-width: 90px;
+  background-color: #ccc;
+  border: 1px transparent solid;
+  color: #353535;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 4px 10px;
+  outline: none;
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  width: 24px !important;
+  height: 24px !important;
+  min-height: 24px;
+  min-width: 24px;
+}
+.metrouicss .dialog .header button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss .dialog .header button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .dialog .header button.mini {
+  min-width: 22px;
+  width: 22px;
+}
+.metrouicss .dialog .header button.big {
+  min-width: 48px;
+  width: 48px;
+}
+.metrouicss .dialog .header button [class^="icon-"],
+.metrouicss .dialog .header button [class*=" icon-"] {
+  vertical-align: -10%;
+  font-size: 1.2em;
+  display: inline-block;
+}
+.metrouicss .dialog .header button [class^="icon-"].icon-large,
+.metrouicss .dialog .header button [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+.metrouicss .dialog .header button.big [class^="icon-"],
+.metrouicss .dialog .header button.big [class*=" icon-"] {
+  font-size: 1.3333333333333333em;
+}
+.metrouicss .dialog .header button [class^="icon-"],
+.metrouicss .dialog .header button [class*=" icon-"] {
+  margin-right: 5px;
+}
+.metrouicss .dialog .header button [class^="icon-"].right,
+.metrouicss .dialog .header button [class*=" icon-"].right {
+  margin-left: 5px;
+  margin-right: auto;
+}
+.metrouicss .dialog .header button.standart {
+  min-width: 90px;
+  min-height: 32px;
+}
+.metrouicss .dialog .header button:active,
+.metrouicss .dialog .header button.default:active {
+  top: 1px;
+  left: 1px;
+}
+.metrouicss .dialog .header button:disabled,
+.metrouicss .dialog .header button.disabled {
+  background-color: #eaeaea;
+  color: #bebebe;
+  cursor: not-allowed;
+}
+.metrouicss .dialog .header button.default {
+  background-color: #008287;
+  color: #fff;
+}
+.metrouicss .dialog .header button:hover,
+.metrouicss .dialog .header button.default:hover {
+  color: inherit;
+}
+.metrouicss .dialog .header button:focus {
+  outline: 0;
+  border: 1px #353535 dotted;
+}
+.metrouicss .dialog .header button.mini {
+  min-height: 20px;
+  min-width: 20px;
+  height: 14px;
+  font-size: .75em !important;
+  padding-top: 0px !important;
+}
+.metrouicss .dialog .header button.big {
+  min-height: 48px;
+  height: 48px;
+  font-size: 1.2em;
+}
+.metrouicss .dialog .header button img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.metrouicss .dialog .header button [class^="icon-"],
+.metrouicss .dialog .header button [class*=" icon-"] {
+  font-size: 11px;
+}
+.metrouicss .dialog .header button i {
+  position: absolute;
+  left: 5px;
+  top: 6px;
+}
+.metrouicss .dialog .content {
+  min-height: 85px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  line-height: 14pt;
+  font-smooth: always;
+}
+.metrouicss .dialog .action {
+  position: relative;
+  bottom: 0;
+  width: auto;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.metrouicss .dialog .action button {
+  margin: 0 10px 0 0;
+}
+.metrouicss .dialog .action button:last-child {
+  margin: 0;
+}
+.metrouicss #dialogOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(235, 235, 235, 0.5);
+  z-index: 1002;
+}
+.metrouicss .calendar {
+  background-color: #ffffff !important;
+}
+.metrouicss .calendar table {
+  border: 1px #ccc solid;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.metrouicss .calendar table tr {
+  height: 1px;
+}
+.metrouicss .calendar tr:empty {
+  display: none;
+}
+.metrouicss .calendar td,
+.metrouicss .calendar th {
+  padding: 4px;
+  width: 14.285% !important;
+  font-size: 10pt;
+  border: 1px #ccc solid !important;
+  text-align: center;
+}
+.metrouicss .calendar td {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+}
+.metrouicss .calendar td span {
+  font-size: 8px !important;
+  line-height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1px 3px;
+  background-color: #b91d47 !important;
+  color: #ffffff !important;
+}
+.metrouicss .calendar .out {
+  background: #ececf0;
+  cursor: default;
+}
+.metrouicss .calendar .empty-day {
+  border: 0 !important;
+  display: none;
+}
+.metrouicss .calendar .weekdays td {
+  background-color: #eff4ff !important;
+  font-weight: bold !important;
+}
+.metrouicss .calendar .current-day {
+  background-color: #00a300 !important;
+  color: #ffffff !important;
+}
+.metrouicss .calendar .event {
+  background-color: #2d89ef !important;
+  color: #ffffff !important;
+}
+.metrouicss .datepicker {
+  position: relative;
+}

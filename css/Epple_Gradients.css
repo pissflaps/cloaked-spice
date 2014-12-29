@@ -1,0 +1,47 @@
+background: rgb(120,120,120);
+background: -moz-linear-gradient(top,  rgba(120,120,120,1) 0%, rgba(94,94,94,1) 50%, rgba(112,112,112,1) 51%, rgba(131,131,131,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(120,120,120,1)), color-stop(50%,rgba(94,94,94,1)), color-stop(51%,rgba(112,112,112,1)), color-stop(100%,rgba(131,131,131,1)));
+background: -webkit-linear-gradient(top,  rgba(120,120,120,1) 0%,rgba(94,94,94,1) 50%,rgba(112,112,112,1) 51%,rgba(131,131,131,1) 100%);
+background: -o-linear-gradient(top,  rgba(120,120,120,1) 0%,rgba(94,94,94,1) 50%,rgba(112,112,112,1) 51%,rgba(131,131,131,1) 100%);
+background: -ms-linear-gradient(top,  rgba(120,120,120,1) 0%,rgba(94,94,94,1) 50%,rgba(112,112,112,1) 51%,rgba(131,131,131,1) 100%);
+background: linear-gradient(to bottom,  rgba(120,120,120,1) 0%,rgba(94,94,94,1) 50%,rgba(112,112,112,1) 51%,rgba(131,131,131,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#787878', endColorstr='#838383',GradientType=0 );
+
+ /* REVERSED */
+ 
+ background: rgb(131,131,131);
+background: -moz-linear-gradient(top,  rgba(131,131,131,1) 0%, rgba(112,112,112,1) 49%, rgba(94,94,94,1) 50%, rgba(120,120,120,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(131,131,131,1)), color-stop(49%,rgba(112,112,112,1)), color-stop(50%,rgba(94,94,94,1)), color-stop(100%,rgba(120,120,120,1)));
+background: -webkit-linear-gradient(top,  rgba(131,131,131,1) 0%,rgba(112,112,112,1) 49%,rgba(94,94,94,1) 50%,rgba(120,120,120,1) 100%);
+background: -o-linear-gradient(top,  rgba(131,131,131,1) 0%,rgba(112,112,112,1) 49%,rgba(94,94,94,1) 50%,rgba(120,120,120,1) 100%);
+background: -ms-linear-gradient(top,  rgba(131,131,131,1) 0%,rgba(112,112,112,1) 49%,rgba(94,94,94,1) 50%,rgba(120,120,120,1) 100%);
+background: linear-gradient(to bottom,  rgba(131,131,131,1) 0%,rgba(112,112,112,1) 49%,rgba(94,94,94,1) 50%,rgba(120,120,120,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#838383', endColorstr='#787878',GradientType=0 );
+
+
+/* MOCK APPLE :DEFAULT	*/
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+    background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
+    background-color:#5f5f5f; /* Fallback */
+	
+/* MOCK APPLE :HOVER	*/
+   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
+    background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
+    background-color:#383838; /* Fallback */
+	-moz-box-shadow: inset 0 0 5px 5px #535353;
+    -webkit-box-shadow: inset 0 0 5px 5px #535353;
+    box-shadow: inset 0 0 5px 5px #535353;
+	
+/* OLD USAGE	*/
+				background:
+					-moz-linear-gradient(top, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%),
+					-moz-linear-gradient(left, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) .2%, rgba(0, 0, 0, 0) 99.8%, rgba(0, 0, 0, .2) 100%),
+					url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR2F0Wjyo75XWfHpw4MkSXNqCkA2lr22B2Fvz63n15qpI0x5yTSAM52XaxJLVXf2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo482BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL2BBlCy7OEqJqCFvs2FV2m32BTaiAd6zb7rlHtrbc1VA2Bm30BSa2B2B7RNSo4a21thbVTL2BBnCy7rCV1rdXbtbXW2B2Bh2Ft78BZLM2v6NE1Fov2FrpC3Zl2BA2l5H6lrrRe2FXNu2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz2B16O9NipAZSsm8nWpfq53ZlTQ3k9s2BamlADZ0CogZMh1MDJEGrgZAg1cDL2Fh5ojLSC12ByMtLp8A2R0un3BNFEjv2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px2BeQqLpPJDae9P52FmrVz4912FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCA=') no-repeat 50% 50%,
+					-moz-linear-gradient(bottom, #666 0, #5e5e5e 50%, #707070 51%, #808080 100%)
+				;
+				background:
+				-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
+				-webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))),
+				url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR2F0Wjyo75XWfHpw4MkSXNqCkA2lr22B2Fvz63n15qpI0x5yTSAM52XaxJLVXf2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo482BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL2BBlCy7OEqJqCFvs2FV2m32BTaiAd6zb7rlHtrbc1VA2Bm30BSa2B2B7RNSo4a21thbVTL2BBnCy7rCV1rdXbtbXW2B2Bh2Ft78BZLM2v6NE1Fov2FrpC3Zl2BA2l5H6lrrRe2FXNu2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz2B16O9NipAZSsm8nWpfq53ZlTQ3k9s2BamlADZ0CogZMh1MDJEGrgZAg1cDL2Fh5ojLSC12ByMtLp8A2R0un3BNFEjv2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px2BeQqLpPJDae9P52FmrVz4912FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCA=') no-repeat 50% 50%,
+				-webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080))
+				;	

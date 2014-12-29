@@ -1,0 +1,55 @@
+/* Mixin */
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+/* Mixin */
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+
+/* Mixin */
+@base: #663333;
+@complement1: spin(@base, 180);
+@complement2: darken(spin(@base, 180), 5%);
+@lighten1: lighten(@base, 15%);
+@lighten2: lighten(@base, 30%);
+@haha: #ABCDEF;
+@hoho: #FFFFCC;
+ 
+body{
+background: @hoho;
+color: @haha;
+}
+
+	.tblOclr {
+	background: @base;
+	color: @compliment1;
+	}
+	.tblEclr {
+	background: @compliment2;
+	color: @base;
+	}
+	.tblFclr {
+	background: @compliment2;
+	color: @lighten2;
+	}
+	.tblbrdr{
+		.border-radius(4px);
+	}
+			#delTable tr:odd{
+				.tblOclr;
+				}
+			#delTable tr:even{
+				.tblEclr;
+				}
+			#delTable tr:first{
+				.tblFclr;
+				}
+			#delTable td{
+				.tblbrdr;
+				}

@@ -1,0 +1,51 @@
+
+// Dashboard body background  #7c8da1
+// Dashboard Report background  #13b164
+// Dashboard Beginning Radius Gradient  33d082
+// Dashboard Highlight Background  55c79a
+
+// Dashboard Gradient for Report Module background
+background: #b7d6af;
+background: -moz-radial-gradient(center, ellipse cover,  #b7d6af 19%, #299a0b 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(19%,#b7d6af), color-stop(100%,#299a0b));
+background: -webkit-radial-gradient(center, ellipse cover,  #b7d6af 19%,#299a0b 100%);
+background: -o-radial-gradient(center, ellipse cover,  #b7d6af 19%,#299a0b 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #b7d6af 19%,#299a0b 100%);
+background: radial-gradient(ellipse at center,  #b7d6af 19%,#299a0b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7d6af', endColorstr='#299a0b',GradientType=1 );
+
+// Dashboard Gradient for Administration Module
+background: #417cab;
+background: -moz-radial-gradient(center, ellipse cover,  #417cab 0%, #284c85 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#417cab), color-stop(100%,#284c85));
+background: -webkit-radial-gradient(center, ellipse cover,  #417cab 0%,#284c85 100%);
+background: -o-radial-gradient(center, ellipse cover,  #417cab 0%,#284c85 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #417cab 0%,#284c85 100%);
+background: radial-gradient(ellipse at center,  #417cab 0%,#284c85 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#417cab', endColorstr='#284c85',GradientType=1 );
+
+// Login /Out bar gradient used on ISI-INFO.COM
+	background-image: linear-gradient(bottom, #417cAB 45%, #284C85 78%);
+	background-image: -o-linear-gradient(bottom, #417cAB 45%, #284C85 78%);
+	background-image: -moz-linear-gradient(bottom, #417cAB 45%, #284C85 78%);
+	background-image: -webkit-linear-gradient(bottom, #417cAB 45%, #284C85 78%);
+	background-image: -ms-linear-gradient(bottom, #417cAB 45%, #284C85 78%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.45, #417CAB),
+		color-stop(0.78, #284C85)
+						);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#417cab', endColorstr='#284c85',GradientType=0 );
+
+// Green gradient for buttons in ISI-INFO.COM
+								background: #bfd255;
+								background: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d));
+								background: -webkit-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+								background: -o-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+								background: -ms-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+								background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 );
+						

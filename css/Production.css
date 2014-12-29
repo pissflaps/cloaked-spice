@@ -1,0 +1,470 @@
+@import url('fontFace.css');
+@import url('../Foundation/css/foundation.min.css');
+@import url('../Foundation/icons/foundation-icons.css');
+@import url('jqui.css');
+/* RESPONSIVE TABLES FROM FOUNDATION */
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+table th { font-weight: bold; }
+table td, table th { padding: 9px 10px; text-align: center; }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	
+	table.responsive { margin-bottom: 0; }
+	
+	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border: 0px; }
+	.pinned table { border-right: none; border: 0px; width: 100%; }
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0; }
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border: 0px; }
+	div.table-wrapper div.scrollable { margin-left: 35%; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
+	
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+	
+	
+}
+
+table, table tr, table td{
+border-collapse: collapse;
+border: none;
+}
+/******************************		
+*   TAC's New Alert System               		
+*	Developed 9/28/2012 - 03/29/2013  by jim mulhern           		
+* 	CERTIFIED FOR: IE 9+ | Opera 12+ | Google Chrome 20+ | Mozilla Firefox 16+
+*	Published 2/12/2014
+* 		ISI Telemanagement               	
+*****************************/	
+/*		***	General Styling Classes for re-use throughout the Alert System		***	*/
+
+body,html,*,*:after, *:before {		
+    font-face: 'Open Sans', Verdana Arial,sans-serif;
+    -webkit-font-smoothing:subpixel-antialiased;
+    -moz-font-smoothing:subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing:antialiased;
+    font-smoothing:subpixel-antialiased;
+
+}
+
+
+	.shadowZ{
+			text-shadow: #333333 0.15em 0.15em 0.25em;
+		}
+		
+	.shadow {
+		-moz-box-shadow:    6px 5px 4px 3px #ccc;
+		-webkit-box-shadow: 6px 5px 4px 3px #ccc;
+		box-shadow:         6px 5px 4px 3px #ccc;
+	 }
+	 .Tshadow{
+		color: #cccccc;
+		font-weight: bold;
+		text-shadow: #212121 0.1em 0.1em 0.25em;
+	}
+	.corners {
+		-moz-border-radius: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.round {
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+	
+	  #Hamburger{
+	    font-size: 12pt;
+		padding-right: 4px;
+	  }
+	  
+/* //////////  TAC ALERT PANEL EDITION //////////// */
+
+    html, body{
+      font-family: 'Open Sans','Source Sans Pro',Arial,verdana, sans-serif;	
+	  font-size: 12pt;
+      height: 100%;
+    }
+    #BodyWrapper{
+      background: rgba(236, 240, 241,1.0);
+      background-attachment: fixed;
+	  color: #212121;
+	 }
+
+	  #BodyWrapper, .inner-wrap{
+	    min-height: 100%;
+	    margin-bottom: -50px; 
+	  }
+	  #BodyWrapper:after {
+        content: "";
+        display: block;
+		height: 50px;
+      }
+	  #Database{
+	    margin: 10px auto;
+        margin-bottom: -50px; 
+	  }
+	  #Footer{
+	  display: inline;
+	  width: 100%;
+	  position: fixed;
+	  bottom: 0px;
+	    height: 50px;
+	background-color: #2c3e50;  /* #3498db   2980b9 */
+color: #f1f7f9;
+	  }
+	 #Title {
+        white-space: nowrap !important;
+     }
+
+#navExpand a:hover{
+background: transparent !important;
+}	  
+	  #Whois, #Alerts{
+	    padding: none;
+	    height: 50px;
+		color: #2c3e50;
+	  }	
+	  #Alerts{
+	border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding: 0.5rem 0.25rem 0.775rem 0.775rem;
+  font-size: 0.995rem;
+  background-color: #2980b9;
+  border-color: #2980b9;
+  color: #f1f7f9;	  
+}
+    #Whois{
+	border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  font-size: 0.8125rem;
+  	z-index:999999;
+	background-color: #3498db;
+	border-color: #3498db;
+	color: #f1f7f9;
+	}
+	  #delTable tr>td{
+	    text-align: center;
+		border: 0px;
+		font-size:  .9em;
+	  }
+
+    .trr td{
+	  font-size: 1.1em;
+	  background-color: rgba(0, 102, 136, 1);
+	  color: #f1f7f9;
+	  text-align: center;
+	  border: 0px;
+	  padding: none;
+	  margin: none;
+    }
+
+#tacWeather{
+clear: none;
+padding: none;
+margin: none;
+overflow: hidden;
+z-index: 9999 !important;
+}
+	#Weather{
+	    vertical-align: top;
+		background: transparent;
+		background-color: transparent;
+		color: #f1f7f9;
+		border: none;
+		padding: none;
+		margin:none;
+		white-space: nowrap !important;
+        z-index: 99999 !important;		
+	}
+	#wIcon{
+		float: left;
+		vertical-align: top;
+		padding-right: 1px;
+		padding-left: 1px;
+	}
+	#temp{
+	margin-top: 2px;
+	padding: none;
+	vertical-align: top;
+	}
+#temp, #humid{
+                color: #00CCFF;
+                font-weight: bold;
+            }
+h7.subheader{
+  color: #f1f7f9;
+  padding: none !important;
+  margin: none !important;
+  clear: none;
+}
+#wReport{
+clear: none;
+}
+#tacLogin{
+min-width: 1px !important;
+clear:none;
+}			
+#time{
+vertical-align: top;
+color: #bbbbbb;
+
+}
+	#RegUser {
+		position: absolute;
+		bottom:1px;
+		right:2px;
+		padding:6px;
+		line-height:0.9em;
+	}			
+	
+img#delCross{
+	height: 16px;
+	width: 16px;
+	border: none;
+}	
+#DelCel {
+	display:table-cell;
+	vertical-align: middle;
+}
+img#del{
+	min-height: 20px;
+		max-height: 30px;
+	min-width: 20px;
+		max-width: 30px;
+	cursor: pointer;		
+}
+
+.ui-autocomplete {
+	background: rgba(255,255,255, 1);
+	background-color: #ffffff;
+	color: #000000;
+	z-index: 9999999 !important;
+}
+
+
+
+#DateTimeString{
+	font-family: Arial Black, sans-serif;
+	color: #00008B;
+}	
+  #UserLink{
+   text-decoration: none;
+   box-shadow: none;
+   border: none;
+  }
+#DBContainer{
+margin-left: 10%;
+margin-right: 10%;
+}  
+		#allgone{
+			position: relative;
+			clear: both;
+			display: inline-block;
+			margin-left: 10%;
+			margin-right: 10%;
+			z-index: 1;
+			text-align: center;
+			font-family: Oswald, Impact, sans-serif;
+			font-size: 21pt;
+			text-align: center;
+			color: #778899;
+		}
+/*			#all_clear {
+				padding: 2em;
+				border:1px solid #212121;
+				font-family: Source Sans Pro, Courier, Times New Roman, sans-serif;
+				background: rgba(250, 250, 210, 0.8);
+				color:#212121;
+				clear:both;
+				float:left;
+				border-radius: 4px;
+				font-size: 16pt;
+				text-align: center;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+*/
+    #talkbubble h5{
+      color: #f5fffa !important;
+}
+
+
+/*		***		GROWL SECTION		***	*/
+
+#growl {
+position: absolute; 
+bottom: 150px; 
+left: 0px;
+width: 350px;
+z-index: 99999;
+color: #000000;
+padding: 1em;
+display: inline-block;
+border-radius: 4px;
+}
+	.notice {
+		position: relative;
+	}
+	
+	.skin {
+		position: absolute;
+		background: rgba(250, 250, 250, 0.5); 
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		border-radius: 4px;
+	}
+	.content{
+		display:block;
+		padding: 25px;
+		margin-left: 2px;
+		font-weight: bold;
+		color: #f5f7f9;
+		background: rgba(33,33,33,0.5);
+	}
+	
+	.Gclose {
+		vertical-align: top;
+		float:right;
+		font-family: Arial Black, Impact, Arial sans-serif;
+		font-size: 11pt;
+		color: #000000;
+		padding: 2px;
+	}	
+
+#save, #cancel{
+position: relative;
+top: 1em;
+clear: both;
+}
+
+#foo {
+border: none;
+}	
+
+#output{
+clear: both;
+margin: 1em;
+padding: 1em;
+}
+
+#TicketForm{
+float: left;
+clear: both;
+}
+	  
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+}	 
+
+.ajaxloader {
+position: absolute;
+width: 30px;
+height: 30px;
+left: 50%;
+top: 15%;
+margin: 0 0 0 -15px;
+border: 8px solid #fff;
+border-right-color: transparent;
+border-radius: 50%;
+box-shadow: 0 0 25px 2px #eee;
+-webkit-animation: spin 1s linear infinite;
+-moz-animation: spin 1s linear infinite;
+-ms-animation: spin 1s linear infinite;
+-o-animation: spin 1s linear infinite;
+animation: spin 1s linear infinite;
+}
+
+#chartdiv {
+background-color: transparent;
+background: transparent;
+overflow: hidden;
+}
+
+
+#ISI{
+background:transparent;
+visibility: hidden;
+display: none;
+}
+  
+  #YOSPOS{
+    background: #000000;
+    border: 1px solid #32CD32;
+    color: #00FF00;
+  }
+    #YOSPOS:hover{ 
+	  background: #006400;
+	  border: 1px solid #00FF00;
+	  color: #000000;
+	  }  
+  #YOSPISS{
+    background: #0000ff;
+    border: 1px solid #bbbbbb;
+    color: #dadada;
+  }
+    #YOSPISS:hover{ 
+	  background: #0000ff;
+	  border: 1px solid #bbbbbb;
+	  color: #ffffff;
+	  }
+
+
+/*Keyframes*/
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;background-color:#6B7A8A;}
+25%{background-color: #778899;animation-timing-function:ease-in-out;}
+50% {background-color:#B0C4DE;}	/*#b4cfe0; */
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6B7A8A;}
+}
+ 
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;background-color:#6B7A8A;}
+25%{background-color: #778899;animation-timing-function:ease-in-out;}
+50% {background-color:#B0C4DE;}	/*#b4cfe0; */
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6B7A8A;}
+}
+ 
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;background-color:#6B7A8A;}
+25%{background-color: #778899;animation-timing-function:ease-in-out;}
+50% {background-color:#B0C4DE;}	/*#b4cfe0; */
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6B7A8A;}
+}
+
+
+/*Snow Keyframes Applied to Body*/
+#BodyWrapper {
+    
+    background-image:url('../img/snow.png'), url('../img/snow3.png'), url('../img/snow2.png');	/* , url('../img/windowfrost.png') */
+    -webkit-animation: snow 25s linear infinite;
+    -moz-animation: snow 25s linear infinite;
+    -ms-animation: snow 25s linear infinite;
+    animation: snow 25s linear infinite;
+}	  

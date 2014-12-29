@@ -1,0 +1,181 @@
+
+ #clouds {
+ background: url('/css/images/cloud.jpg') repeat-x scroll 0px 50% #049EC4;
+ animation: 20s linear 0s normal none infinite animate-cloud;	  
+}	  
+
+@-webkit-keyframes animate-cloud{
+	from{
+		background-position:600px 100%
+	}
+
+	to{
+		background-position:0 100%
+	}
+
+}
+
+@-moz-keyframes animate-cloud{
+	from{
+		background-position:600px 100%
+	}
+
+	to{
+		background-position:0 100%
+	}
+
+}
+
+@-ms-keyframes animate-cloud{
+	from{
+		background-position:600px 100%
+	}
+
+	to{
+		background-position:0 100%
+	}
+
+}
+
+@-o-keyframes animate-cloud{
+	from{
+		background-position:600px 100%
+	}
+
+	to{
+		background-position:0 100%
+	}
+
+}
+
+.animate-cloud-key from{
+	background-position:600px 100%
+}
+
+.animate-cloud-key to{
+	background-position:0 100%
+}
+
+@-webkit-keyframes animate-bot{
+	from{
+		margin-top:-120px
+	}
+
+	50%{
+		margin-top:-110px
+	}
+
+	to{
+		margin-top:-120px
+	}
+
+}
+
+@-moz-keyframes animate-bot{
+	from{
+		margin-top:-120px
+	}
+
+	50%{
+		margin-top:-110px
+	}
+
+	to{
+		margin-top:-120px
+	}
+
+}
+
+@-ms-keyframes animate-bot{
+	from{
+		margin-top:-120px
+	}
+
+	50%{
+		margin-top:-110px
+	}
+
+	to{
+		margin-top:-120px
+	}
+
+}
+
+@-o-keyframes animate-bot{
+	from{
+		margin-top:-120px
+	}
+
+	50%{
+		margin-top:-110px
+	}
+
+	to{
+		margin-top:-120px
+	}
+
+}
+
+.animate-bot-key from{
+	margin-top:-120px
+}
+
+.animate-bot-key 50%{
+	margin-top:-110px
+}
+
+.animate-bot-key to{
+	margin-top:-120px
+}
+
+@-webkit-keyframes animate-pattern{
+	from{
+		background-position:0 0
+	}
+
+	to{
+		background-position:0 286px
+	}
+
+}
+
+@-moz-keyframes animate-pattern{
+	from{
+		background-position:0 0
+	}
+
+	to{
+		background-position:0 286px
+	}
+
+}
+
+@-ms-keyframes animate-pattern{
+	from{
+		background-position:0 0
+	}
+
+	to{
+		background-position:0 286px
+	}
+
+}
+
+@-o-keyframes animate-pattern{
+	from{
+		background-position:0 0
+	}
+
+	to{
+		background-position:0 286px
+	}
+
+}
+
+.animate-pattern-key from{
+	background-position:0 0
+}
+
+.animate-pattern-key to{
+	background-position:0 286px
+}

@@ -1,0 +1,1006 @@
+@charset "UTF-8";
+@import url('gumby.css');
+@import url('jquerybase.css');
+/******************************		
+*   TAC's New Alert System               		
+*	Developed 9/28/2012 - 03/29/2013  by jim mulhern           		
+* 	CERTIFIED FOR: IE 9+ | Opera 12+ | Google Chrome 20+ | Mozilla Firefox 16+
+*	Published 10/19/2012
+* 		ISI Telemanagement               	
+*****************************/	
+
+
+
+/*	*** 		
+// Stabalize Font usage. 		***	 		
+http://fonts.googleapis.com/css?family=Press+Start+2P|Noticia+Text|Cabin|Cabin+Condensed|Lato|Istok+Web|Source+Sans+Pro|Droid+Sans|Cantora+One|Electrolize|Ubuntu|Oswald|Share|Open+Sans|Dosis|Oxygen|UnifrakturCook ;
+		//		Define font families 	 ***	*/
+		
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url(http://themes.googleusercontent.com/static/fonts/cabin/v4/JEgmtEDzc-IH8jBshQXrYA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cabin Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Condensed'), local('CabinCondensed'), url(http://themes.googleusercontent.com/static/fonts/cabincondensed/v4/B0txb0blf2N29WdYPJjMShZ1gqmQBTb4Nwa_fF0DajA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cantora One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cantora One'), local('CantoraOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/cantoraone/v2/2Tarv7Qs4oCEU-xItQ7PXYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/xIAtSaglM8LZOYdGmG1JqQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Electrolize'), local('Electrolize-Regular'), url(http://themes.googleusercontent.com/static/fonts/electrolize/v2/DDy9sgU2U7S4xAwH5thnJ4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Istok Web Regular'), local('IstokWeb-Regular'), url(http://themes.googleusercontent.com/static/fonts/istokweb/v5/EvPKapBawcLZ3hbihjhqAT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noticia Text'), local('NoticiaText-Regular'), url(http://themes.googleusercontent.com/static/fonts/noticiatext/v3/wdyV6x3eKpdeUPQ7BJ5uUHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v2/RzoNiRR1p2Mqyyz2RwqSMw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share'), local('Share-Regular'), url(http://themes.googleusercontent.com/static/fonts/share/v1/_jCje2O-7QL947BeMhJzWQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+
+
+
+/* * * HARD STYLES * * *  
+
+
+*EDIT THIS AFTER ALL OTHER STYLESHEETS 
+
+
+*HAVE BEEN MODIFIED PROPERLY		***	
+
+
+
+*/
+
+body {
+		background:#FFFFFF;
+		background-attachment: fixed;
+		font-size: 14pt/18pt;
+		color: #212121;
+	}
+	
+	#color{
+	color: #FFFFFF;
+	}
+	
+	
+/*		***	General Styling Classes for re-use throughout the Alert System		***	*/
+	.shadowZ{
+			text-shadow: #212121 0.15em 0.15em 0.2em;
+		}
+		
+	.shadow {
+		-moz-box-shadow:    6px 5px 4px 3px #ccc;
+		-webkit-box-shadow: 6px 5px 4px 3px #ccc;
+		box-shadow:         6px 5px 4px 3px #ccc;
+	 }
+	 .Tshadow{
+		color: #FFFFFF;
+		font-weight: bold;
+		text-shadow: #212121 0.1em 0.1em 0.25em;
+	}
+	.corners {
+		-moz-border-radius: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.round {
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+		#talkbubble {
+			   width: 150px;
+			   height: 60px; 
+			   background: #ffffcc;
+			   color: #000000;
+			   position: relative;
+			   -moz-border-radius:    8px; 
+			   -webkit-border-radius: 8px; 
+			   border-radius:         8px;
+			   border: 1px solid #ffffcc;
+			   padding: 0.25em;
+		}
+			#talkbubble:before {
+			   content:"";
+			   position: absolute;
+			   right: 100%;
+			   top: 25px;
+			   width: 0;
+			   height: 0;
+			   border-top: 13px solid transparent;
+			   border-right: 26px solid #ffffcc;
+			   border-bottom: 13px solid transparent;
+			}
+					
+/*		***		Login Bar Style and Layout Design 		***	*/
+	#RegUser {
+		position: absolute;
+		top:1px;
+		right:2px;
+		padding:6px;
+		background: rgba(255, 52, 180, 0.8); 
+		color:#f5fffa;
+		border-radius:4px;
+		line-height:0.9em;
+	}
+		#RegUser:hover { background: rgba(15, 150, 225, 0.6);  }		
+		#RegUser a{ color:#eeeeee; } #RegUser a:hover{ color: #F5FFFA; }
+		
+#firstlinks{
+	display: inline;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	font-family: Oxygen, Dosis, Arial, sans-serif;
+	z-index: 99999 !important; 
+}
+	#loginout{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		font-family: Source Sans Pro, Cabin Condensed, Arial, Tahoma, sans-serif;
+		padding: 0px;
+		display: inline;
+		background: rgba(100,100,100,0.3);
+		color: #ff8000;
+		width: 100%;
+		height: 50px;
+		text-align:center;
+		margin: none;
+		z-index: 99;
+		clear: none;
+	}
+			
+		#loginout a{
+			color: #FFA007;
+			text-decoration: none;
+			font-weight: bold;
+		}
+			#loginout a:hover{
+				color: #F5FFFA;
+				text-decoration: none;
+			}
+#outlog{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	clear: none;
+	font-size: 12px;
+	padding: 0.25em;
+	line-height: 1.5;
+	background: rgba(210,20,20,0.5);
+	border-radius: 4px;
+	border: 1px solid transparent;
+	font-family: Electrolize, Share, Ubuntu, Arial;
+}
+	#outlog:hover{
+		background: rgba(20,20,20,0.8);
+		border: 1px solid #ffffff;
+		}
+#in{
+	display: inline-block;
+	font-family: Lato, Droid Sans, Arial;
+	background: rgba(0,180,30,0.3);
+	padding: 0.5em;
+	position: relative;
+	vertical-align: bottom;
+	line-height:1.75;
+	text-align: center;
+	border-radius: 4px;
+	margin-left: 75px;
+}
+	#out{
+		display:inline-block;
+		position: relative;
+		margin-left: 30%;
+		padding: 0.2em;
+		vertical-align: bottom;
+		font-size: 10pt;
+		line-height: 0.75;
+	}
+#NotLogged{
+	background: #FF0000;
+	color: #ffffff;
+	border-radius: 2px;
+	padding:0.5em;
+}
+	#RegUser{
+		display: block;
+		float: right;
+		clear:none;
+		padding: 0.5em;
+		font-size: 12px;
+	}
+								
+								
+#LoggedIn	{
+background: transparent url(../icons/user.png) no-repeat;
+background-position: left;
+padding-left:1.1em;
+}
+			#LoggedIn:hover{
+				background: transparent url(../icons/tux.png) no-repeat;
+				background-position: left;
+				padding-left:1.1em;
+			}
+									
+/*	***	LOGINOUT UL > LI STYLE  & DESIGN LAYOUT	***	*/
+#firstlinks ul{
+	list-style: none;
+	font-family: Cabin Condensed, Share, verdana, sans-serif;
+	display: inline;
+	table-layout:fixed;
+	z-index: 98;
+	white-space: nowrap;
+	clear: none;
+	padding: 0px;
+}
+	#firstlinks ul li{
+		list-style:none;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0px;
+		margin: 0px;
+		font-size: 1em;
+		float: left;
+		line-height: 0.75;
+		clear: none;
+		height: 50px;
+		width: 75px;
+		border: 1px dotted rgba(0,0,0,0.25);
+		vertical-align: top;
+		border-radius: 4px;
+		text-align: center;
+			transition: background .25s ease-in;
+			-moz-transition: background .25s ease-in;
+			-o-transition: background .25s ease-in;
+			-webkit-transition: background .25s ease-in;	
+	}
+		#open{
+			background: rgba(150,200,25,0.75);
+			background-position: center;
+			color: #f5fffa;
+		}
+			#open:hover{
+				background-color: rgba(150,200,25,1);
+				color: #ffffff;
+			}
+					
+		#links{
+			background: rgba(0,100,180,0.75);
+			background-position: center;
+			color: #f5fffa;
+		}
+				#links:hover{
+					background-color: rgba(0, 100, 180, 1);
+					color: #ffffff;
+				}
+		#tEdit {
+			background: rgba(250,220,0,0.75);
+			background-position: center;
+			color: #f5fffa;
+		}
+				#tEdit:hover{
+					background-color: rgba(250,220,0,1);
+					color: #ffffff;
+				}
+		#Stats{
+			background: rgba(255,140,0,0.75);
+			background-position: center;
+			color: #f5fffa;
+		}
+				#Stats:hover{
+					background-color:rgba(255,140,0,1);
+					color: #ffffff;
+				}
+		#Themes{	
+			clear:none;
+			float: right;
+			background: rgba(200,10,18,0.75);
+			background-position: center;
+			color: #f5fffa;
+		}
+				#Themes:hover{
+					background-color: rgba(220, 10, 18, 1);
+					color: #ffffff;
+				}
+		#Tweather{
+		clear: none;
+		float: right;
+		background: rgba(95, 175, 250, 0.75);
+		background-position: center;
+		color: #f5fffa;
+		}
+				#Tweather:hover{
+					background-color: rgba(95, 175, 250, 1);
+					color: #ffffff;
+				}
+
+
+/*		***		GROWL SECTION		***	*/
+
+#growl {position: absolute;bottom:50px;left:0;
+width:350px;
+z-index: 99;
+color: #ffffff;
+padding: 1em;
+display:inline-block;
+border-radius: 4px;
+}
+	.notice {
+		position: relative;
+	}
+	
+	.skin {
+		position: absolute;
+		background: rgba(0, 0, 0, 0.5); 
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		border-radius: 4px;
+	}
+	.content{
+		display:block;
+		padding: 25px;
+		margin-left: 5px;
+		font-weight: bold;
+		background: rgba(0,0,0,0.5);
+		background-position: bottom right;
+	}
+	
+	.Gclose {
+		vertical-align: top;
+		float:right;
+		font-family: Arial Black, Impact, Arial sans-serif;
+		font-size: 11pt;
+		color: #FF0000;
+		padding: 2px;
+	}	
+/*		***	Database Div and Below Layout	& Design stylings		***	*/
+	#Database {
+							margin-top: 2%;
+							margin-left: 5%;
+							z-index: 1;
+							clear: both;
+							padding: 2em;
+							width: 85%;
+
+	}
+		#allgone{
+			position: relative;
+			clear: both;
+			display: inline-block;
+			margin-left: 25%;
+			z-index: 1;
+			text-align: center;
+			font-family: Oswald, Impact, sans-serif;
+			font-size: 21pt;
+			text-align: center;
+		}
+			#all_clear {
+				padding: 1em;
+				border:1px solid #212121;
+				font-family: Source Sans Pro, Courier, Times New Roman, sans-serif;
+				background: rgba(250, 250, 210, 0.8);
+				color:#212121;
+				clear:both;
+				float:left;
+				border-radius: 4px;
+				font-size: 12pt;
+				text-align: center;
+				margin: 1em auto;
+			}
+
+#DateTimeString{
+	font-family: Arial Black, sans-serif;
+	color: #00008B;
+}			
+			
+			#table, #delTable {
+				text-align: center;
+				background: transparent;
+				table-layout: fixed;
+			}
+#foo{
+margin-left: 15%;
+clear: both;
+padding: 2em;
+}		
+#epple{
+width:0px !important;
+}
+		
+/*	***	NewTicket drop-down structure and styling 	***	*/
+
+#panel{
+	background: transparent;
+	clear:both;
+	list-style: none;
+}
+#panel a{
+	color: #FFA007;
+	padding:0.2em;
+		transition: color .5s ease-in;
+		-moz-transition: color .5s ease-in;
+		-o-transition: color .5s ease-in;
+		-webkit-transition: color .5s ease-in;	
+	}
+		#panel a:hover{
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
+#NewTicket{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		display: block;
+		text-align: left;
+		background: rgba(0,0,10, 0.3);
+		padding: 1.5em;
+		border: none;
+		border-radius: 2px;
+}
+	#linx{
+		position: fixed;
+		top: 50px;
+		right: 0px;
+	}
+		#hotlinks{
+			background: rgba(0,0,10,0.5);
+			color: #FAFAFA;
+			padding: 0.25em;
+			vertical-align: top;
+			float: right;
+			clear: both;
+			display: block;
+			border-radius: 4px;
+			z-index: 99;
+		}		
+			#linkBlock{
+				width: 85%;
+				display: block;
+			}
+#hotlinks a { color: #FFA007; }									
+#hotlinks a:hover { color: #FFFFFF; text-shadow: #444444 0.1em 0.1em 0.2em; }									
+#rotor a:hover{background:transparent;color:transparent;border:none;}
+							
+#rotor{
+	clear: both;
+	padding:2px;
+	vertical-align: top;
+	text-align: center;
+}	
+	#eTicket{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+		background: rgba(100,180,50, 0.3);
+		padding: 0.25em;
+		border: none;
+	}
+	#tStat{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		width: 100%;
+		display: inline-block;
+		background: rgba(255,140,0,0.25);
+		padding: 0.25em;
+		border: none;
+	}
+	#Style{
+		position: fixed;
+		top: 50px;
+		left: 0px;
+		width: 100%;
+		display: inline-block;
+		background: rgba(200,10,18, 0.3);
+		padding: 0.25em;
+		border: none;
+		vertical-align:bottom;
+		clear:both;
+		}
+#email{
+	float: right;
+	clear: none;
+	background: transparent;
+	cursor: pointer;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 15px;
+}
+	#forma {
+		padding:5px;
+		text-align: left;
+		background:transparent;		/* #add8e6; */
+		border: none;
+		overflow: hidden;
+	}
+	#aTechs{
+			vertical-align: bottom;
+			padding: 0.05em;
+			display: block;
+		}
+.emails { 
+	word-spacing:2px;
+	letter-spacing:1px;
+	background: transparent;
+	border: none;
+	font: 14px "Segoe UI";
+	color: #000000;
+	overflow:hidden;
+} 
+
+/*		***	Ticket Editing Styling and Design Layout		***	*/
+		
+	#eTicket input {
+	padding:5px;
+	border-radius: 4px;
+	}
+#TicketTable {
+	background: transparent;
+	color: #ffffff;
+}
+	#content{
+	background: transparent;
+	}
+#table {
+	text-align: center;
+	vertical-align: top;
+	color: #000000;
+}
+
+		#table td{
+			padding: 0.5em;
+		}
+#divtop {
+display: inline;
+text-align: center;
+vertical-align: top;
+}
+#divbottom {
+text-align: left;
+vertical-align: top;
+display: block;
+padding: 5px;
+background: transparent;
+}
+.outline {
+	border: 1px solid #444444;
+}
+	
+#status {
+	display: none;
+	 padding:10px;
+	 margin: 5px auto;
+	 border-radius: 4px;
+	 clear:both;
+}
+			.success{
+				background: #32cd32;
+				color: #EEFFCC;
+				border:1px solid #006400;
+			}
+			.error{
+				background: #FFF007;
+				color: #FF0000;
+				border: 1px solid #FF0000;
+			}
+		
+ #noticket {
+	 background: transparent;
+	 color: #eeeeee;
+	 text-shadow: #444444 0.15em 0.15em 0.25em;
+	 font-size: 1.25em;
+	 line-height: 1.5;
+ }
+	 
+ #save {
+	 margin: 5px auto;
+ }
+	 
+ #pgTitle{
+	 display:block;
+	 font-family: Arial Black, Arial, Sans-serif;
+	 font-size: 16px;
+	 background: rgba(0,0,0,0.3);
+	 color: #f5fffa;
+	 text-align: center;
+	 padding: 2px;
+ }
+	#pgTitle sub{
+		font-family: Courier New, Arial, sans-serif;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 0.5;
+	}
+		#PutInQ{
+			display:none;
+			padding:10px;
+			margin: 5px auto;
+			border-radius: 4px;
+			float:right;
+		}
+		
+#Putback{
+	background: #0073ea;
+	text-shadow: #000000 0.1em 0.1em 0.25em;
+	color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #0000FF;
+}
+	#Putback:hover{
+		background: #006400;
+		color: #EEFFCC;
+		border: 1px solid #32cd32;
+	}
+		
+/*	***	Ticket Search Display and Styling	***	*/
+
+.removed {
+background:#EFC2C2;
+padding:5px;
+display:block;
+cursor:pointer;
+}
+
+.added{
+background:#D8E6AD;
+padding:5px;
+display:block;
+cursor:pointer;
+} 						
+
+/*		***	Database Ticket Listing Display Classes and Stylings		***	*/
+	
+	.tblOclr {
+	background:  rgba(0, 0, 0, 0.6);
+	color: #FFFFFF; /* #0064CD */
+	padding: 3px;
+	}
+	
+	.tblEclr {
+	background: rgba(200,200,200, 0.8);
+	color: #000000;
+	padding:3px;
+	}
+	
+	.tblFclr {	
+	background:  rgba(50,50,50,0.3);
+	color: #0073EA;		/*  #C76114  */
+	font-size: 16pt;
+	text-shadow: #212121 0.1em 0.1em 0.25em;
+	padding:3px;
+	}
+	
+	.tblbrdr{
+	border-right: 1px solid rgba(20,20,20,0.2);
+	border-bottom: 1px solid rgba(20,20,20,0.2);
+	padding: 5px;
+	}
+
+	#delTable td{
+		padding: 1em;
+	}	
+	
+.database{
+visibility: hidden;
+}
+
+#tacWeather{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 400px;
+	height: 120px;
+	z-index: 98;
+	cursor: pointer;
+	display: none;
+}	
+
+#Container{
+	display: inline-block;
+	background: rgba(200,200,200,0.15);
+	color: #f5fffa;
+	border: none;
+	vertical-align: top;
+	border-radius: 15px;
+	padding: 0.05em;
+}
+	
+	#Weather{
+		display: block;
+		font-family: arial,verdana, sans-serif;
+		font-size: 11pt;
+		background: rgba(250, 150, 10, 0.6);
+		color: #000000;
+		border-radius: 4px;
+		padding: 0.25em;
+		text-shadow: #444444 0.1em 0.1em 0.25em;
+		text-align: left;
+		vertical-align: bottom;
+		line-height: 1.1;
+	}
+	#wIcon{
+		float: left;
+		padding: 0.5em;
+		border-radius: 8px;
+	}
+			#time{
+				font-family: arial, sans-serif;
+				font-size: 10px;
+				line-height: 1.5;
+				text-align: right;
+				float: right;
+				clear: both;
+				padding: 0.05em;
+				color: #ffffff;
+				vertical-align: top;
+			}
+			#temp, #humid, #realfeel{
+				color: #eeff00;
+				font-weight: bold;
+			}
+
+a:link, a:active {color:#FFFF00;
+	transition: color .5s ease-in;
+		-moz-transition: color .5s ease-in;
+		-o-transition: color .5s ease-in;
+		-webkit-transition: color .5s ease-in;	
+	text-decoration:underline; 
+}
+
+a:visited {color:#FFFFFF;
+	text-decoration:none; 
+}
+
+a:hover, :not #deletelink a:hover {color:#FFFFFF; 
+	text-decoration:none;
+}
+
+	
+#tad a:hover {
+	color: #ffffff;
+	background: #212121;
+	text-decoration: none;
+	text-shadow: #555555 0.1em 0.1em 0.2em;
+}
+
+#chkbx{
+	background: rgba(200,200,200,0.25);
+	padding:0.2em;
+	clear:none;
+	border-radius: 4px;
+}
+	
+.delete{
+	cursor: pointer;
+	}
+	
+img#delCross{
+	height: 16px;
+	width: 16px;
+	border: none;
+}	
+	
+#slide, .cb-slideshow{
+list-style: none;
+list-style-type: none;
+}
+
+.ui-dialog-titlebar{
+font-face: Oswald, Impact, sans-serif;
+}
+
+#form1{
+background: rgba(200,200,200,0.6);
+color: #444444;
+padding: 0.75em;
+margin: 0px;
+border: 0px;
+line-height: 1.5;
+border-radius: 4px;
+}
+	#form1 label{
+	color: #212121;
+	font-weight: bold;
+	}
+	
+	#register {
+		line-height: 1.1;
+		position: relative;
+		top: -22px;
+		color: #888888;
+		float: right;
+		text-align: right;
+	}
+	
+#help1, #help2{
+	display: inline-block;
+	height: 25px;
+	width: 100px;
+	background: #000000;
+	color: #FFFFFF;
+	z-index: 99999;
+}
+	
+#epple,
+#help1, #help2, #username, #bubble_background, #beaker, .bubble, .glow,
+#beaker2, .bubble2, .glow2,
+#beaker3, .bubble3, .glow3,
+#beaker4, .bubble4, .glow4,
+#beaker5, .bubble5, .glow5,
+#beaker6, .bubble6, .glow6,
+#beaker7, .bubble7, .glow7,
+#beaker8, .bubble8, .glow8,
+#beaker9, .bubble9, .glow9,
+#beaker10, .bubble10, .glow10, #slide, 
+.cb-slideshow{
+visibility: hidden;
+}
+
+.themes{
+	position: relative;
+	top: 0.5em;
+}	
+
+#dialog-form{
+font-size: 0.95em;
+line-height: 1.2;
+padding: 5px;
+}
+
+#ISI *{
+height:0px;
+width: 0px;
+}
+
+#Whois{
+display: inline-block;
+position: fixed;
+bottom: 0px;
+right: 0px;
+font-family: Source Sans Pro, Arial, sans-serif;
+font-size: 0.75em;
+background-color: rgba(10,25,13,0.5);
+color: #f1f1f1;
+padding: 0.75em;
+vertical-align: bottom;
+text-shadow:#212121 0.15em 0.15em 0.25em;
+border-top-left-radius: 15px;
+						transition: background-color .5s ease-in;
+						-moz-transition: background-color .5s ease-in;
+						-o-transition: background-color .5s ease-in;
+						-webkit-transition: background-color .5s ease-in;	
+}
+	#Whois:hover{
+		background-color: rgba(33,33,33, 0.3);
+		color: #444444;
+		}
+		
+#spaceme{
+	position: fixed;
+	top: 0px;
+	left: 30%;
+	clear: none;
+	margin: 0.25em;
+	padding: 2px;
+	vertical-align: top;
+}
+
+#search{
+	float: left;
+	clear: none;
+	margin: 1px;
+	padding: 0.3em;
+	border-radius: 4px;
+	vertical-align: top;
+	width: 150px;
+}
+
+.ui-autocomplete {
+	background: rgba(255,255,255, 1);
+	background-color: #ffffff;
+	color: #000000;
+	z-index: 9999999 !important;
+}
+
+#success, #resuccess {
+background: transparent;
+color: #ffffff;
+padding: 5px;
+vertical-align: top;
+text-align: center;
+}
+
+.themes{
+display: inline;
+list-style: none;
+vertical-align: top;
+text-align: center;
+clear: none;
+padding: 0px;
+margin: 0px;
+}
+

@@ -1,0 +1,39 @@
+* {
+	font-family:tahoma;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:32px;
+	color:#8BE487;
+}
+
+h3 {
+	font-size:22px;
+	color:#C8E487;
+}
+
+p {
+	font-family:arial;
+	font-size:12px;
+}
+
+h4 {
+	text-indent:-1000px;
+	width:400px;
+	height:120px;
+	border:1px solid #8BE487;
+	background:url('../images/green.jpg') no-repeat;
+	display:block;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#text_body {
+	width:380px;
+	line-height:24px;
+	border:1px solid #8BE487;
+	background:#EAF1DA;
+	padding:10px;
+	font-family:tahoma;
+}

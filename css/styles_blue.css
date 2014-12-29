@@ -1,0 +1,36 @@
+* {
+	font-family:Lucinda Grand;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:48px;
+	color:#23B2D2;
+}
+
+h3 {
+	font-size:18px;
+	color:#45D7DD;
+}
+
+p {
+	font-size:14px;
+}
+
+h4 {
+	text-indent:-1000px;
+	width:400px;
+	height:120px;
+	background:url('../images/blue.jpg') no-repeat;
+	display:block;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#text_body {
+	width:380px;
+	line-height:24px;
+	border:1px solid #23B2D2;
+	background:#E1F5F9;
+	padding:10px;
+}
