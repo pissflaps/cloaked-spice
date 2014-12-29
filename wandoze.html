@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+<link rel="icon" href="http://tac-alert01/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="Foundation/js/vendor/modernizr.js"></script>
+  <!-- // LOAD MODERNIZR FIRST for legacy browser interaction -->
+    <title>TACALERT OS</title>
+  <!-- // Style sheets loaded in succession for structure elements and button layout configuration --> 
+<style>
+body {
+  background: #008080;
+}
+
+.window { 
+  max-width: 500px;
+  font-family: 'Arial',sans-serif;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+
+.window > .inner {
+  border: 1px solid;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+}
+
+.window .header {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.window.description .header {
+  background: #000080;
+}
+
+.window .header > .icon {
+  background: url('win98_notepad_icon.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dppx) { 
+  .window .header > .icon {
+    background-image: url('win98_notepad_icon.png');
+    background-size: 16px 16px;
+  }
+}
+
+.window.description .header > .icon {
+  background: url('win98_windows_icon.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+  margin-left: 1px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dppx) { 
+  .window.description .header > .icon {
+    background-image: url('win98_windows_icon.png');
+    background-size: 16px 16px;
+  }
+}
+
+.window .header > .buttons {
+  margin: 1px 0;
+  background: url('win98_window_controls.png') no-repeat;
+  width: 50px;
+  height: 14px;
+  float: right;
+}
+
+.window.description .header > .buttons {
+  background-position: -35px 0;
+  width: 15px;
+  height: 14px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dppx) { 
+  .window .header > .buttons {
+    background-image:   url('win98_window_controls.png');
+    background-size: 50px 14px;
+  }
+}
+
+.window .actions {
+  margin: 5px 9px;
+  line-height: 1;
+  color: #000;
+  font-size: 11px;
+}
+
+.window .content {
+  margin: 0 2px 2px 2px;
+  border: 1px solid;
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  font-size: 13px;
+}
+
+.window .content > .inner {
+  background: #fff;
+  border: 1px solid;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-bottom-color: #dfdfdf;
+  border-right-color: #dfdfdf;
+  padding: 7px 10px;
+}
+
+.window.description .content,
+.window.description .content > .inner {
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+
+p {
+  margin: 0;
+}
+
+.header:hover{
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="TITLEBAR window">
+  <div class="inner">
+    <div class="header">
+      <div class="icon"></div>
+      Ticket # 411845
+      <div class="buttons"></div>
+    </div>
+    <div class="actions">
+      Posted at 11:15 33, for customer SECURIAN FINANCIAL GROUP
+    </div>
+    <div class="content">
+      <div class="inner">
+	  <p><b>NOTES:</b>
+        Help with report temp let</p>
+        <p><b>Contact Preference:</b>  Phone</p>
+		
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div  class="TITLEBAR window description">
+  <div class="inner">
+    <div class="header">
+      <div class="icon"></div>
+      <b>LATEST ACTIVITY</b>: 12:17:29
+      <div class="buttons"></div>
+    </div>
+    <div class="content">
+      <div class="inner">
+        <p>Ticket #411845 has been added to the Open Queue for SECURIAN FINANCIAL GROUP</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="jQuery/jquery-2.1.1.min.js"></script>    
+  <!-- // Per the FOUNDATION docs, load all external libraries near the end of BODY in the DOM -->
+<script type="text/javascript" src="Foundation/js/foundation.min.js"></script>
+  <!-- // Foundation.min contains all modules in the event of expansion being needed into other library functions -->
+<script type="text/javascript" src="Foundation/Tables/responsive-tables.js"></script>
+  <!-- // Responsive Tables Plug-in provided by Foundation Framework // -->
+  <!-- // jQuery and Foundation frameworks apply before DOM load -->
+<script type="text/javascript" src="jQuery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+  <!-- // Load Foundation vendor-specific library additions -->
+<script type="text/javascript" src="js/jQuery_Plugins.js"></script>
+<!-- // Compressed version of all related vendor plug-ins used in jQuery -->
+<script src="js/TACALERT.js" type="text/javascript" async></script>
+<!-- // TACALERT will now contain a majority of the site's functions. Initialization of functions and elements is done below.
+    //  *** MODIFY AT YOUR OWN RISK *** // -->
+<script>
+$(document).ready(function(){
+$('.TITLEBAR').draggable();
+});
+</script>
+</body>
+</html>

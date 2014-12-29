@@ -1,0 +1,115 @@
+<UL id="quotes">
+<li>"If you give someone a program, you will frustrate them for a day; if you teach them how to program, you will frustrate them for a lifetime."</li>
+<li>"Never be afraid to try something new. Remember, amateurs built the ark. Professionals built the Titanic."</li>
+<li>"To go forward, you must backup."</li>
+<li>"Failure is not an option, but it comes embedded in Windows."</li>
+<li>"Home computers are being called upon to perform many new functions, including the consumption of homework formerly eaten by the dog.  ~Doug Larson"</li>
+<li>"Never let a computer know you're in a hurry.  ~Author Unknown"</li>
+<li>"To err is human, but to really foul things up requires a computer.  ~Farmer's Almanac, 1978"</li>
+<li>"Treat your password like your toothbrush.  Don't let anybody else use it, and get a new one every six months.  ~Clifford Stoll"</li>
+<li>"Computing is not about computers any more.  It is about living.  ~Nicholas Negroponte"</li>
+<li>"After growing wildly for years, the field of computing appears to be reaching its infancy.  ~John Pierce"</li>
+<li>"Hardware: where the people in your company's software section will tell you the problem is.  Software:  where the people in your company's hardware section will tell you the problem is.  ~Dave Barry, Claw Your Way to the Top"</li>
+<li>"Computers have lots of memory but no imagination.  ~Author Unknown"</li>
+<li>"As network administrator I can take down the network with one keystroke.  It's just like being a doctor but without getting gooky stuff on my paws.  ~Scott Adams (Dogbert)"</li>
+<li>"If you have any trouble sounding condescending, find a Unix user to show you how it's done.  ~Scott Adams"</li>
+<li>"Database:  the information you lose when your memory crashes.  ~Dave Barry, Claw Your Way to the Top"</li>
+<li>"Back up my hard drive?  How do I put it in reverse?  ~Author Unknown"</li>
+<li>"Computers make it easier to do a lot of things, but most of the things they make it easier to do don't need to be done.  ~Andy Rooney"</li>
+<li>"Don't anthropomorphize computers - they hate it.  ~Author Unknown"</li>
+<li>"Hardware:  the parts of a computer that can be kicked.  ~Jeff Pesis"</li>
+<li>"I haven't lost my mind; I have a tape back-up somewhere.  ~Author Unknown"</li>
+<li>"I just wish my mouth had a backspace key.  ~Author Unknown"</li>
+<li>"Spreadsheet:  a kind of program that lets you sit at your desk and ask all kinds of neat "what if?" questions and generate thousands of numbers instead of actually working.  ~Dave Barry, Claw Your Way to the Top"</li>
+<li>"If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization.  ~One of Murphy's Laws of Technology"</li>
+<li>"A picture is worth a thousand words but it takes 3,000 times the disk space.  ~Author Unknown"</li>
+<li>"If it draws blood, it's hardware.  ~Author Unknown"</li>
+<li>"It's not computer literacy that we should be working on, but sort of human-literacy.  Computers have to become human-literate.  ~Nicholas P. Negroponte"</li>
+<li>"Rebooting is a wonder drug - it fixes almost everything.  ~Garrett Hazel, Help Desk Blues, 2002"</li>
+<li>"Man is still the most extraordinary computer of all.  ~John F. Kennedy"</li>
+<li>"RAM disk is not an installation procedure.  ~Author Unknown"</li>
+<li>"The attention span of a computer is only as long as its power cord.  ~Author Unknown"</li>
+<li>"The question of whether computers can think is just like the question of whether submarines can swim.  ~Edsger W. Dijkstra"</li>
+<li>"There are 10 types of people in this world:  those who understand binary and those who don't.  ~Author Unknown"</li>
+<li>"Information technology and business are becoming inextricably interwoven.  I don't think anybody can talk meaningfully about one without the talking about the other.  ~Bill Gates"</li>
+<li>"There is only one satisfying way to boot a computer.  ~J.H. Goldfuss"</li>
+<li>"Those parts of the system that you can hit with a hammer (not advised) are called hardware; those program instructions that you can only curse at are called software.  ~Author Unknown"</li>
+<li>"I regularly read Internet user groups filled with messages from people trying to solve software incompatibility problems that, in terms of complexity, make the U.S. Tax Code look like Dr. Seuss.  ~Dave Barry"</li>
+<li>"Apathy Error:  Don't bother striking any key.  ~Author Unknown"</li>
+<li>"At least my pencil never crashes!  ~Author Unknown"</li>
+<li>"I wish life had an Undo function.  ~Author Unknown"</li>
+<li>"In a few minutes a computer can make a mistake so great that it would have taken many men many months to equal it.  ~Author Unknown"</li>
+<li>"Mac users swear by their computers.  PC users swear at their computers.  ~Author Unknown"</li>
+<li>"Some people can hack it, others can't.  ~Author Unknown"</li>
+<li>"Unix is simple.  It just takes a genius to understand its simplicity.  ~Dennis Ritchie"</li>
+<li>"What boots up must come down.  ~Author Unknown"</li>
+<li>"I try to avoid using Microsoft. That's why I use MS-DOS.  ~Author Unknown"</li>
+<li>"Technology makes it possible for people to gain control over everything, except over technology.  ~John Tudor"</li>
+<li>"Technology is like a fish. The longer it stays on the shelf, the less desirable it becomes.  ~Andrew Heller"</li>
+<li>"The most overlooked advantage of owning a computer is that if they foul up there's no law against whacking them around a bit.  ~Eric Porterfield"</li>
+<li>"The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency.  ~Bill Gates"</li>
+<li>"The number you have dialed is imaginary. Please divide by 0 and try again."</li>
+<li>"The 50-50-90 rule: Anytime you have a 50-50 chance of getting something right, there's a 90% probability you'll get it wrong."</li>
+<li>"82% of all statistics are made up on the spot."</li>
+<li>"7/5th of all people do not understand fractions."</li>
+<li>"A bus stops at a bus station; a train stops at a train station. On my desk I have a workstation."</li>
+<li>"They say we use only 10% of our brain. Just think if we used the other 60%!"</li>
+<li>"When a Japanese manufacturer was asked by his North American counterpart, 'What is the best language in which to do business?' the man responded: 'My customer’s language'."</li>
+<li>"I rang Dutch Telecom, I said 'I want to report a nuisance caller', he said 'Not you again'."</li>
+<li>"A clean desk is a sign of a cluttered desk drawer."</li>
+<li>"Every morning is the dawn of a new error."</li>
+<li>"Never use a preposition to end a sentence with."</li>
+<li>"The first 90% of a project takes 90% of the time, and the final 10% takes the other 90% of the time."</li>
+<li>"I know that you believe you understand what you think I said, but I'm not sure you realize that what you heard is not what I meant.  ~Robert McCloskey"</li>
+<li>"Experience is the name every one gives to their mistakes.  ~Oscar Wilde"</li>
+<li>"640K ought to be enough for anybody.  ~Bill Gates, 1981"</li>
+<li>"A good programmer is someone who looks both ways before crossing a one-way street. - Doug Linder"</li>
+<li>"Any sufficiently advanced bug is indistinguishable from a feature.  ~Rich Kulawiec"</li>
+<li>"A program is a device used to convert data into error messages."</li>
+<li>"Behind every good computer -- is a jumble of wires 'n stuff."</li>
+<li>"BUFFERS=20 FILES=15 2nd down, 4th quarter, 5 yards to go!"</li>
+<li>"Buy a Pentium/90 so you can reboot faster."</li>
+<li>"C.O.B.O.L - Completely Obsolete Boring Old Language."</li>
+<li>"Sleep: A completely inadequate substitute for caffeine."</li>
+<li>"Definition of an Upgrade: Take old bugs out, put new ones in."</li>
+<li>"Did anyone see my lost carrier?"</li>
+<li>"Error: Keyboard not attached. Press F1 to continue."</li>
+<li>"ERROR: Computer possessed; Load EXOR.SYS ? [Y/N]"</li>
+<li>"Error reading FAT record: Try the SKINNY one? (Y/N)"</li>
+<li>"Hey! It compiles! Ship it!"</li>
+<li>"Hot Tip #3: Be sure to turn it on before calling technical support."</li>
+<li>"It said 'Insert disk #3', but only two will fit."</li>
+<li>"Linux renders ships, NT is rendering ships useless."</li>
+<li>"Linux: Because rebooting is for adding new hardware."</li>
+<li>"Murphy's Law on Computing: 1. When computing, whatever happens, behave as though you meant it to happen."</li>
+<li>"Murphy's Law on Computing: 2. When you get to the point where you really understand your computer, it's probably obsolete."</li>
+<li>"Murphy's Law on Computing: 3. The first place to look for information is in the section of the manual where you least expect to find it."</li>
+<li>"Murphy's Law on Computing: 4. When the going gets tough, upgrade."</li>
+<li>"Murphy's Law on Computing: 5. For every action, there is an equal and opposite malfunction."</li>
+<li>"Murphy's Law on Computing: 6. To err is human... to blame your computer for your mistakes is even more human, it is downright natural."</li>
+<li>"Murphy's Law on Computing: 7. He who laughs last probably made a back-up."</li>
+<li>"Murphy's Law on Computing: 8. If at first you do not succeed, blame your computer."</li>
+<li>"Murphy's Law on Computing: 9. A complex system that does not work is invariably found to have evolved from a simpler system that worked just fine."</li>
+<li>"Murphy's Law on Computing: 10. The number one cause of computer problems is computer solutions."</li>
+<li>"Murphy's Law on Computing: 11. A computer program will always do what you tell it to do, but rarely what you want to do."</li>
+<li>"My software never has bugs. It just develops random features."</li>
+<li>"Never execute code written on a Friday or a Monday."</li>
+<li>"Programmer /n./ A red-eyed, mumbling mammal capable of conversing with inanimate objects."</li>
+<li>"Multitasking /adj./ 3 PCs and a chair with wheels."</li>
+<li>"Tech Support Tip #2: When the support agent says "Click...", wait for the rest of the sentence."</li>
+<li>"The problem with doing something right the first time is that nobody appreciates how difficult it was."</li>
+<li>"There are two ways to write error-free programs. Only the third one works."</li>
+<li>"The three most dangerous things are a programmer with a soldering iron, a manager who codes, and a user who gets ideas."</li>
+<li>"If we don’t take care of our customers, someone else will."</li>
+<li>"Our life is frittered away by detail. Simplify, simplify!  ~Henry David Thoreau"</li>
+<li>"If you make customers unhappy in the physical world, they might each tell 6 friends. If you make customers unhappy on the Internet, they can each tell 6,000 friends.  ~Jeff Bezos"</li>
+<li>"Customers don’t expect you to be perfect. They do expect you to fix things when they go wrong.  ~Donald Porter"</li>
+<li>"Quality in a service or product is not what you put into it. It is what the client or customer gets out of it.  ~Peter Drucker"</li>
+<li>"The quality of our work depends on the quality of our people."</li>
+<li>"To my customer: I may not have the answer, but I’ll find it. I may not have the time, but I’ll make it."</li>
+<li>"Customer service is not a department, it's an attitude!"</li>
+<li>"Make your product easier to buy than your competition, or you will find your customers buying from them, not you.  ~Mark Cuban"</li>
+<li>"Your most unhappy customers are your greatest source of learning.  ~Bill Gates"</li>
+<li>"This may seem simple, but you need to give customers what they want, not what you think they want. And, if you do this, people will keep coming back.  ~John Ilhan"</li>
+<li>"Spend a lot of time talking to customers face to face. You'd be amazed how many companies don't listen to their customers.  ~Ross Perot"</li>
+</UL>

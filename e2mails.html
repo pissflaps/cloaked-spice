@@ -1,0 +1,50 @@
+<script>
+$(document).ready(function(){
+    $('#check:button').toggle(function(){
+        $('input:checkbox.list').attr('checked','checked');
+        $(this).val('uncheck all')
+    },function(){
+        $('input:checkbox.list').removeAttr('checked');
+        $(this).val('check all');        
+    });
+});
+
+</script>
+
+<div id="eTable" class='metrouicss'>
+
+<table CELLSPACING=2 NOWRAP>
+<TBODY> <TR> <TD>
+<FORM METHOD="POST" id="forma" NAME="Email" ACTION="/cgi-bin/EmailAddresses.cgi" >
+
+<DIV class="emails">
+    <INPUT TYPE="checkbox" class="list" NAME="Allen" VALUE="abaum@isi-info.com"> Allen Baum<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Andrew" VALUE="apark@isi-info.com"> Andrew Park<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Dan" VALUE="dschmitt@isi-info.com"> Dan Schmitt<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Dino" VALUE="dmanzella@isi-info.com"> Dino Manzella<BR>
+	<INPUT TYPE="hidden" class="list" NAME="Jim" VALUE="jmulhern@isi-info.com">
+    <INPUT TYPE="checkbox" class="list" NAME="JimS" VALUE="jscholtens@isi-info.com"> Jim Scholtens<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Jon" VALUE="jdehlin@isi-info.com"> Jon Dehlin<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Matt" VALUE="mrsikes@isi-info.com"> Matt Sikes<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Mike" VALUE="mstratton@isi-info.com"> Mike Stratton<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Mike" VALUE="nali@isi-info.com"> Nasir Ali<BR>	
+    <INPUT TYPE="checkbox" class="list" NAME="Peter" VALUE="pmathewsian@isi-info.com"> Peter Mathewsian<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Ray" VALUE="rburquist@isi-info.com"> Ray Burquist<BR>
+	<INPUT TYPE="checkbox" class="list" NAME="Shannon" VALUE="ssmith@isi-info.com"> Shannon Smith<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Susan" VALUE="stylkowski@isi-info.com"> Susan Tylkowski<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Tom" VALUE="tgarza@isi-info.com"> Tom Garza<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Tom" VALUE="tiverson@isi-info.com"> Terry Iverson<BR>
+    <INPUT TYPE="checkbox" class="list" NAME="Victor" VALUE="vvrba@isi-info.com"> Victor Vrba<BR>
+</DIV>
+<br/>
+<INPUT id='check' type='button' class='metro danger btn' value='check all' />
+<BR>
+<Button TYPE="Submit" id="submit" NAME="Submit" class="metro warning btn icon left"><img src="/icons/user_comment.png" alt=""/> Let's make it happen!</button>
+</FORM>
+
+<font face="Century Gothic" size=3 id="aTechs"><strong>Today's <a class="external" href="email.txt" Target="_New">available techs!</a></strong></font>
+
+	</TD>
+		</TR>
+		  </TABLE>
+		  </div>

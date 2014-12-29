@@ -1,0 +1,35 @@
+<?php
+$db_host = 'localhost';
+$db_user = 'root';
+$db_pwd = '';
+$database = 'dbase';
+$table = 'tickets';
+$ticket = 'Ticket';
+global $content;
+
+	$con = mysql_connect($db_host, $db_user, $db_pwd);
+if(!mysql_connect($db_host, $db_user, $db_pwd))   
+		die ("Can't connect to database");
+			if(!mysql_select_db($database))   
+				die ("Can't select database");
+
+	$content = implode(",", $_POST['content']);
+		$pieces = explode(",", $content);
+			$T = $pieces[0];
+			$P = $pieces[1];
+			$S = $pieces[2];
+			$C = $pieces[3];
+			$C4 = $pieces[4];
+
+
+		
+	//	$sql = "UPDATE content SET T = '$content'	WHERE element_id = '1' ";
+		$result = "UPDATE tickets SET Ticket='$T', Priority='$P', Site='$S', Comments='$C' WHERE Ticket='$C4'";
+			
+			if (mysql_query($result, $con)){
+				echo '1';
+/* 			*** RUN THIS IF THE TICKET SHOULD BE BROUGHT BACK INTO THE ALERT SYSTEM ***				
+				mysql_query("UPDATE tickets SET Deleted='R' WHERE Ticket='$C4'",$con);
+*/
+			}
+?>

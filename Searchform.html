@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>Search Test with Angular JS</title>
+    <link rel="stylesheet" href="css/Bootstrap/Bootstrap1.css" type="text/css" />
+    <script src="js/Angular/Angular.js"></script>
+    <script src="js/Angular/search.js"></script>
+</head>
+ 
+<body>
+ 
+    <div ng-controller="SearchCtrl">
+    <form class="well form-search">
+        <label for="searchForm">Search:</label>
+        <input type="text" ng-model="keywords" class="input-medium search-query" placeholder="Keywords...">
+        <button type="submit" class="btn" ng-click="search()">Search</button>
+        <p class="help-block">Try for example: "php" or "angularjs" or "asdfg"</p>      
+    </form>
+  <pre ng-model="result">
+  {{ result }}
+  </pre>
+   </div>
+ </body>
+ 
+</html>

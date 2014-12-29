@@ -1,0 +1,3 @@
+$sql = "insert into tickets\n"
+    . "(Ticket, Date, Stime, Etime, Site_ID, Priority, Comments) \n"
+    . " values ($_GET[\'ticket\'], DATE_FORMAT(CURDATE(),\'%c/%e/%Y\'), CURTIME(),ADDTIME(CURTIME(),\'02:00:00\'), $_GET[\'siteName\'], $_GET[\'priority\'], $_GET[\'comments\'])";

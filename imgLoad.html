@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">  
+<html>  
+  <head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+    <title>jLoader Demo Page</title>  
+		<script src="jQuery/jquery-1.8.0.js"></script>
+		<script src="jQuery.jLoader.js"></script>
+		<link rel="stylesheet" href="css/Base.css" type="text/css" >
+  </head>  
+  <body>  
+    <div id="simpleImageContainer"></div>  
+    <div id="complexImageContainer"></div>  
+
+    <script type="text/javascript">  
+
+    $("#simpleImageContainer").jLoader();  
+    $("#complexImageContainer").jLoader({  
+        simpleFileNames: false,  
+        imgContainer:"complexImageContainer"  
+      }, "bground"
+	  );  
+	  
+    </script>  
+  </body>  
+</html>  

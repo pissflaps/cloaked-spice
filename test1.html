@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="js/Angular.js"></script>
+<script src="js/Angular/Test1.js"></script>
+<link href="css/python.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+  <div ng-controller="GreetingCtrl">
+    <h1>{{ greeting }}</h1>
+  </div>
+<br>
+  <div ng-controller="DoubleCtrl">
+    Two times <input ng-model="num"> equals {{double(num) }}
+  </div>
+</body>
+</html>
+

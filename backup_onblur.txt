@@ -1,0 +1,11 @@
+
+
+VALUE="TICKET NUMBER" 
+onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;" 
+
+
+VALUE="SITE NAME"
+onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;"
+
+VALUE='Wikibase Search' 
+onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;"

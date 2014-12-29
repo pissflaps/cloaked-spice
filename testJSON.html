@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<script src="jQuery/jquery-2.0.0.js"></script>
+<script src="js/JSONtest.js"></script>
+<link type ="text/css" rel="stylesheet" href="css/python.css">
+<style>
+#tickets{
+color: #98dbcc;
+background-color: rgba(200,200,200,.5);
+padding: 10px;
+border:1px solid #bbbbbb;
+border-radius: 4px;
+}
+</style>
+</head>
+<body>
+<div id="topHalf">
+<h1>This is a web page.</h1>
+</div>
+
+<center> <HR width="75%">
+	<div id="tickets"></div>
+ <HR width="50%"> <button id="loadJSON">Load Tickets</button></center>
+
+<div id="bottomHalf">
+<h4>Bottom Half</h4>
+</div>
+
+<br>
+<footer id="footer">
+Footer section.
+</footer>
+
+</body>
+<script>
+function getAllTickets() {
+  $('#tickets').fadeOut(800, function() {
+    get('t.json').then(function(response) {
+    var obj = JSON.parse(response);
+    $('#tickets').html('<p>'+ response +'</p>');
+      console.log("Success! \n");
+    }, function(error) {
+      console.error("Failed!", error);
+  });
+  }).fadeIn(800);
+
+}
+
+$(document).ready(function() {
+    $('#loadJSON').on('click', function() {
+        new getAllTickets();
+		setInterval('getAllTickets()', 15000);
+    });
+});
+</script>
+</html>

@@ -1,0 +1,695 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+	display:inline-block;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/************   END CSS RESET   ************/
+@import url(http://fonts.googleapis.com/css?family=Istok+Web|Droid+Sans|Lato);
+
+
+.corners {
+-moz-border-radius: 2px;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+}
+
+.round {
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+
+body {
+	font-family: 'Droid Sans', 'Istok Web' sans-serif;
+	border: none;
+	margin: 10px auto;
+	}
+	
+#title {
+background: #7db442 ;
+height:100px;
+}
+
+
+#container {
+clear: both;
+float:left;
+background: transparent;
+z-index: 0;
+}
+
+#poster {
+top:2em;
+background: transparent;
+ /*   -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#CCCCCC), color-stop(.4,#bdbdbd)); */
+padding:5px;
+}
+
+#email {
+float:right;
+clear:both;
+padding:2px;
+background:transparent;
+border: none;
+}
+
+#form{
+padding:1.5em;
+clear:left;
+float:left;
+background:transparent;
+}
+#content {
+clear:both;
+float:left;
+z-index:0;
+overflow: auto;
+
+min-height:350px;
+}
+	
+#submissionForm {
+clear:right;
+left:0px;
+}
+
+#themes, #old {
+
+clear:both;
+float:left;
+}
+	#themes a, #tab2 a, #old a{
+	color:#0000FF;
+	text-decoration:underline;
+
+	}
+		#themes a:hover, #old a:hover, #tab2 a:hover {
+		color:#f5fffa;
+		text-decoration:none;
+		background: #0000FF;
+		}
+
+
+ 
+ .db {
+ min-height: 350px;
+ background:transparent;
+ overflow: auto;
+  }
+
+ td, tr, input {
+ padding:2px;
+ }
+ 
+ 
+   		* html a:hover { background: transparent; }
+
+.emails { 
+	padding:5px;
+	word-spacing:2px;
+	letter-spacing:1px;
+	background: transparent;
+    border: 0px;
+	display: marker; 
+	font: 14px "Segoe UI";
+	color: #000000;
+} 
+
+img {
+	border:none;
+	}
+
+a:link {color:#F5FFFA;
+	text-decoration:none; }
+
+a:visited {color:#F5FFFA;
+	text-decoration:none; }
+
+a:hover {color:#0000FF; 
+	text-decoration:none;}
+
+a:active {color:#FFFFFF; 
+	text-decoration:none; } 
+
+	
+	@font-face {
+	font-family: Script MT Bold;
+	src: url('SCRIPTBL.ttf');
+	}
+
+	h5 {
+	font-family:Tahoma, Arial, Verdana, sans-serif;
+	font: 21px/24px;
+	}
+
+
+.trr {
+background:transparent;
+}
+
+.links {
+text-align: right;
+float:left;
+background:#000000;
+padding:5px;
+border: none;
+	/* for IE */
+filter:alpha(opacity=25);
+	/* CSS3 standard */
+opacity:0.25;
+}
+
+.quote {
+text-align: left;
+clear:both;
+	/* for IE */
+filter:alpha(opacity=90);
+	/* CSS3 standard */
+opacity:0.90;
+z-index:0;
+border: 0px;
+display:inline-block;
+}
+
+.fade {
+text-align: left;
+clear:both;
+	/* for IE */
+filter:alpha(opacity=75);
+	/* CSS3 standard */
+opacity:0.75;
+z-index:0;
+border: none;
+border-bottom:0px;
+}
+
+.fade2{
+position:absolute;
+top:0;
+right:0;
+padding:2px;
+background: #000000;
+color: #ffffff;
+cursor:pointer;
+filter:alpha(opacity=60);
+	/* CSS3 standard */
+opacity:0.6;
+z-index:0;
+}
+
+a.img{
+background: transparent;
+border:0px;
+}
+
+
+ .imgg {
+ padding-top: 2px;
+ padding-left: 3px;
+ display: block;
+ }
+ 
+
+  .clear {
+  background:transparent;
+  }
+
+ 
+ 
+ 
+ 
+ /* ------------------------- BUTTONS ------------------------- */
+ 
+ 
+button {
+    display:inline; 
+    float:clear;
+    margin:0 1px 0 0;
+    background:#1c4e63 ;
+    border:0px dashed #f5fffa;
+    position: relative; 
+    font-family:"Lato" sans-serif;
+    font-size:80%;
+    line-height:90%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#f5fffa;
+    cursor:pointer;
+    padding:2px 2px 2px 2px; /* Links */
+}
+
+
+/* BUTTONS */
+
+.buttons a, .buttons button{
+    display:block; 
+    float:left;
+    margin:0 1px 0 0;
+    background: #1c4e63;
+    border:none;
+    position: relative; 
+    font-family:"Lato", Tahoma, Arial, Verdana, sans-serif;
+    font-size:40%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#f5fffa;
+    cursor:progress;
+    padding:1px 2px 2px 1px; /* Links */
+}
+
+.buttons button{
+    width:auto;
+    border:none;
+    overflow:visible;
+    padding:1px 2px 2px 1px; /* IE6 */
+}
+.buttons button[type]{
+    padding:1px 2px 2px 1px; /* Firefox */
+    line-height:10px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:1px 2px 2px 1px; /* IE7 */
+}
+.buttons button img, .buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:0px;
+    width:16px;
+    height:16px;
+}
+
+/* STANDARD */
+
+button:hover, .buttons a:hover{
+    background:#32CD32;
+    border:0px dashed #f5fffa;
+    color:#f5fffa;
+}
+.buttons a:active{
+background:#57ABFF;
+    border:0px dashed #f5fffa;
+    color:#f5fffa;
+}
+/* B & W */
+.buttons a.bw, button.bw{
+    color:#ffffff;
+    background: #000000;
+        border: 0px dashed #f5fffa;
+}
+.buttons a.bw:hover, button.bw:hover{
+    background:#ffffff;
+    border:0px dashed #f5fffa;
+    color:#000000;
+}
+.buttons a.bw:active{
+    background:#000000;
+    border:0px dashed #808080;
+    color:#ffffff;
+}
+
+
+/* POSITIVE */
+
+button.positive, .buttons a.positive{
+    color:#f5fffa;
+    background: #129C00;
+    border: 0px dashed #f5fffa;
+}
+.buttons a.positive:hover, button.positive:hover{
+    background:#32CD32;
+    border:0px dashed #000000;
+    color:#000000;
+}
+.buttons a.positive:active{
+    background:#57ABFF;;
+    border:0px dashed #D8DBB8;
+    color:#000000;
+}
+
+/* NEGATIVE */
+
+.buttons a.negative, button.negative{
+    color:#FFFFFF;
+    background: #FF0000;
+       border: 0px dashed #f5fffa;
+}
+.buttons a.negative:hover, button.negative:hover{
+    background:#FFCCCC;
+    border:0px dashed #f5fffa;
+    color:#000000;
+}
+.buttons a.negative:active{
+    background:#FF0000;
+    border:0px dashed #808080;
+    color:#FFFFFF;
+}
+/* NEGATIVE2 */
+
+.buttons a.negative2, button.negative2{
+    color:#000000;
+    background: #FFF007;
+        border: 0px dashed #f5fffa;
+}
+.buttons a.negative2:hover, button.negative2:hover{
+    background: #FFFFCC;
+    border:0px solid #000000;
+    color:#000000;
+}
+.buttons a.negative2:active{
+    background:#FFF007;
+    border:0px dashed #808080;
+    color:#D8DBB8;
+}
+/* NEGATIVE3 */
+
+.buttons a.negative3, button.negative3{
+    color:#000000;
+    background: #DEF708;
+    border: 0px dashed #f5fffa;
+}
+.buttons a.negative3:hover, button.negative3:hover{
+    background:#FFFFCC;
+    border:0px dashed #f5fffa;
+    color:#000000;
+}
+.buttons a.negative3:active{
+    background:#99CCFF;
+    border:0px dashed #808080;
+    color:#D8DBB8;
+}
+
+	/* NEGATIVE4*/
+.buttons a.negative4, button.negative4{
+    color:#000000;
+    background: #F5BF0C;
+        border: 0px dashed #f5fffa;
+}
+.buttons a.negative4:hover, button.negative4:hover{
+    background:#FAD250;
+    border:0px dashed #f5fffa;
+    color:#000000;
+}
+.buttons a.negative4:active{
+    background:#F5BF0C;
+    border:0px dashed #808080;
+    color:#D8DBB8;
+}
+
+/* NETAGIVE5 */
+.buttons a.negative5, button.negative5{
+    color:#000000;
+    background: #36E813;
+        border: 0px dashed #f5fffa;
+}
+.buttons a.negative5:hover, button.negative5:hover{
+    background:#C5EB52;
+    border:0px dashed #f5fffa;
+    color:#000000;
+}
+.buttons a.negative5:active{
+    background:#36E813;
+    border:0px dashed #808080;
+    color:#D8DBB8;
+}
+
+/* Hotdog Express */
+.buttons a.HDE, button.HDE{
+    color:#FFFFFF;
+    background: #FF0000;
+        border: 0px dashed #f5fffa;
+}
+.buttons a.HDE:hover, button.HDE:hover{
+    background:#FFFF00;
+    border:0px dashed #f5fffa;
+    color:#000000;
+}
+.buttons a.HDE:active{
+    background:#FF0000;
+    border:0px dashed #808080;
+    color:#FFFFFF;
+}
+
+
+#talkbubble {
+   width: 120px;
+   height: 80px; 
+   background: #eeeeee;
+   position: relative;
+   -moz-border-radius:    10px; 
+   -webkit-border-radius: 10px; 
+   border-radius:         10px;
+   border: #000000;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #eeeeee;
+   border-bottom: 13px solid transparent;
+}
+
+ 
+ #triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red; 
+	border-left: 100px solid transparent;
+	
+}	
+
+#delTable {
+font-family: 'Droid Sans', sans-serif;
+background:transparent;
+}
+
+
+ /* table, button, tr, span, a, p, div, textarea, input {
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+*/
+ 
+ 
+ 
+  
+.message
+{
+		-webkit-background-size: 40px 40px;
+		-moz-background-size: 40px 40px;
+		background-size: 40px 40px;			
+		background-image: -webkit-gradient(linear, left top, right bottom,
+								color-stop(.25, rgba(255, 255, 255, .05)), color-stop(.25, transparent),
+								color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .05)),
+								color-stop(.75, rgba(255, 255, 255, .05)), color-stop(.75, transparent),
+								to(transparent));
+		background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+								
+		 -moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+		 -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);		
+		 box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+		 width: 100%;
+		 border: 1px solid;
+		 color: #fff;
+		 padding: 15px;
+		 position: fixed;
+		 _position: absolute;
+		 text-shadow: 0 1px 0 rgba(0,0,0,.5);
+		 -webkit-animation: animate-bg 5s linear infinite;
+		 -moz-animation: animate-bg 5s linear infinite;
+}
+
+.info
+{
+		 background-color: #4ea5cd;
+		 border-color: #3b8eb5;
+}
+
+.error
+{
+		 background-color: #de4343;
+		 border-color: #c43d3d;
+}
+		 
+.warning
+{
+		 background-color: #eaaf51;
+		 border-color: #d99a36;
+}
+
+.success
+{
+		 background-color: #61b832;
+		 border-color: #55a12c;
+}
+
+.message h3
+{
+		 margin: 0 0 5px 0;													 
+}
+
+.message p
+{
+		 margin: 0;													 
+}
+
+@-webkit-keyframes animate-bg
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+
+
+@-moz-keyframes animate-bg 
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+
+
+#trigger-list
+{
+		 text-align: center;
+		 margin: 100px 0;
+		 padding: 0;
+}
+
+#trigger-list li
+{
+		 display: inline-block;
+		 *display: inline;
+		 zoom: 1;
+}
+
+#trigger-list .trigger
+{
+		 display: inline-block;
+		 background: #ddd;
+		 border: 1px solid #777;
+		 padding: 10px 20px;
+		 margin: 0 5px;
+		 font: bold 12px Arial, Helvetica;
+		 text-decoration: none;
+		 color: #333;
+		 -moz-border-radius: 3px;
+		 -webkit-border-radius: 3px;
+		 border-radius: 3px;
+}
+
+#trigger-list .trigger:hover
+{
+		background: #f5f5f5;
+}
+

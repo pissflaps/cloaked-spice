@@ -1,0 +1,13 @@
+TICKET NUMBER :
+
+value="Ticket Number" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
+
+SITE NAME: 
+
+value="Site Name" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;"
+
+COMMENTS:
+
+onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;"
+
+

@@ -1,0 +1,44 @@
+<html> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<head> <title> Checkbox experiment </title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script>  
+function hideCheckedRows() {
+     var checkboxes = document.getElementsByName("item");
+     var checkboxes_to_remove = new Array();
+     var count = 0;
+			for (var i = 0; i < checkboxes.length; i++) {         
+				if (checkboxes[i].checked == true) {
+					checkboxes_to_remove[count++] = checkboxes[i];
+				}     
+			}     
+		for (var i = 0; i < checkboxes_to_remove.length; i++) {
+			cbx = checkboxes_to_remove[i];
+				// parentNode.parentNode.parentNode is the <tr>
+				// parentNode.parentNode is the <td> containing the checkbox
+				cbx.parentNode.parentNode.parentNode.removeChild(
+				cbx.parentNode.parentNode);
+			} 
+		} </script>
+		</head> 
+	<body>  
+				<table>     
+				<tr name="table_row">         
+					<td><input type="checkbox" name="item" value="Check1"></td>
+						<td>Id1</td><td>Alt_Id1</td><td>Title1</td>
+							<td>Type1</td><td>Format1</td>
+				</tr>     
+					<tr name="table_row">         
+						<td><input type="checkbox" name="item" value="Check2"></td>
+							<td>Id2</td><td>Alt_Id2</td><td>Title2</td>
+							<td>Type2</td><td>Format2</td>
+					</tr>     
+						<tr name="table_row">         
+							<td><input type="checkbox" name="item" value="Check3"></td>
+								<td>Id3</td><td>Alt_Id3</td><td>Title3</td>
+									<td>Type3</td><td>Format3</td>
+						</tr>
+				</table>  
+		<input type="button" value="Click to remove checkboxes!"         onclick="hideCheckedRows();"/>
+	</body>
+</html> 

@@ -1,0 +1,32 @@
+<script type="text/javascript">
+$(document).ready(function($) {
+  $.ajax({
+  url : "http://api.wunderground.com/api/679813d8a5bcf543/geolookup/conditions/q/IL/Chicago.json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json['location']['city'];
+  var temp_f = parsed_json['current_observation']['temp_f'];
+  var humidity = parsed_json['current_observation']['relative_humidity'];
+  var Wreport = parsed_json['current_observation']['weather'];
+  var wind = parsed_json['current_observation']['wind_string'];
+  var visibility_mi = parsed_json['current_observation']['visibility_mi'];
+  var time = parsed_json['current_observation']['observation_time'];
+  var imgURL= parsed_json['current_observation']['image']['url'];
+  var FeelsLike = parsed_json['current_observation']['feelslike_string'];
+  var IconURL = parsed_json['current_observation']['icon_url'];
+	$('#Weather')
+	//<br> The Weather is brought to you by <img src='" + imgURL + "' height='25' width='75' /> <br>
+		.append("<img id='wIcon' src='"+ IconURL +"' /> Current temperature in " + location + " is: <b id='temp'>" + temp_f + " deg</b> humidity: <b id='humid'>"+ humidity 
+		+"</b> <br>Outside feels like: <b id='realfeel'>"+ FeelsLike +"</b>. <p>Wind: <em>"+ wind +"</em>. </p> Weather is currently: "+ Wreport +", with a visibility of: "+ visibility_mi 
+		+"mi. <br><span id='time'>"+ time +" </span>");
+
+  }
+  });
+});
+</script>
+
+<div id="Container">
+	<span id="Weather">
+	</span>
+</div>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app>
+ <head>  
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="jQuery/jquery-2.0.0.js"></script>    
+  <script src="js/Angular/Angular.js"></script>
+  <script src="js/Angular/TacJSON.js"></script>
+
+  <script type="text/javascript" src="js/favico2.js"></script>   
+  
+<title> TAC Alert System - JSON test</title>
+
+  <link rel="stylesheet" href="Bootstrap/css/Bootstrap.min.css" type="text/css">
+ <style>
+	body{
+		margin: 10px auto;
+		padding: 10px;
+	}
+	p#JSONdump{ 
+	padding: 10px auto;
+	}
+	#delTable td{
+	display: table-cell;
+	text-align: center;
+	}
+  </style>  
+ </head>
+
+<body >
+<div id="JSON">
+<h2>Ticket Listing in JSON <small><sup>(JavaScript-Oriented Notation)</sup></small> </h2>
+</div>
+
+<br> 
+
+<div id='JSONdump'  ng-controller="TacCtrl" ng-app>
+	<table id="delTable" class="table table-striped table-bordered"> 
+		<thead>
+	<tr id="fields"><td>Ticket</td><td>Date</td><td>Start Time</td><td>E.T.A.</td><td>Priority</td><td>Site</td><td>Comments</td><td>Remove</td></tr>
+		</thead>
+	<tbody>
+        <tr ng-repeat="ticket in response" > 
+	<td id="{{ticket.Ticket}}"><b>{{ticket.Ticket}}</b></td>	
+	<td>{{ticket.Date}}</td>
+	<td>{{ticket.Stime}}</td>
+	<td>{{ticket.ETA}}</td>
+	<td>{{ticket.Priority}}</td>
+	<td>{{ticket.Site}}</td>
+	<td>{{ticket.Comments}}</td>
+	<td id="DelCel"><a href="#" ng-click="removeTicket"><img class="delete" id="del" border="0" src="icon_trash.png" height="25px" width="25px" title="Remove Ticket #{{ticket.Ticket}}" /></a> </td>
+        </tr>
+</table>
+
+<script type="text/javascript">	
+$(document).ready(function() {"use strict";
+var $RowCounts = $("#delTable tr").length;
+  var $COUNT = parseInt( ($RowCounts - 1));
+    var favicon = new Favico({
+     "type" : "circle",
+     "bgColor" : '#FF0000',
+     "textColor" : '#FFFFFF',
+        animation: "popFade"
+    });
+ favicon.badge($COUNT);
+	
+function Notify() {
+$RowCounts = $("#delTable tr").length;
+ $COUNT = parseInt( ($RowCounts - 1));	
+ favicon = new Favico({
+ "type" : "rectangle",
+	      "bgColor" : '#FADC00',
+          "textColor" : '#000000',
+	       animation: "pop"
+ });
+ favicon.badge($COUNT);
+}
+ function apply() {
+    $('table#delTable tr:odd').addClass('tblOclr');
+    $('table#delTable tr:even').addClass('tblEclr');
+    $('table#delTable tr:first').addClass('tblFclr');
+    $('table#delTable td').addClass('tblbrdr');	
+  Notify();
+}
+
+});			
+</script>
+
+<?php include('PDO2JSON.PHP'); ?>
+
+</body>
+</html>

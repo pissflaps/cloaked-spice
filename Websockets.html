@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<html lang="en">
+<head>
+			<title>Tac's WEB Sockets</title>
+		<link rel="stylesheet" href="css/RESET.css">
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script src="jQuery/jquery-1.8.0.js"></script>
+<script src="jquery/jquery-ui-1.8.23.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.default.css">
+	<link rel="shortcut icon" href="img/bookmark.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/tacalert.css" title="default">
+<script type="text/javascript" src="js/jquery.gracefulWebSocket.js"></script>
+	
+<script>
+	var ws = $.gracefulWebSocket("ws://127.0.0.1:8080/");
+	ws.onmessage = function (event) {
+		   var messageFromServer = event.data;   
+		   $("#SrvrMsg").append("<p>"+ messageFromServer +"! </p>").fadeIn('slow');
+		}
+		
+	$(document).ready( function() {
+	
+	$('#SubButton').live("click", function() {
+		var name= $('#name').val();
+		var message= $('#msg').val();
+			$.ajax({
+				url: "websockets.html",
+				dataType: "json",
+				success: function() {
+					ws.send("Hello, "+ name +"! <br> Your message was: <br><pre>"+ message +"<br>");
+				}
+			});	
+		return false;
+	});
+		
+	$("button").button();
+	
+});
+</script>
+</head>
+
+<body>
+
+<div id="FORM">
+<form id="ugh" action="POST" > 
+<INPUT TYPE="text"  NAME="NAME" id="name" tabindex="1" MAXLENGTH=16  placeholder="Name" required> 
+<br>
+<INPUT TYPE="text" NAME="Message" id="msg" MAXLENGTH=45 placeholder="Message" tabindex="2" required>
+<br>
+<Button TYPE="submit" NAME="submit" VALUE="Submit" id="SubButton"><img src="/icons/package_add.png" title="Submit!" /> Submit</button>
+&nbsp;<Button TYPE="reset" id="reset" NAME="Reset" VALUE="Reset"><img src="/icons/page_refresh.png" title="Reset page" /> Reset</button>
+</form>
+
+</div>
+<div id="SrvrMsg">
+</div>
+
+</body>
+</html>

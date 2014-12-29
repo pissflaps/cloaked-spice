@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <title>Node Based Echo</title>
+		<link rel="stylesheet" href="css/RESET.css">
+		<link rel="stylesheet" href="css/Bootstrap/jquery.Base.css">
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script src="jQuery/jquery-1.8.0.js"></script>
+<script src="jquery/jquery-ui-1.8.23.min.js"></script>
+		<link rel="shortcut icon" href="img/bookmark.ico" type="image/x-icon" />
+	    <script type="text/javascript" src="js/jq.websock.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+$(document).ready(function() {
+        // sends a message to the websocket server
+        function sendToServer() {
+
+            ws.send('krakenmsgA', '{ messageTextA: ' + $('#echoText').val() + ' }');
+            ws.send('krakenmsgB', '{ messageTextB: ' + $('#echoText').val() + ' }');
+        }
+
+        // set-up web socket
+        var ws = $.websocket("ws://localhost:8080/", "kraken-protocol", {
+            open: function () { },
+            close: function () { alert('websocket has been closed'); },
+            events: {
+                krakenmsgA: function (e) { $('#returnText').append(e.data + "<br/>"); },
+                krakenmsgB: function (e) { $('#returnText').append(e.data + "<br/>"); }
+            }
+        });
+});
+    </script>
+    <div>
+        <div style="float: left; clear: left; padding-top: 2px;">
+            Your text:
+        </div>
+        <div style="float: left; padding-left: 20px;">
+            <input type="text" id="echoText" style="width: 150px;" required />
+        </div>
+        <div style="clear: left;">
+            <input type="button" onclick="javascript:sendToServer();" value="Send" />
+        </div>
+        <div id="returnText" style="clear: left; height: 200px; padding-top: 30px;">
+        </div>
+    </div>
+</body>
+</html>

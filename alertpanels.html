@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="Foundation/js/vendor/modernizr.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<html lang="en">
+<link rel="icon" href="http://tac-alert01/favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="Foundation/css/foundation.css" type="text/css">
+ <link rel="stylesheet" href="Foundation/icons/foundation-icons.css" type="text/css">
+<script type="text/javascript" src="jQuery/jquery-2.0.0.js"></script>
+<script type="text/javascript" src="Foundation/js/vendor/fastclick.js"></script>
+<script type="text/javascript" src="Foundation/js/vendor/placeholder.js"></script>
+<script type="text/javascript" src="Foundation/js/vendor/jquery.cookie.js"></script>
+<script type="text/javascript" src="Foundation/js/foundation.min.js"></script>
+<script type="text/javascript" src="jQuery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/alert-panels.css" type="text/css">
+
+</head>
+<body>
+
+<div id="username" style="color:transparent;background:transparent;">
+ 
+<?php
+    require_once( "session.php"); 
+    require_once( "database.php"); 
+	if(! isset($_SESSION["myusername"])) {
+			$login = $_COOKIE["LoggedInAs"];
+				if(empty($_COOKIE["LoggedInAs"]) ){
+					$login = $_SERVER["REMOTE_ADDR"];
+				}
+	}
+		else{
+			$login = $_SESSION["myusername"];
+		}
+echo $login; 
+?>
+<div class="fixed">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">My Site</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Logged in as <i class="fi-torsos"></i> { <?php echo $login;?> }</a></li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+    <li class="has-form">
+  <div class="row collapse">
+    <div class="large-8 small-9 columns">
+      <input type="text" placeholder="Find Stuff">
+    </div>
+    <div class="large-4 small-3 columns">
+      <a href="#" class="alert button expand">Search</a>
+    </div>
+  </div>
+</li>
+    </ul>
+  </section>
+  </nav>
+</div>
+
+<div class="row">
+  <div class="small-11 large-7 columns small-centered">
+
+    <div class="alert-panel" data-alert>
+      <div class="alert-panel-title">
+        Holy Smokes, You Can't Press That!
+        <a href="#" class="alert-panel close">&times;</a>
+      </div>
+      <div class="alert-panel-message">
+        I think you meant to press a different button on the page. Please Try again, thank you!
+      </div>
+      <div class="alert-panel-action">
+        <a href="#" class="small button radius secondary">Cancel</a>
+        <a href="#" class="small button radius">Continue</a>
+      </div>
+    </div>
+
+    <div class="alert-panel secondary" data-alert>
+      <div class="alert-panel-title">
+        Holy Smokes, You Can't Press That!
+        <a href="#" class="alert-panel close">&times;</a>
+      </div>
+      <div class="alert-panel-message">
+        I think you meant to press a different button on the page. Please Try again, thank you!
+      </div>
+      <div class="alert-panel-action">
+        <a href="#" class="small button radius secondary">Cancel</a>
+        <a href="#" class="small button radius">Continue</a>
+      </div>
+    </div>
+
+    <div class="alert-panel success" data-alert>
+      <div class="alert-panel-title">
+        Holy Smokes, You Can't Press That!
+        <a href="#" class="alert-panel close">&times;</a>
+      </div>
+      <div class="alert-panel-message">
+        I think you meant to press a different button on the page. Try again, screwup.
+      </div>
+      <div class="alert-panel-action">
+        <a href="#" class="small button radius secondary">Cancel</a>
+        <a href="#" class="small button radius success">Continue</a>
+      </div>
+    </div>
+
+    <div class="alert-panel alert" data-alert>
+      <div class="alert-panel-title">
+	    NOT ALLOWED
+		<a href="#" class="alert-panel close alert">&times;</a>
+	  </div>
+	   <div class="alert-panel-message">
+        <b> This is your last warning. </b>
+      </div>
+	  <div class="alert-panel-action">
+        <a href="#" class="small button radius secondary">Cancel</a>
+        <a href="#" class="small button radius alert">Continue</a>
+      </div>
+	</div>
+
+
+	
+<script> 
+$(document).foundation({
+  alert: {
+    animation_speed: 500,
+    animation: 'fadeOut'
+ }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title></title>
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function zxcAddRow(zxcid,zxcc){
+var zxctbdy=document.getElementById(zxcid);
+var zxcrows=zxctbdy.getElementsByTagName('TR');
+if (!window['zxcClone'+zxcid]){
+var zxcclone=zxcrows[zxcc].cloneNode(true);
+var zxcips=zxcclone.getElementsByTagName('INPUT');
+for (var zxc0=0;zxc0<zxcips.length;zxc0++){
+zxcips[zxc0].value='';
+}
+window['zxcClone'+zxcid]=zxcclone;
+zxcrows[zxcc].getElementsByTagName('INPUT')[0].style.display='none'; // this line removals checkbox from row[zxcc]
+}
+var zxcclone=window['zxcClone'+zxcid].cloneNode(true);
+zxctbdy.insertBefore(zxcclone,zxcrows[zxcrows.length-1]);
+zxcNames(zxcid,zxcc);
+}
+
+function zxcRemoveRow(zxcid,zxcc){
+var zxctbdy=document.getElementById(zxcid);
+var zxcrows=zxctbdy.getElementsByTagName('TR');
+var zxcary=[];
+for (var zxc0=zxcc+1;zxc0<zxcrows.length-1;zxc0++){ // the +1 prevents removal of row[zxcc]
+zxcary.push(zxcrows[zxc0]);
+}
+for (var zxc1=0;zxc1<zxcary.length;zxc1++){
+if (zxcary[zxc1].getElementsByTagName('INPUT')[0].checked){
+zxctbdy.removeChild(zxcary[zxc1]);
+}
+}
+zxcNames(zxcid,zxcc);
+}
+
+function zxcNames(zxcid,zxcc){
+var zxctbdy=document.getElementById(zxcid);
+var zxcrows=zxctbdy.getElementsByTagName('TR');
+for (var zxc0=zxcc;zxc0<zxcrows.length-1;zxc0++){
+var zxcips=zxcrows[zxc0].getElementsByTagName('INPUT');
+for (var zxc1=0;zxc1<zxcips.length;zxc1++){
+zxcips[zxc1].name=zxcips[zxc1].name.replace(/\d/g,'')+(zxc0-1);
+zxcips[zxc1].id=zxcips[zxc1].id.replace(/\d/g,'')+(zxc0-1);
+}
+}
+}
+
+//-->
+</script></head>
+
+<body>
+<table border="1" align="center" cellspacing="1" cellpadding="0" width="70%" id="empTbl">
+<tbody id="TBDY1" >
+<tr height = "25">
+<td align="left" class= "tabletitle2" style="FONT-SIZE: 11px" width="10%"> </td>
+<td align="left" class= "tabletitle2" style="FONT-SIZE: 11px" width="30%">Employer Name</td>
+<td align="left" class= "tabletitle2" style="FONT-SIZE: 11px" width="30%">No. of years in the organization</td>
+<td align="left" class= "tabletitle2" style="FONT-SIZE: 11px" width="30%">CTC</td>
+</tr>
+<tr height = "25">
+<td align="left" class= "tablecell3" style="FONT-SIZE: 11px" width="10%"><input type="checkbox" name= "CheckBox0" id="CheckBox0" onclick=""></td>
+<td align="left" class= "tablecell3" style="FONT-SIZE: 11px" width="30%"><input type="text" class=basic name="employerName0" id="employerName0" style="FONT-SIZE: 12px" value=""></td>
+<td align="left" class= "tablecell3" style="FONT-SIZE: 11px" width="30%"><input type="text" class=basic name="yearsOfEmployment0" id="yearsOfEmployment0" style="FONT-SIZE: 12px" value=""></td>
+<td align="left" class= "tablecell3" style="FONT-SIZE: 11px" width="30%"><input type="text" class=basic name="CTC0" id="CTC0" style="FONT-SIZE: 12px" value=""></td>
+</tr>
+<tr height = "25">
+<td align="right" onclick="zxcAddRow('TBDY1',1);" class="tablecell3" width="50%"><input type="button" name="Add Rows" id="Add Rows" value="Add Rows" style="width:150px;FONT-SIZE: 14px" onclick=""></td>
+<td align="left" onclick="zxcRemoveRow('TBDY1',1);" class="tablecell3" width="50%"><input type="button" name="Delete Rows" id="Delete Rows" value="Delete Rows" style="width:150px;FONT-SIZE: 14px" onclick=""></td>
+</tr>
+</tbody>
+</table>
+</body>
+

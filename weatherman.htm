@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+<link rel="icon" href="http://tac-alert01/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="Foundation/js/vendor/modernizr.js"></script>
+  <!-- // LOAD MODERNIZR FIRST for legacy browser interaction -->
+ 
+  <link rel="stylesheet" type="text/css" href="css/production.css" class="theme">
+
+</head>
+<body style="background:#212121">
+
+<div id="Weather"><div>
+<script type="text/javascript" src="jQuery/jquery-2.1.1.min.js"></script>  
+<script type="text/javascript" src="Foundation/js/foundation.min.js"></script>
+<script>
+
+function weatherMan(){
+  var URL = "http://api.wunderground.com/api/f4de0ee4ffd72094/geolookup/conditions/q/IL/Chicago.json?callback=?";
+  var weatherJSON = $.getJSON(URL, function() {
+   console.log("weatherMan has started...");
+  })
+  .done(function(parsed_json) { var pattern=  new RegExp("^(.{26})([a-z])");
+      var temperF = parsed_json.current_observation.temp_f;
+      var humidity = parsed_json.current_observation.relative_humidity;
+      var Wreport = parsed_json.current_observation.weather;
+      var time = parsed_json.current_observation.observation_time;
+      var Icon = parsed_json.current_observation.icon_url;
+      var IconURL = Icon.replace(pattern, "$1h");
+  $('#Weather').html("<div class='row collapse'><span class='small-4 left'><img id='wIcon' src='"+ IconURL +"' /><h4 id='temp'>" + temperF +
+    "<sup>&deg;</sup></h4></span><span class='small-3'><h7 class='subheader'>Humidity: <b id='humid'>"+ humidity +"</b> | <strong>"+
+    Wreport +".</strong></h7></span><small id='time' class='left'>"+ time +"</small></div>");
+  })
+  .fail(function(){
+      $('#Weather').html("<b>Sorry</b>, something's not quite right here.");
+    })
+  .always(function(){
+  console.log("weatherMan has completed.");
+  });
+
+}
+
+$(document).ready(function() {
+ new weatherMan();
+ });
+</script>
+</body>
+</HTML>
