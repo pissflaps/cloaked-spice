@@ -1,0 +1,32 @@
+
+function sendmail($from, $to, $subject, $message, $headers)
+{
+    if (is_array($to)) {
+            $recipients = implode(', ', $to);
+    } else {
+        $recipients = $to;
+    }
+
+    $errorlevel = error_reporting();
+    $headers["From"] = $from;
+    $headers["To"] = $to;
+    $headers["Subject"] = $subject;
+
+    $params = array();
+    $params["host"] = "localhost";
+    $params["port"] = "25";
+    $params["auth"] = false;
+
+    error_reporting($errorlevel & ~E_WARNING);
+
+    $mail_object =& Mail::factory("smtp", $params);
+    $res = $mail_object->send($recipients, $headers, $message);
+
+    error_reporting($errorlevel);
+
+    return $res;
+}
+
+ // $tickets_removed = "SELECT * FROM `tickets` WHERE `Removed_Datetime` like CURRENT_DATE() ";
+// $removedticks = "SELECT * FROM `tickets` WHERE Removed_Datetime = CURRENT_TIMESTAMP()";
+// $email = "SELECT * FROM `tickets` WHERE Date = CURRENT_DATE AND ETA = CURRENT_TIME() ";
